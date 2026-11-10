@@ -30,26 +30,26 @@
    "place": 2
   },
   {
-   "person": "Judy",
-   "ranks": {
-    "masters": 1,
-    "usopen": 4,
-    "open": 3,
-    "pga": 4
-   },
-   "total": 12,
-   "place": 3
-  },
-  {
    "person": "David",
    "ranks": {
     "masters": 2,
     "usopen": 3,
-    "open": 4,
+    "open": 3,
     "pga": 3
    },
-   "total": 12,
+   "total": 11,
    "place": 3
+  },
+  {
+   "person": "Judy",
+   "ranks": {
+    "masters": 1,
+    "usopen": 4,
+    "open": 4,
+    "pga": 4
+   },
+   "total": 13,
+   "place": 4
   }
  ],
  "majors": [
@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2005/2005 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 2,
       "David": 1,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2005/2005 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 1,
       "David": 2,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2005/2005 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 1,
       "David": 2,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2005/2005 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 1,
       "David": 2,
@@ -248,7 +248,7 @@
      "person": "David",
      "rank": 2,
      "total": "-12",
-     "usable": 8,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -300,11 +300,11 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "+5",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -542,10 +542,10 @@
        "counts": false
       },
       {
-       "name": "Fredrik Jacobson",
-       "espn": null,
+       "name": "Freddie Jacobson",
+       "espn": "Freddie Jacobson",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -577,9 +577,9 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -588,18 +588,11 @@
      "espn": null,
      "kind": "dnp",
      "suggestion": null
-    },
-    {
-     "person": "Alan",
-     "roster": "Fredrik Jacobson",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
     }
    ],
    "field_size": 93,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "usopen",
@@ -618,7 +611,7 @@
     {
      "day": 1,
      "file": "snapshots/2005/2005 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -635,7 +628,7 @@
     {
      "day": 2,
      "file": "snapshots/2005/2005 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -652,7 +645,7 @@
     {
      "day": 3,
      "file": "snapshots/2005/2005 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -669,7 +662,7 @@
     {
      "day": 4,
      "file": "snapshots/2005/2005 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -848,10 +841,10 @@
        "counts": true
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -1090,7 +1083,7 @@
        "counts": true
       },
       {
-       "name": "Fredrik Jacobson",
+       "name": "Freddie Jacobson",
        "espn": null,
        "score": null,
        "status": "DNP",
@@ -1139,9 +1132,9 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -1167,7 +1160,7 @@
     },
     {
      "person": "Alan",
-     "roster": "Fredrik Jacobson",
+     "roster": "Freddie Jacobson",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -1175,7 +1168,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "open",
@@ -1194,16 +1187,16 @@
     {
      "day": 1,
      "file": "snapshots/2005/2005 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 4,
-      "David": 3,
-      "Michael": 2,
+      "David": 2,
+      "Michael": 3,
       "Alan": 1
      },
      "totals": {
       "Judy": "-3",
-      "David": "-5",
+      "David": "-12",
       "Michael": "-10",
       "Alan": "-17"
      }
@@ -1211,7 +1204,7 @@
     {
      "day": 2,
      "file": "snapshots/2005/2005 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 3,
       "David": 4,
@@ -1220,7 +1213,7 @@
      },
      "totals": {
       "Judy": "-18",
-      "David": "-14",
+      "David": "-17",
       "Michael": "-23",
       "Alan": "-27"
      }
@@ -1228,7 +1221,7 @@
     {
      "day": 3,
      "file": "snapshots/2005/2005 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 3,
       "David": 4,
@@ -1237,18 +1230,18 @@
      },
      "totals": {
       "Judy": "-11",
-      "David": "-12",
+      "David": "-11",
       "Michael": "-32",
-      "Alan": "-32"
+      "Alan": "-33"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2005/2005 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
-      "Judy": 3,
-      "David": 4,
+      "Judy": 4,
+      "David": 3,
       "Michael": 1,
       "Alan": 2
      },
@@ -1265,7 +1258,7 @@
    "standings": [
     {
      "person": "Judy",
-     "rank": 3,
+     "rank": 4,
      "total": "E",
      "usable": 6,
      "counting": 5,
@@ -1370,10 +1363,10 @@
     },
     {
      "person": "David",
-     "rank": 4,
+     "rank": 3,
      "total": "-14",
-     "usable": 4,
-     "counting": 4,
+     "usable": 5,
+     "counting": 5,
      "golfers": [
       {
        "name": "Vijay Singh",
@@ -1424,12 +1417,12 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Lee Westwood",
@@ -1582,7 +1575,7 @@
      "person": "Alan",
      "rank": 2,
      "total": "-25",
-     "usable": 6,
+     "usable": 7,
      "counting": 5,
      "golfers": [
       {
@@ -1666,11 +1659,11 @@
        "counts": false
       },
       {
-       "name": "Fredrik Jacobson",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Freddie Jacobson",
+       "espn": "Freddie Jacobson",
+       "score": "E",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -1715,9 +1708,9 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -1747,18 +1740,11 @@
      "espn": null,
      "kind": "dnp",
      "suggestion": null
-    },
-    {
-     "person": "Alan",
-     "roster": "Fredrik Jacobson",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
     }
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "pga",
@@ -1777,7 +1763,7 @@
     {
      "day": 1,
      "file": "snapshots/2005/2005 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -1794,7 +1780,7 @@
     {
      "day": 2,
      "file": "snapshots/2005/2005 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -1811,7 +1797,7 @@
     {
      "day": 3,
      "file": "snapshots/2005/2005 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -1828,7 +1814,7 @@
     {
      "day": 4,
      "file": "snapshots/2005/2005 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -1955,7 +1941,7 @@
      "person": "David",
      "rank": 3,
      "total": "+14",
-     "usable": 7,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -2007,11 +1993,11 @@
        "counts": true
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "+6",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -2165,7 +2151,7 @@
      "person": "Alan",
      "rank": 1,
      "total": "+4",
-     "usable": 7,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -2249,11 +2235,11 @@
        "counts": false
       },
       {
-       "name": "Fredrik Jacobson",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Freddie Jacobson",
+       "espn": "Freddie Jacobson",
+       "score": "+5",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -2277,9 +2263,9 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -2302,19 +2288,12 @@
      "espn": null,
      "kind": "dnp",
      "suggestion": null
-    },
-    {
-     "person": "Alan",
-     "roster": "Fredrik Jacobson",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
     }
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   }
  ],
- "updated": "2026-11-10T16:56-05:00"
+ "updated": "2026-11-10T17:55-05:00"
 }

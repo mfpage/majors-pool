@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2012/2012 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -79,7 +79,7 @@
      },
      "totals": {
       "Alan": "-14",
-      "Judy": "-3",
+      "Judy": "-6",
       "David": "-3",
       "Michael": "-9"
      }
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2012/2012 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -96,7 +96,7 @@
      },
      "totals": {
       "Alan": "-9",
-      "Judy": "+2",
+      "Judy": "-4",
       "David": "-10",
       "Michael": "-11"
      }
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2012/2012 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -113,7 +113,7 @@
      },
      "totals": {
       "Alan": "-27",
-      "Judy": "E",
+      "Judy": "-2",
       "David": "E",
       "Michael": "-19"
      }
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2012/2012 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -248,7 +248,7 @@
      "person": "Judy",
      "rank": 3,
      "total": "-9",
-     "usable": 7,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -316,11 +316,11 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "+10",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -577,9 +577,9 @@
     },
     {
      "person": "Judy",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -606,7 +606,7 @@
    ],
    "field_size": 96,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "usopen",
@@ -625,7 +625,7 @@
     {
      "day": 1,
      "file": "snapshots/2012/2012 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -642,7 +642,7 @@
     {
      "day": 2,
      "file": "snapshots/2012/2012 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -659,7 +659,7 @@
     {
      "day": 3,
      "file": "snapshots/2012/2012 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 2,
@@ -676,7 +676,7 @@
     {
      "day": 4,
      "file": "snapshots/2012/2012 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 2,
@@ -871,10 +871,10 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -1132,9 +1132,9 @@
     },
     {
      "person": "Judy",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -1168,7 +1168,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "open",
@@ -1187,7 +1187,7 @@
     {
      "day": 1,
      "file": "snapshots/2012/2012 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1204,7 +1204,7 @@
     {
      "day": 2,
      "file": "snapshots/2012/2012 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -1221,7 +1221,7 @@
     {
      "day": 3,
      "file": "snapshots/2012/2012 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1238,7 +1238,7 @@
     {
      "day": 4,
      "file": "snapshots/2012/2012 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -1247,7 +1247,7 @@
      },
      "totals": {
       "Alan": "E",
-      "Judy": "-4",
+      "Judy": "-6",
       "David": "+6",
       "Michael": "+10"
      }
@@ -1364,8 +1364,8 @@
     {
      "person": "Judy",
      "rank": 1,
-     "total": "-4",
-     "usable": 9,
+     "total": "-6",
+     "usable": 10,
      "counting": 5,
      "golfers": [
       {
@@ -1433,12 +1433,12 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Simon Dyson",
@@ -1446,7 +1446,7 @@
        "score": "+2",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Brandt Snedeker",
@@ -1687,9 +1687,9 @@
     },
     {
      "person": "Judy",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -1730,7 +1730,7 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "pga",
@@ -1749,7 +1749,7 @@
     {
      "day": 1,
      "file": "snapshots/2012/2012 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 1,
@@ -1758,7 +1758,7 @@
      },
      "totals": {
       "Alan": "-10",
-      "Judy": "-16",
+      "Judy": "-17",
       "David": "-12",
       "Michael": "-12"
      }
@@ -1766,7 +1766,7 @@
     {
      "day": 2,
      "file": "snapshots/2012/2012 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 1,
@@ -1783,7 +1783,7 @@
     {
      "day": 3,
      "file": "snapshots/2012/2012 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 2,
@@ -1800,7 +1800,7 @@
     {
      "day": 4,
      "file": "snapshots/2012/2012 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -1809,7 +1809,7 @@
      },
      "totals": {
       "Alan": "+9",
-      "Judy": "-5",
+      "Judy": "-8",
       "David": "-13",
       "Michael": "-9"
      }
@@ -1926,8 +1926,8 @@
     {
      "person": "Judy",
      "rank": 3,
-     "total": "-5",
-     "usable": 8,
+     "total": "-8",
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -1976,7 +1976,7 @@
        "score": "+4",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Retief Goosen",
@@ -1995,12 +1995,12 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Simon Dyson",
@@ -2242,9 +2242,9 @@
    "name_check": [
     {
      "person": "Judy",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -2264,8 +2264,8 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:57-05:00"
+ "updated": "2026-11-10T17:56-05:00"
 }

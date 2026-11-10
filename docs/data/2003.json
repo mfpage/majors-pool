@@ -35,10 +35,10 @@
     "masters": 4,
     "usopen": 2,
     "open": 1,
-    "pga": 3
+    "pga": 4
    },
-   "total": 10,
-   "place": 2
+   "total": 11,
+   "place": 3
   },
   {
    "person": "David",
@@ -46,10 +46,10 @@
     "masters": 1,
     "usopen": 4,
     "open": 3,
-    "pga": 4
+    "pga": 3
    },
-   "total": 12,
-   "place": 4
+   "total": 11,
+   "place": 3
   }
  ],
  "majors": [
@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2003/2003 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 2,
@@ -81,13 +81,13 @@
       "Michael": "+5",
       "Alan": "+5",
       "Judy": "-8",
-      "David": "+8"
+      "David": "+6"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2003/2003 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -98,13 +98,13 @@
       "Michael": "+13",
       "Alan": "+4",
       "Judy": "-2",
-      "David": "+9"
+      "David": "+7"
      }
     },
     {
      "day": 3,
      "file": "snapshots/2003/2003 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 1,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2003/2003 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 2,
@@ -458,7 +458,7 @@
      "person": "David",
      "rank": 1,
      "total": "-5",
-     "usable": 6,
+     "usable": 7,
      "counting": 5,
      "golfers": [
       {
@@ -486,11 +486,11 @@
        "counts": false
       },
       {
-       "name": "Charles Howel IIIl",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Charles Howell III",
+       "espn": "Charles Howell III",
+       "score": "+6",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -598,13 +598,6 @@
     },
     {
      "person": "David",
-     "roster": "Charles Howel IIIl",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "David",
      "roster": "Thomas Bjorn",
      "espn": "Thomas Bjørn",
      "kind": "spelling",
@@ -627,7 +620,7 @@
    ],
    "field_size": 102,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "usopen",
@@ -641,7 +634,7 @@
     {
      "day": 1,
      "file": "snapshots/2003/2003 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 4,
@@ -652,13 +645,13 @@
       "Michael": "E",
       "Alan": "E",
       "Judy": "-4",
-      "David": "-6"
+      "David": "-7"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2003/2003 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 1,
@@ -675,7 +668,7 @@
     {
      "day": 3,
      "file": "snapshots/2003/2003 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 2,
@@ -686,13 +679,13 @@
       "Michael": "-7",
       "Alan": "-4",
       "Judy": "-1",
-      "David": "+15"
+      "David": "+13"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2003/2003 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -703,7 +696,7 @@
       "Michael": "-5",
       "Alan": "+18",
       "Judy": "+10",
-      "David": "+25"
+      "David": "+23"
      }
     }
    ],
@@ -1028,8 +1021,8 @@
     {
      "person": "David",
      "rank": 4,
-     "total": "+25",
-     "usable": 5,
+     "total": "+23",
+     "usable": 6,
      "counting": 5,
      "golfers": [
       {
@@ -1057,12 +1050,12 @@
        "counts": true
       },
       {
-       "name": "Charles Howel IIIl",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Charles Howell III",
+       "espn": "Charles Howell III",
+       "score": "+8",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Colin Montgomerie",
@@ -1094,7 +1087,7 @@
        "score": "+10",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Jose Maria Olazabal",
@@ -1148,13 +1141,6 @@
     },
     {
      "person": "David",
-     "roster": "Charles Howel IIIl",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "David",
      "roster": "Thomas Bjorn",
      "espn": "Thomas Bjørn",
      "kind": "spelling",
@@ -1177,7 +1163,7 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "open",
@@ -1196,24 +1182,24 @@
     {
      "day": 1,
      "file": "snapshots/2003/2003 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
-      "Michael": 2,
+      "Michael": 3,
       "Alan": 4,
       "Judy": 1,
-      "David": 3
+      "David": 2
      },
      "totals": {
       "Michael": "+12",
       "Alan": "+17",
       "Judy": "+9",
-      "David": "+13"
+      "David": "+10"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2003/2003 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -1224,13 +1210,13 @@
       "Michael": "+11",
       "Alan": "+20",
       "Judy": "+15",
-      "David": "+26"
+      "David": "+23"
      }
     },
     {
      "day": 3,
      "file": "snapshots/2003/2003 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -1241,13 +1227,13 @@
       "Michael": "+11",
       "Alan": "+21",
       "Judy": "+12",
-      "David": "+32"
+      "David": "+31"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2003/2003 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -1584,7 +1570,7 @@
      "person": "David",
      "rank": 3,
      "total": "+34",
-     "usable": 5,
+     "usable": 6,
      "counting": 5,
      "golfers": [
       {
@@ -1612,12 +1598,12 @@
        "counts": false
       },
       {
-       "name": "Charles Howel IIIl",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Charles Howell III",
+       "espn": "Charles Howell III",
+       "score": "+14",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Colin Montgomerie",
@@ -1649,7 +1635,7 @@
        "score": "+14",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Jose Maria Olazabal",
@@ -1717,13 +1703,6 @@
     },
     {
      "person": "David",
-     "roster": "Charles Howel IIIl",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "David",
      "roster": "Thomas Bjorn",
      "espn": "Thomas Bjørn",
      "kind": "spelling",
@@ -1746,7 +1725,7 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "pga",
@@ -1760,7 +1739,7 @@
     {
      "day": 1,
      "file": "snapshots/2003/2003 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 1,
@@ -1771,13 +1750,13 @@
       "Michael": "+8",
       "Alan": "-4",
       "Judy": "+9",
-      "David": "+16"
+      "David": "+11"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2003/2003 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 1,
@@ -1788,41 +1767,41 @@
       "Michael": "+28",
       "Alan": "+14",
       "Judy": "+25",
-      "David": "+21"
+      "David": "+15"
      }
     },
     {
      "day": 3,
      "file": "snapshots/2003/2003 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
-      "Michael": 3,
+      "Michael": 4,
       "Alan": 1,
-      "Judy": 2,
-      "David": 4
+      "Judy": 3,
+      "David": 2
      },
      "totals": {
       "Michael": "+31",
       "Alan": "+15",
       "Judy": "+31",
-      "David": "+37"
+      "David": "+25"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2003/2003 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 1,
-      "Judy": 3,
-      "David": 4
+      "Judy": 4,
+      "David": 3
      },
      "totals": {
       "Michael": "+38",
       "Alan": "+35",
       "Judy": "+44",
-      "David": "+54"
+      "David": "+44"
      }
     }
    ],
@@ -2041,7 +2020,7 @@
     },
     {
      "person": "Judy",
-     "rank": 3,
+     "rank": 4,
      "total": "+44",
      "usable": 6,
      "counting": 5,
@@ -2146,9 +2125,9 @@
     },
     {
      "person": "David",
-     "rank": 4,
-     "total": "+54",
-     "usable": 5,
+     "rank": 3,
+     "total": "+44",
+     "usable": 6,
      "counting": 5,
      "golfers": [
       {
@@ -2176,12 +2155,12 @@
        "counts": false
       },
       {
-       "name": "Charles Howel IIIl",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Charles Howell III",
+       "espn": "Charles Howell III",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Colin Montgomerie",
@@ -2221,7 +2200,7 @@
        "score": "+15",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Rich Beem",
@@ -2274,13 +2253,6 @@
     },
     {
      "person": "David",
-     "roster": "Charles Howel IIIl",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "David",
      "roster": "Thomas Bjorn",
      "espn": "Thomas Bjørn",
      "kind": "spelling",
@@ -2303,8 +2275,8 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   }
  ],
- "updated": "2026-11-10T16:56-05:00"
+ "updated": "2026-11-10T17:55-05:00"
 }

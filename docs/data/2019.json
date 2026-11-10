@@ -8,17 +8,6 @@
  ],
  "overall": [
   {
-   "person": "Michael",
-   "ranks": {
-    "masters": 2,
-    "pga": 2,
-    "usopen": 1,
-    "open": 3
-   },
-   "total": 8,
-   "place": 1
-  },
-  {
    "person": "Judy",
    "ranks": {
     "masters": 3,
@@ -27,6 +16,17 @@
     "open": 1
    },
    "total": 9,
+   "place": 1
+  },
+  {
+   "person": "Michael",
+   "ranks": {
+    "masters": 2,
+    "pga": 2,
+    "usopen": 2,
+    "open": 4
+   },
+   "total": 10,
    "place": 2
   },
   {
@@ -38,17 +38,17 @@
     "open": 2
    },
    "total": 10,
-   "place": 3
+   "place": 2
   },
   {
    "person": "Alan",
    "ranks": {
     "masters": 4,
     "pga": 3,
-    "usopen": 2,
-    "open": 4
+    "usopen": 1,
+    "open": 3
    },
-   "total": 13,
+   "total": 11,
    "place": 4
   }
  ],
@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2019/2019 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2019/2019 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2019/2019 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 4,
@@ -113,7 +113,7 @@
      },
      "totals": {
       "Michael": "-36",
-      "Alan": "-24",
+      "Alan": "-26",
       "Judy": "-38",
       "David": "-45"
      }
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2019/2019 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 4,
@@ -130,7 +130,7 @@
      },
      "totals": {
       "Michael": "-47",
-      "Alan": "-34",
+      "Alan": "-37",
       "Judy": "-44",
       "David": "-50"
      }
@@ -247,8 +247,8 @@
     {
      "person": "Alan",
      "rank": 4,
-     "total": "-34",
-     "usable": 7,
+     "total": "-37",
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -281,7 +281,7 @@
        "score": "-2",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Bubba Watson",
@@ -308,12 +308,12 @@
        "counts": true
       },
       {
-       "name": "Matthew Fitzpatrick",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Matt Fitzpatrick",
+       "espn": "Matt Fitzpatrick",
+       "score": "-5",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Gary Woodland",
@@ -353,7 +353,7 @@
      "person": "Judy",
      "rank": 3,
      "total": "-44",
-     "usable": 10,
+     "usable": 11,
      "counting": 5,
      "golfers": [
       {
@@ -413,11 +413,11 @@
        "counts": false
       },
       {
-       "name": "Alexander Noren",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Alex Noren",
+       "espn": "Alex Noren",
+       "score": "+8",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -458,7 +458,7 @@
      "person": "David",
      "rank": 1,
      "total": "-50",
-     "usable": 11,
+     "usable": 12,
      "counting": 5,
      "golfers": [
       {
@@ -510,11 +510,11 @@
        "counts": false
       },
       {
-       "name": "Rafael Cabrera Bello",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Rafa Cabrera Bello",
+       "espn": "Rafa Cabrera Bello",
+       "score": "-2",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -563,28 +563,7 @@
    "name_check": [
     {
      "person": "Alan",
-     "roster": "Matthew Fitzpatrick",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Alan",
      "roster": "Thomas Pieters",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Judy",
-     "roster": "Alexander Noren",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "David",
-     "roster": "Rafael Cabrera Bello",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -599,7 +578,7 @@
    ],
    "field_size": 87,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "pga",
@@ -618,7 +597,7 @@
     {
      "day": 1,
      "file": "snapshots/2019/2019 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -635,7 +614,7 @@
     {
      "day": 2,
      "file": "snapshots/2019/2019 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -644,7 +623,7 @@
      },
      "totals": {
       "Michael": "-20",
-      "Alan": "-3",
+      "Alan": "-4",
       "Judy": "-12",
       "David": "E"
      }
@@ -652,7 +631,7 @@
     {
      "day": 3,
      "file": "snapshots/2019/2019 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -669,7 +648,7 @@
     {
      "day": 4,
      "file": "snapshots/2019/2019 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 3,
@@ -796,7 +775,7 @@
      "person": "Alan",
      "rank": 3,
      "total": "+18",
-     "usable": 6,
+     "usable": 7,
      "counting": 5,
      "golfers": [
       {
@@ -856,11 +835,11 @@
        "counts": true
       },
       {
-       "name": "Matthew Fitzpatrick",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Matt Fitzpatrick",
+       "espn": "Matt Fitzpatrick",
+       "score": "+7",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -901,7 +880,7 @@
      "person": "Judy",
      "rank": 1,
      "total": "-2",
-     "usable": 9,
+     "usable": 10,
      "counting": 5,
      "golfers": [
       {
@@ -961,11 +940,11 @@
        "counts": false
       },
       {
-       "name": "Alexander Noren",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Alex Noren",
+       "espn": "Alex Noren",
+       "score": "+9",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -1006,7 +985,7 @@
      "person": "David",
      "rank": 4,
      "total": "+28",
-     "usable": 7,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -1058,11 +1037,11 @@
        "counts": true
       },
       {
-       "name": "Rafael Cabrera Bello",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Rafa Cabrera Bello",
+       "espn": "Rafa Cabrera Bello",
+       "score": "+12",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -1110,29 +1089,8 @@
    ],
    "name_check": [
     {
-     "person": "Alan",
-     "roster": "Matthew Fitzpatrick",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Judy",
-     "roster": "Alexander Noren",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
      "person": "David",
      "roster": "Justin Thomas",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "David",
-     "roster": "Rafael Cabrera Bello",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -1147,7 +1105,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "usopen",
@@ -1166,7 +1124,7 @@
     {
      "day": 1,
      "file": "snapshots/2019/2019 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 2,
@@ -1183,16 +1141,16 @@
     {
      "day": 2,
      "file": "snapshots/2019/2019 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
-      "Michael": 1,
-      "Alan": 2,
+      "Michael": 2,
+      "Alan": 1,
       "Judy": 3,
       "David": 4
      },
      "totals": {
       "Michael": "-21",
-      "Alan": "-18",
+      "Alan": "-21",
       "Judy": "-12",
       "David": "-11"
      }
@@ -1200,7 +1158,7 @@
     {
      "day": 3,
      "file": "snapshots/2019/2019 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 1,
@@ -1209,7 +1167,7 @@
      },
      "totals": {
       "Michael": "-16",
-      "Alan": "-19",
+      "Alan": "-21",
       "Judy": "-14",
       "David": "-14"
      }
@@ -1217,16 +1175,16 @@
     {
      "day": 4,
      "file": "snapshots/2019/2019 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
-      "Michael": 1,
-      "Alan": 2,
+      "Michael": 2,
+      "Alan": 1,
       "Judy": 4,
       "David": 3
      },
      "totals": {
       "Michael": "-25",
-      "Alan": "-22",
+      "Alan": "-27",
       "Judy": "-18",
       "David": "-19"
      }
@@ -1237,7 +1195,7 @@
    "standings": [
     {
      "person": "Michael",
-     "rank": 1,
+     "rank": 2,
      "total": "-25",
      "usable": 11,
      "counting": 5,
@@ -1342,9 +1300,9 @@
     },
     {
      "person": "Alan",
-     "rank": 2,
-     "total": "-22",
-     "usable": 9,
+     "rank": 1,
+     "total": "-27",
+     "usable": 10,
      "counting": 5,
      "golfers": [
       {
@@ -1369,7 +1327,7 @@
        "score": "+1",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Patrick Reed",
@@ -1404,12 +1362,12 @@
        "counts": true
       },
       {
-       "name": "Matthew Fitzpatrick",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Matt Fitzpatrick",
+       "espn": "Matt Fitzpatrick",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Gary Woodland",
@@ -1509,10 +1467,10 @@
        "counts": false
       },
       {
-       "name": "Alexander Noren",
-       "espn": null,
+       "name": "Alex Noren",
+       "espn": "Alex Noren",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -1554,7 +1512,7 @@
      "person": "David",
      "rank": 3,
      "total": "-19",
-     "usable": 6,
+     "usable": 7,
      "counting": 5,
      "golfers": [
       {
@@ -1606,11 +1564,11 @@
        "counts": true
       },
       {
-       "name": "Rafael Cabrera Bello",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Rafa Cabrera Bello",
+       "espn": "Rafa Cabrera Bello",
+       "score": "+6",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -1658,27 +1616,6 @@
    ],
    "name_check": [
     {
-     "person": "Alan",
-     "roster": "Matthew Fitzpatrick",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Judy",
-     "roster": "Alexander Noren",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "David",
-     "roster": "Rafael Cabrera Bello",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
      "person": "David",
      "roster": "Thorbjorn Olesen",
      "espn": "Thorbjørn Olesen",
@@ -1688,7 +1625,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "open",
@@ -1707,41 +1644,41 @@
     {
      "day": 1,
      "file": "snapshots/2019/2019 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
-      "Michael": 3,
-      "Alan": 1,
-      "Judy": 4,
-      "David": 2
+      "Michael": 4,
+      "Alan": 2,
+      "Judy": 1,
+      "David": 3
      },
      "totals": {
       "Michael": "-7",
       "Alan": "-9",
-      "Judy": "-5",
+      "Judy": "-9",
       "David": "-8"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2019/2019 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 2,
-      "Judy": 4,
-      "David": 3
+      "Judy": 3,
+      "David": 4
      },
      "totals": {
       "Michael": "-20",
       "Alan": "-18",
-      "Judy": "-14",
+      "Judy": "-17",
       "David": "-17"
      }
     },
     {
      "day": 3,
      "file": "snapshots/2019/2019 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 3,
@@ -1750,25 +1687,25 @@
      },
      "totals": {
       "Michael": "-29",
-      "Alan": "-25",
-      "Judy": "-16",
+      "Alan": "-27",
+      "Judy": "-24",
       "David": "-30"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2019/2019 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
-      "Michael": 3,
-      "Alan": 4,
+      "Michael": 4,
+      "Alan": 3,
       "Judy": 1,
       "David": 2
      },
      "totals": {
       "Michael": "-9",
-      "Alan": "-7",
-      "Judy": "-13",
+      "Alan": "-11",
+      "Judy": "-18",
       "David": "-12"
      }
     }
@@ -1778,7 +1715,7 @@
    "standings": [
     {
      "person": "Michael",
-     "rank": 3,
+     "rank": 4,
      "total": "-9",
      "usable": 8,
      "counting": 5,
@@ -1883,9 +1820,9 @@
     },
     {
      "person": "Alan",
-     "rank": 4,
-     "total": "-7",
-     "usable": 7,
+     "rank": 3,
+     "total": "-11",
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -1926,7 +1863,7 @@
        "score": "+3",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Sergio Garcia",
@@ -1945,12 +1882,12 @@
        "counts": true
       },
       {
-       "name": "Matthew Fitzpatrick",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Matt Fitzpatrick",
+       "espn": "Matt Fitzpatrick",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Gary Woodland",
@@ -1989,8 +1926,8 @@
     {
      "person": "Judy",
      "rank": 1,
-     "total": "-13",
-     "usable": 7,
+     "total": "-18",
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -2050,12 +1987,12 @@
        "counts": true
       },
       {
-       "name": "Alexander Noren",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Alex Noren",
+       "espn": "Alex Noren",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Adam Scott",
@@ -2087,7 +2024,7 @@
        "score": "+2",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       }
      ]
     },
@@ -2147,10 +2084,10 @@
        "counts": true
       },
       {
-       "name": "Rafael Cabrera Bello",
-       "espn": null,
+       "name": "Rafa Cabrera Bello",
+       "espn": "Rafa Cabrera Bello",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -2200,13 +2137,6 @@
    "name_check": [
     {
      "person": "Alan",
-     "roster": "Matthew Fitzpatrick",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Alan",
      "roster": "Martin Kaymer",
      "espn": null,
      "kind": "dnp",
@@ -2214,21 +2144,7 @@
     },
     {
      "person": "Judy",
-     "roster": "Alexander Noren",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Judy",
      "roster": "Kevin Na",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "David",
-     "roster": "Rafael Cabrera Bello",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -2243,8 +2159,8 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:57-05:00"
+ "updated": "2026-11-10T17:56-05:00"
 }

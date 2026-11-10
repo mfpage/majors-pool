@@ -80,7 +80,7 @@
     {
      "day": 1,
      "file": "snapshots/2020/2020 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -97,7 +97,7 @@
     {
      "day": 2,
      "file": "snapshots/2020/2020 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 2,
@@ -114,7 +114,7 @@
     {
      "day": 3,
      "file": "snapshots/2020/2020 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -131,7 +131,7 @@
     {
      "day": 4,
      "file": "snapshots/2020/2020 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 2,
@@ -205,10 +205,10 @@
        "counts": false
       },
       {
-       "name": "Matthew Fitzpatrick",
-       "espn": null,
+       "name": "Matt Fitzpatrick",
+       "espn": "Matt Fitzpatrick",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -245,10 +245,10 @@
        "counts": false
       },
       {
-       "name": "Rafael Cabrera Bello",
-       "espn": null,
+       "name": "Rafa Cabrera Bello",
+       "espn": "Rafa Cabrera Bello",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       }
@@ -572,20 +572,6 @@
    ],
    "name_check": [
     {
-     "person": "Alan",
-     "roster": "Matthew Fitzpatrick",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Alan",
-     "roster": "Rafael Cabrera Bello",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
      "person": "Judy",
      "roster": "Charles Howell III",
      "espn": null,
@@ -609,7 +595,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "usopen",
@@ -628,7 +614,7 @@
     {
      "day": 1,
      "file": "snapshots/2020/2020 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -636,7 +622,7 @@
       "Michael": 1
      },
      "totals": {
-      "Alan": "+1",
+      "Alan": "-5",
       "Judy": "+1",
       "David": "-5",
       "Michael": "-10"
@@ -645,7 +631,7 @@
     {
      "day": 2,
      "file": "snapshots/2020/2020 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -653,7 +639,7 @@
       "Michael": 1
      },
      "totals": {
-      "Alan": "+15",
+      "Alan": "+13",
       "Judy": "+11",
       "David": "+4",
       "Michael": "+1"
@@ -662,15 +648,15 @@
     {
      "day": 3,
      "file": "snapshots/2020/2020 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
-      "Alan": 4,
-      "Judy": 2,
-      "David": 3,
+      "Alan": 2,
+      "Judy": 3,
+      "David": 4,
       "Michael": 1
      },
      "totals": {
-      "Alan": "+14",
+      "Alan": "+16",
       "Judy": "+18",
       "David": "+23",
       "Michael": "+15"
@@ -679,7 +665,7 @@
     {
      "day": 4,
      "file": "snapshots/2020/2020 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 1,
@@ -687,7 +673,7 @@
       "Michael": 2
      },
      "totals": {
-      "Alan": "+35",
+      "Alan": "+45",
       "Judy": "+33",
       "David": "+40",
       "Michael": "+33"
@@ -700,9 +686,9 @@
     {
      "person": "Alan",
      "rank": 4,
-     "total": "+35",
-     "usable": 4,
-     "counting": 4,
+     "total": "+45",
+     "usable": 5,
+     "counting": 5,
      "golfers": [
       {
        "name": "Rory McIlroy",
@@ -753,10 +739,10 @@
        "counts": false
       },
       {
-       "name": "Matthew Fitzpatrick",
-       "espn": null,
+       "name": "Matt Fitzpatrick",
+       "espn": "Matt Fitzpatrick",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -793,12 +779,12 @@
        "counts": false
       },
       {
-       "name": "Rafael Cabrera Bello",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Rafa Cabrera Bello",
+       "espn": "Rafa Cabrera Bello",
+       "score": "+10",
+       "status": "F",
+       "out": false,
+       "counts": true
       }
      ]
     },
@@ -1120,20 +1106,6 @@
    ],
    "name_check": [
     {
-     "person": "Alan",
-     "roster": "Matthew Fitzpatrick",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Alan",
-     "roster": "Rafael Cabrera Bello",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
      "person": "Judy",
      "roster": "Brooks Koepka",
      "espn": null,
@@ -1171,7 +1143,7 @@
    ],
    "field_size": 144,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "masters",
@@ -1190,7 +1162,7 @@
     {
      "day": 1,
      "file": "snapshots/2020/2020 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -1207,7 +1179,7 @@
     {
      "day": 2,
      "file": "snapshots/2020/2020 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -1224,7 +1196,7 @@
     {
      "day": 3,
      "file": "snapshots/2020/2020 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -1241,7 +1213,7 @@
     {
      "day": 4,
      "file": "snapshots/2020/2020 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -1263,7 +1235,7 @@
      "person": "Alan",
      "rank": 4,
      "total": "-30",
-     "usable": 6,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -1315,11 +1287,11 @@
        "counts": true
       },
       {
-       "name": "Matthew Fitzpatrick",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Matt Fitzpatrick",
+       "espn": "Matt Fitzpatrick",
+       "score": "+1",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -1355,11 +1327,11 @@
        "counts": false
       },
       {
-       "name": "Rafael Cabrera Bello",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Rafa Cabrera Bello",
+       "espn": "Rafa Cabrera Bello",
+       "score": "+2",
+       "status": "F",
+       "out": false,
        "counts": false
       }
      ]
@@ -1683,13 +1655,6 @@
    "name_check": [
     {
      "person": "Alan",
-     "roster": "Matthew Fitzpatrick",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Alan",
      "roster": "Keegan Bradley",
      "espn": null,
      "kind": "dnp",
@@ -1698,13 +1663,6 @@
     {
      "person": "Alan",
      "roster": "Sergio Garcia",
-     "espn": null,
-     "kind": "dnp",
-     "suggestion": null
-    },
-    {
-     "person": "Alan",
-     "roster": "Rafael Cabrera Bello",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -1726,8 +1684,8 @@
    ],
    "field_size": 92,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:57-05:00"
+ "updated": "2026-11-10T17:56-05:00"
 }

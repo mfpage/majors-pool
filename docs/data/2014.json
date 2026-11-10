@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2014/2014 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 3,
       "Michael": 2,
@@ -80,14 +80,14 @@
      "totals": {
       "David": "-2",
       "Michael": "-3",
-      "Alan": "+6",
+      "Alan": "+1",
       "Judy": "-9"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2014/2014 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -97,14 +97,14 @@
      "totals": {
       "David": "-7",
       "Michael": "-7",
-      "Alan": "+6",
+      "Alan": "+9",
       "Judy": "+3"
      }
     },
     {
      "day": 3,
      "file": "snapshots/2014/2014 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 3,
@@ -114,14 +114,14 @@
      "totals": {
       "David": "-8",
       "Michael": "+9",
-      "Alan": "+14",
+      "Alan": "+11",
       "Judy": "E"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2014/2014 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -131,7 +131,7 @@
      "totals": {
       "David": "-6",
       "Michael": "+2",
-      "Alan": "+19",
+      "Alan": "+15",
       "Judy": "+2"
      }
     }
@@ -143,7 +143,7 @@
      "person": "David",
      "rank": 1,
      "total": "-6",
-     "usable": 8,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -203,11 +203,11 @@
        "counts": false
       },
       {
-       "name": "Gonzalo Fdez-Castano",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Gonzalo Fernandez-Castano",
+       "espn": "Gonzalo Fernandez-Castaño",
+       "score": "+4",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -352,9 +352,9 @@
     {
      "person": "Alan",
      "rank": 4,
-     "total": "+19",
-     "usable": 4,
-     "counting": 4,
+     "total": "+15",
+     "usable": 5,
+     "counting": 5,
      "golfers": [
       {
        "name": "Phil Mickelson",
@@ -413,12 +413,12 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Francesco Molinari",
@@ -563,9 +563,9 @@
    "name_check": [
     {
      "person": "David",
-     "roster": "Gonzalo Fdez-Castano",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Gonzalo Fernandez-Castano",
+     "espn": "Gonzalo Fernandez-Castaño",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -591,9 +591,9 @@
     },
     {
      "person": "Alan",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -613,7 +613,7 @@
    ],
    "field_size": 97,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "usopen",
@@ -632,7 +632,7 @@
     {
      "day": 1,
      "file": "snapshots/2014/2014 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -649,7 +649,7 @@
     {
      "day": 2,
      "file": "snapshots/2014/2014 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -666,7 +666,7 @@
     {
      "day": 3,
      "file": "snapshots/2014/2014 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 4,
@@ -683,7 +683,7 @@
     {
      "day": 4,
      "file": "snapshots/2014/2014 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -765,10 +765,10 @@
        "counts": false
       },
       {
-       "name": "Gonzalo Fdez-Castano",
-       "espn": null,
+       "name": "Gonzalo Fernandez-Castano",
+       "espn": "Gonzalo Fernandez-Castaño",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -975,10 +975,10 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -1125,9 +1125,9 @@
    "name_check": [
     {
      "person": "David",
-     "roster": "Gonzalo Fdez-Castano",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Gonzalo Fernandez-Castano",
+     "espn": "Gonzalo Fernandez-Castaño",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -1153,9 +1153,9 @@
     },
     {
      "person": "Alan",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -1175,7 +1175,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "open",
@@ -1194,7 +1194,7 @@
     {
      "day": 1,
      "file": "snapshots/2014/2014 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 4,
       "Michael": 2,
@@ -1211,7 +1211,7 @@
     {
      "day": 2,
      "file": "snapshots/2014/2014 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 4,
       "Michael": 3,
@@ -1228,7 +1228,7 @@
     {
      "day": 3,
      "file": "snapshots/2014/2014 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 4,
       "Michael": 3,
@@ -1245,7 +1245,7 @@
     {
      "day": 4,
      "file": "snapshots/2014/2014 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 4,
       "Michael": 2,
@@ -1327,10 +1327,10 @@
        "counts": false
       },
       {
-       "name": "Gonzalo Fdez-Castano",
-       "espn": null,
+       "name": "Gonzalo Fernandez-Castano",
+       "espn": "Gonzalo Fernandez-Castaño",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -1537,10 +1537,10 @@
        "counts": true
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -1694,9 +1694,9 @@
     },
     {
      "person": "David",
-     "roster": "Gonzalo Fdez-Castano",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Gonzalo Fernandez-Castano",
+     "espn": "Gonzalo Fernandez-Castaño",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -1715,9 +1715,9 @@
     },
     {
      "person": "Alan",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -1744,7 +1744,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "pga",
@@ -1763,7 +1763,7 @@
     {
      "day": 1,
      "file": "snapshots/2014/2014 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 2,
       "Michael": 3,
@@ -1780,7 +1780,7 @@
     {
      "day": 2,
      "file": "snapshots/2014/2014 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 2,
       "Michael": 3,
@@ -1797,7 +1797,7 @@
     {
      "day": 3,
      "file": "snapshots/2014/2014 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 2,
       "Michael": 4,
@@ -1814,7 +1814,7 @@
     {
      "day": 4,
      "file": "snapshots/2014/2014 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "David": 2,
       "Michael": 4,
@@ -1836,7 +1836,7 @@
      "person": "David",
      "rank": 2,
      "total": "-51",
-     "usable": 7,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -1896,11 +1896,11 @@
        "counts": true
       },
       {
-       "name": "Gonzalo Fdez-Castano",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Gonzalo Fernandez-Castano",
+       "espn": "Gonzalo Fernandez-Castaño",
+       "score": "E",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -2106,10 +2106,10 @@
        "counts": true
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -2263,9 +2263,9 @@
     },
     {
      "person": "David",
-     "roster": "Gonzalo Fdez-Castano",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Gonzalo Fernandez-Castano",
+     "espn": "Gonzalo Fernandez-Castaño",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -2284,9 +2284,9 @@
     },
     {
      "person": "Alan",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     },
     {
@@ -2306,8 +2306,8 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:57-05:00"
+ "updated": "2026-11-10T17:56-05:00"
 }

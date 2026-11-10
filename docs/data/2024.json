@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2024/2024 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2024/2024 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2024/2024 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2024/2024 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -563,7 +563,7 @@
    "name_check": [],
    "field_size": 89,
    "error": null,
-   "updated": "2026-11-10T16:58-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "pga",
@@ -582,7 +582,7 @@
     {
      "day": 1,
      "file": "snapshots/2024/2024 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -599,7 +599,7 @@
     {
      "day": 2,
      "file": "snapshots/2024/2024 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -616,7 +616,7 @@
     {
      "day": 3,
      "file": "snapshots/2024/2024 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -633,7 +633,7 @@
     {
      "day": 4,
      "file": "snapshots/2024/2024 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -1075,7 +1075,7 @@
    "name_check": [],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:58-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "usopen",
@@ -1094,7 +1094,7 @@
     {
      "day": 1,
      "file": "snapshots/2024/2024 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -1111,7 +1111,7 @@
     {
      "day": 2,
      "file": "snapshots/2024/2024 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -1128,7 +1128,7 @@
     {
      "day": 3,
      "file": "snapshots/2024/2024 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -1145,7 +1145,7 @@
     {
      "day": 4,
      "file": "snapshots/2024/2024 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -1602,7 +1602,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:58-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "open",
@@ -1621,7 +1621,7 @@
     {
      "day": 1,
      "file": "snapshots/2024/2024 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -1638,7 +1638,7 @@
     {
      "day": 2,
      "file": "snapshots/2024/2024 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1655,7 +1655,7 @@
     {
      "day": 3,
      "file": "snapshots/2024/2024 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1672,7 +1672,7 @@
     {
      "day": 4,
      "file": "snapshots/2024/2024 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:58-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 2,
@@ -2114,8 +2114,8 @@
    "name_check": [],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:58-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:58-05:00"
+ "updated": "2026-11-10T17:56-05:00"
 }

@@ -19,6 +19,17 @@
    "place": 1
   },
   {
+   "person": "David",
+   "ranks": {
+    "masters": 3,
+    "usopen": 1,
+    "open": 2,
+    "pga": 3
+   },
+   "total": 9,
+   "place": 1
+  },
+  {
    "person": "Judy",
    "ranks": {
     "masters": 2,
@@ -27,28 +38,17 @@
     "pga": 1
    },
    "total": 10,
-   "place": 2
-  },
-  {
-   "person": "David",
-   "ranks": {
-    "masters": 3,
-    "usopen": 1,
-    "open": 3,
-    "pga": 3
-   },
-   "total": 10,
-   "place": 2
+   "place": 3
   },
   {
    "person": "Michael",
    "ranks": {
     "masters": 1,
     "usopen": 4,
-    "open": 2,
+    "open": 3,
     "pga": 4
    },
-   "total": 11,
+   "total": 12,
    "place": 4
   }
  ],
@@ -70,24 +70,24 @@
     {
      "day": 1,
      "file": "snapshots/2011/2011 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
-      "Michael": 2,
+      "Michael": 3,
       "Alan": 1,
       "Judy": 4,
-      "David": 3
+      "David": 2
      },
      "totals": {
       "Michael": "-9",
       "Alan": "-16",
       "Judy": "-8",
-      "David": "-8"
+      "David": "-10"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2011/2011 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2011/2011 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 4,
@@ -115,13 +115,13 @@
       "Michael": "-26",
       "Alan": "-14",
       "Judy": "-30",
-      "David": "-26"
+      "David": "-27"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2011/2011 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -132,7 +132,7 @@
       "Michael": "-39",
       "Alan": "-7",
       "Judy": "-38",
-      "David": "-21"
+      "David": "-23"
      }
     }
    ],
@@ -457,8 +457,8 @@
     {
      "person": "David",
      "rank": 3,
-     "total": "-21",
-     "usable": 8,
+     "total": "-23",
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -483,7 +483,7 @@
        "score": "+1",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Ernie Els",
@@ -510,12 +510,12 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Francesco Molinari",
@@ -577,15 +577,15 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     }
    ],
    "field_size": 99,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "usopen",
@@ -604,7 +604,7 @@
     {
      "day": 1,
      "file": "snapshots/2011/2011 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 1,
@@ -621,7 +621,7 @@
     {
      "day": 2,
      "file": "snapshots/2011/2011 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 1,
@@ -638,7 +638,7 @@
     {
      "day": 3,
      "file": "snapshots/2011/2011 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 1,
@@ -655,7 +655,7 @@
     {
      "day": 4,
      "file": "snapshots/2011/2011 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -1044,10 +1044,10 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
        "score": null,
-       "status": "DNP",
+       "status": "CUT",
        "out": true,
        "counts": false
       },
@@ -1146,15 +1146,15 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     }
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "open",
@@ -1173,41 +1173,41 @@
     {
      "day": 1,
      "file": "snapshots/2011/2011 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
-      "Alan": 2,
+      "Alan": 3,
       "Judy": 4,
-      "David": 3
+      "David": 2
      },
      "totals": {
       "Michael": "-6",
       "Alan": "-2",
       "Judy": "+1",
-      "David": "-1"
+      "David": "-6"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2011/2011 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
-      "Michael": 2,
-      "Alan": 1,
+      "Michael": 3,
+      "Alan": 2,
       "Judy": 4,
-      "David": 3
+      "David": 1
      },
      "totals": {
       "Michael": "-1",
       "Alan": "-3",
       "Judy": "+5",
-      "David": "+1"
+      "David": "-4"
      }
     },
     {
      "day": 3,
      "file": "snapshots/2011/2011 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 2,
@@ -1218,24 +1218,24 @@
       "Michael": "+20",
       "Alan": "+13",
       "Judy": "+24",
-      "David": "+11"
+      "David": "+3"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2011/2011 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
-      "Michael": 2,
+      "Michael": 3,
       "Alan": 1,
       "Judy": 4,
-      "David": 3
+      "David": 2
      },
      "totals": {
       "Michael": "+26",
       "Alan": "+20",
       "Judy": "+44",
-      "David": "+27"
+      "David": "+21"
      }
     }
    ],
@@ -1244,7 +1244,7 @@
    "standings": [
     {
      "person": "Michael",
-     "rank": 2,
+     "rank": 3,
      "total": "+26",
      "usable": 5,
      "counting": 5,
@@ -1559,9 +1559,9 @@
     },
     {
      "person": "David",
-     "rank": 3,
-     "total": "+27",
-     "usable": 6,
+     "rank": 2,
+     "total": "+21",
+     "usable": 7,
      "counting": 5,
      "golfers": [
       {
@@ -1613,12 +1613,12 @@
        "counts": false
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
-       "counts": false
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": true
       },
       {
        "name": "Francesco Molinari",
@@ -1642,7 +1642,7 @@
        "score": "+13",
        "status": "F",
        "out": false,
-       "counts": true
+       "counts": false
       },
       {
        "name": "Jason Day",
@@ -1708,15 +1708,15 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     }
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   },
   {
    "key": "pga",
@@ -1735,24 +1735,24 @@
     {
      "day": 1,
      "file": "snapshots/2011/2011 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 1,
-      "Alan": 3,
+      "Alan": 4,
       "Judy": 2,
-      "David": 4
+      "David": 3
      },
      "totals": {
       "Michael": "-6",
       "Alan": "+6",
       "Judy": "-4",
-      "David": "+7"
+      "David": "+2"
      }
     },
     {
      "day": 2,
      "file": "snapshots/2011/2011 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -1763,13 +1763,13 @@
       "Michael": "+1",
       "Alan": "+8",
       "Judy": "-10",
-      "David": "+12"
+      "David": "+11"
      }
     },
     {
      "day": 3,
      "file": "snapshots/2011/2011 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -1780,13 +1780,13 @@
       "Michael": "-1",
       "Alan": "+1",
       "Judy": "-10",
-      "David": "+16"
+      "David": "+12"
      }
     },
     {
      "day": 4,
      "file": "snapshots/2011/2011 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:57-05:00",
+     "saved": "2026-11-10T17:56-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -2123,7 +2123,7 @@
      "person": "David",
      "rank": 3,
      "total": "+22",
-     "usable": 6,
+     "usable": 7,
      "counting": 5,
      "golfers": [
       {
@@ -2175,11 +2175,11 @@
        "counts": true
       },
       {
-       "name": "Miguel Jimenez",
-       "espn": null,
-       "score": null,
-       "status": "DNP",
-       "out": true,
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "+11",
+       "status": "F",
+       "out": false,
        "counts": false
       },
       {
@@ -2249,16 +2249,16 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Jimenez",
-     "espn": null,
-     "kind": "dnp",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
      "suggestion": null
     }
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:57-05:00"
+   "updated": "2026-11-10T17:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:57-05:00"
+ "updated": "2026-11-10T17:56-05:00"
 }

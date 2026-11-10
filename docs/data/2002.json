@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2002/2002 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 4,
       "Michael": 2,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2002/2002 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2002/2002 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2002/2002 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -445,7 +445,7 @@
        "counts": false
       },
       {
-       "name": "Toshimitzu Izawa",
+       "name": "Toshimitsu Izawa",
        "espn": null,
        "score": null,
        "status": "DNP",
@@ -619,7 +619,7 @@
     },
     {
      "person": "Alan",
-     "roster": "Toshimitzu Izawa",
+     "roster": "Toshimitsu Izawa",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -634,7 +634,7 @@
    ],
    "field_size": 98,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "usopen",
@@ -648,7 +648,7 @@
     {
      "day": 1,
      "file": "snapshots/2002/2002 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 2,
       "Michael": 3,
@@ -665,7 +665,7 @@
     {
      "day": 2,
      "file": "snapshots/2002/2002 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 3,
       "Michael": 1,
@@ -682,7 +682,7 @@
     {
      "day": 3,
      "file": "snapshots/2002/2002 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 3,
       "Michael": 1,
@@ -699,7 +699,7 @@
     {
      "day": 4,
      "file": "snapshots/2002/2002 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 1,
       "Michael": 3,
@@ -1023,7 +1023,7 @@
        "counts": false
       },
       {
-       "name": "Toshimitzu Izawa",
+       "name": "Toshimitsu Izawa",
        "espn": null,
        "score": null,
        "status": "DNP",
@@ -1190,7 +1190,7 @@
     },
     {
      "person": "Alan",
-     "roster": "Toshimitzu Izawa",
+     "roster": "Toshimitsu Izawa",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -1205,7 +1205,7 @@
    ],
    "field_size": 158,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "open",
@@ -1219,7 +1219,7 @@
     {
      "day": 1,
      "file": "snapshots/2002/2002 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 4,
       "Michael": 2,
@@ -1236,7 +1236,7 @@
     {
      "day": 2,
      "file": "snapshots/2002/2002 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -1253,7 +1253,7 @@
     {
      "day": 3,
      "file": "snapshots/2002/2002 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 4,
       "Michael": 1,
@@ -1270,7 +1270,7 @@
     {
      "day": 4,
      "file": "snapshots/2002/2002 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 3,
       "Michael": 2,
@@ -1594,7 +1594,7 @@
        "counts": false
       },
       {
-       "name": "Toshimitzu Izawa",
+       "name": "Toshimitsu Izawa",
        "espn": null,
        "score": null,
        "status": "DNP",
@@ -1775,7 +1775,7 @@
     },
     {
      "person": "Alan",
-     "roster": "Toshimitzu Izawa",
+     "roster": "Toshimitsu Izawa",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -1790,7 +1790,7 @@
    ],
    "field_size": 159,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   },
   {
    "key": "pga",
@@ -1804,7 +1804,7 @@
     {
      "day": 1,
      "file": "snapshots/2002/2002 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -1821,7 +1821,7 @@
     {
      "day": 2,
      "file": "snapshots/2002/2002 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -1838,7 +1838,7 @@
     {
      "day": 3,
      "file": "snapshots/2002/2002 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 1,
       "Michael": 3,
@@ -1855,7 +1855,7 @@
     {
      "day": 4,
      "file": "snapshots/2002/2002 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:56-05:00",
+     "saved": "2026-11-10T17:55-05:00",
      "ranks": {
       "David": 1,
       "Michael": 4,
@@ -2179,7 +2179,7 @@
        "counts": true
       },
       {
-       "name": "Toshimitzu Izawa",
+       "name": "Toshimitsu Izawa",
        "espn": null,
        "score": null,
        "status": "DNP",
@@ -2332,7 +2332,7 @@
     },
     {
      "person": "Alan",
-     "roster": "Toshimitzu Izawa",
+     "roster": "Toshimitsu Izawa",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -2347,8 +2347,8 @@
    ],
    "field_size": 158,
    "error": null,
-   "updated": "2026-11-10T16:56-05:00"
+   "updated": "2026-11-10T17:55-05:00"
   }
  ],
- "updated": "2026-11-10T16:56-05:00"
+ "updated": "2026-11-10T17:55-05:00"
 }
