@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2006/2006 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 4,
       "Michael": 1,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2006/2006 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 3,
       "Michael": 1,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2006/2006 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 4,
       "Michael": 2,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2006/2006 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 2,
       "Michael": 4,
@@ -606,7 +606,7 @@
    ],
    "field_size": 90,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "usopen",
@@ -625,7 +625,7 @@
     {
      "day": 1,
      "file": "snapshots/2006/2006 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 2,
       "Michael": 4,
@@ -642,7 +642,7 @@
     {
      "day": 2,
      "file": "snapshots/2006/2006 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 4,
       "Michael": 3,
@@ -659,7 +659,7 @@
     {
      "day": 3,
      "file": "snapshots/2006/2006 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -676,7 +676,7 @@
     {
      "day": 4,
      "file": "snapshots/2006/2006 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -1175,7 +1175,7 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "open",
@@ -1194,7 +1194,7 @@
     {
      "day": 1,
      "file": "snapshots/2006/2006 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 2,
       "Michael": 3,
@@ -1211,7 +1211,7 @@
     {
      "day": 2,
      "file": "snapshots/2006/2006 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 1,
       "Michael": 4,
@@ -1228,7 +1228,7 @@
     {
      "day": 3,
      "file": "snapshots/2006/2006 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 1,
       "Michael": 4,
@@ -1245,7 +1245,7 @@
     {
      "day": 4,
      "file": "snapshots/2006/2006 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 1,
       "Michael": 4,
@@ -1744,7 +1744,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "pga",
@@ -1763,7 +1763,7 @@
     {
      "day": 1,
      "file": "snapshots/2006/2006 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -1780,7 +1780,7 @@
     {
      "day": 2,
      "file": "snapshots/2006/2006 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -1797,7 +1797,7 @@
     {
      "day": 3,
      "file": "snapshots/2006/2006 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -1814,7 +1814,7 @@
     {
      "day": 4,
      "file": "snapshots/2006/2006 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -2299,8 +2299,8 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   }
  ],
- "updated": "2026-11-10T17:55-05:00"
+ "updated": "2026-11-10T18:08-05:00"
 }

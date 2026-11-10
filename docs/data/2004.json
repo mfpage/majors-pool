@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2004/2004 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2004/2004 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2004/2004 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2004/2004 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -413,7 +413,7 @@
        "counts": false
       },
       {
-       "name": "Freddie Jacobson",
+       "name": "Fredrik Jacobson",
        "espn": "Freddie Jacobson",
        "score": "+1",
        "status": "F",
@@ -590,6 +590,13 @@
      "suggestion": null
     },
     {
+     "person": "David",
+     "roster": "Fredrik Jacobson",
+     "espn": "Freddie Jacobson",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "Michael",
      "roster": "Jim Furyk",
      "espn": null,
@@ -606,7 +613,7 @@
    ],
    "field_size": 100,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "usopen",
@@ -620,7 +627,7 @@
     {
      "day": 1,
      "file": "snapshots/2004/2004 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -637,7 +644,7 @@
     {
      "day": 2,
      "file": "snapshots/2004/2004 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -654,7 +661,7 @@
     {
      "day": 3,
      "file": "snapshots/2004/2004 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 2,
@@ -671,7 +678,7 @@
     {
      "day": 4,
      "file": "snapshots/2004/2004 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 2,
@@ -963,7 +970,7 @@
        "counts": false
       },
       {
-       "name": "Freddie Jacobson",
+       "name": "Fredrik Jacobson",
        "espn": "Freddie Jacobson",
        "score": null,
        "status": "CUT",
@@ -1141,6 +1148,13 @@
     },
     {
      "person": "David",
+     "roster": "Fredrik Jacobson",
+     "espn": "Freddie Jacobson",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "David",
      "roster": "Colin Montgomerie",
      "espn": null,
      "kind": "dnp",
@@ -1156,7 +1170,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "open",
@@ -1170,7 +1184,7 @@
     {
      "day": 1,
      "file": "snapshots/2004/2004 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 4,
@@ -1187,7 +1201,7 @@
     {
      "day": 2,
      "file": "snapshots/2004/2004 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1204,7 +1218,7 @@
     {
      "day": 3,
      "file": "snapshots/2004/2004 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -1221,7 +1235,7 @@
     {
      "day": 4,
      "file": "snapshots/2004/2004 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -1513,7 +1527,7 @@
        "counts": true
       },
       {
-       "name": "Freddie Jacobson",
+       "name": "Fredrik Jacobson",
        "espn": "Freddie Jacobson",
        "score": null,
        "status": "CUT",
@@ -1705,6 +1719,13 @@
     },
     {
      "person": "David",
+     "roster": "Fredrik Jacobson",
+     "espn": "Freddie Jacobson",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "David",
      "roster": "Fred Couples",
      "espn": null,
      "kind": "dnp",
@@ -1734,7 +1755,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "pga",
@@ -1748,7 +1769,7 @@
     {
      "day": 1,
      "file": "snapshots/2004/2004 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1765,7 +1786,7 @@
     {
      "day": 2,
      "file": "snapshots/2004/2004 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1782,7 +1803,7 @@
     {
      "day": 3,
      "file": "snapshots/2004/2004 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1799,7 +1820,7 @@
     {
      "day": 4,
      "file": "snapshots/2004/2004 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -2091,7 +2112,7 @@
        "counts": true
       },
       {
-       "name": "Freddie Jacobson",
+       "name": "Fredrik Jacobson",
        "espn": "Freddie Jacobson",
        "score": "E",
        "status": "F",
@@ -2276,6 +2297,13 @@
     },
     {
      "person": "David",
+     "roster": "Fredrik Jacobson",
+     "espn": "Freddie Jacobson",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "David",
      "roster": "Fred Couples",
      "espn": null,
      "kind": "dnp",
@@ -2284,8 +2312,8 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   }
  ],
- "updated": "2026-11-10T17:55-05:00"
+ "updated": "2026-11-10T18:08-05:00"
 }

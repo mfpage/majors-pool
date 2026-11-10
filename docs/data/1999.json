@@ -69,7 +69,7 @@
     {
      "day": 1,
      "file": "snapshots/1999/1999 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -86,7 +86,7 @@
     {
      "day": 2,
      "file": "snapshots/1999/1999 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -103,7 +103,7 @@
     {
      "day": 3,
      "file": "snapshots/1999/1999 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -120,7 +120,7 @@
     {
      "day": 4,
      "file": "snapshots/1999/1999 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -682,7 +682,7 @@
    ],
    "field_size": 64,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "usopen",
@@ -700,7 +700,7 @@
     {
      "day": 1,
      "file": "snapshots/1999/1999 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -717,7 +717,7 @@
     {
      "day": 2,
      "file": "snapshots/1999/1999 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -734,7 +734,7 @@
     {
      "day": 3,
      "file": "snapshots/1999/1999 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -751,7 +751,7 @@
     {
      "day": 4,
      "file": "snapshots/1999/1999 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -1243,7 +1243,7 @@
    ],
    "field_size": 155,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "open",
@@ -1261,7 +1261,7 @@
     {
      "day": 1,
      "file": "snapshots/1999/1999 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1278,7 +1278,7 @@
     {
      "day": 2,
      "file": "snapshots/1999/1999 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -1295,7 +1295,7 @@
     {
      "day": 3,
      "file": "snapshots/1999/1999 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -1312,7 +1312,7 @@
     {
      "day": 4,
      "file": "snapshots/1999/1999 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1846,7 +1846,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "pga",
@@ -1864,7 +1864,7 @@
     {
      "day": 1,
      "file": "snapshots/1999/1999 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -1881,7 +1881,7 @@
     {
      "day": 2,
      "file": "snapshots/1999/1999 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -1898,7 +1898,7 @@
     {
      "day": 3,
      "file": "snapshots/1999/1999 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -1915,7 +1915,7 @@
     {
      "day": 4,
      "file": "snapshots/1999/1999 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -2400,8 +2400,8 @@
    ],
    "field_size": 149,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   }
  ],
- "updated": "2026-11-10T17:55-05:00"
+ "updated": "2026-11-10T18:08-05:00"
 }

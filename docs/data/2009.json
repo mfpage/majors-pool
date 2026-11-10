@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2009/2009 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 4,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2009/2009 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2009/2009 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2009/2009 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -316,7 +316,7 @@
        "counts": true
       },
       {
-       "name": "Miguel Angel Jimenez",
+       "name": "Miguel Jimenez",
        "espn": "Miguel Angel Jiménez",
        "score": "+6",
        "status": "F",
@@ -542,7 +542,7 @@
        "counts": false
       },
       {
-       "name": "Jeev Milkha Singh",
+       "name": "Jeev Singh",
        "espn": "Jeev Milkha Singh",
        "score": null,
        "status": "CUT",
@@ -563,9 +563,9 @@
    "name_check": [
     {
      "person": "David",
-     "roster": "Miguel Angel Jimenez",
+     "roster": "Miguel Jimenez",
      "espn": "Miguel Angel Jiménez",
-     "kind": "spelling",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -598,6 +598,13 @@
     },
     {
      "person": "Alan",
+     "roster": "Jeev Singh",
+     "espn": "Jeev Milkha Singh",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
      "roster": "Scott Verplank",
      "espn": null,
      "kind": "dnp",
@@ -606,7 +613,7 @@
    ],
    "field_size": 96,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "usopen",
@@ -625,7 +632,7 @@
     {
      "day": 1,
      "file": "snapshots/2009/2009 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -642,7 +649,7 @@
     {
      "day": 2,
      "file": "snapshots/2009/2009 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -659,7 +666,7 @@
     {
      "day": 3,
      "file": "snapshots/2009/2009 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 2,
@@ -676,7 +683,7 @@
     {
      "day": 4,
      "file": "snapshots/2009/2009 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 2,
       "David": 1,
@@ -871,7 +878,7 @@
        "counts": false
       },
       {
-       "name": "Miguel Angel Jimenez",
+       "name": "Miguel Jimenez",
        "espn": "Miguel Angel Jiménez",
        "score": null,
        "status": "CUT",
@@ -1097,7 +1104,7 @@
        "counts": false
       },
       {
-       "name": "Jeev Milkha Singh",
+       "name": "Jeev Singh",
        "espn": "Jeev Milkha Singh",
        "score": null,
        "status": "CUT",
@@ -1118,9 +1125,9 @@
    "name_check": [
     {
      "person": "David",
-     "roster": "Miguel Angel Jimenez",
+     "roster": "Miguel Jimenez",
      "espn": "Miguel Angel Jiménez",
-     "kind": "spelling",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -1139,6 +1146,13 @@
     },
     {
      "person": "Alan",
+     "roster": "Jeev Singh",
+     "espn": "Jeev Milkha Singh",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
      "roster": "Scott Verplank",
      "espn": null,
      "kind": "dnp",
@@ -1147,7 +1161,7 @@
    ],
    "field_size": 160,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "open",
@@ -1166,7 +1180,7 @@
     {
      "day": 1,
      "file": "snapshots/2009/2009 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 2,
       "David": 1,
@@ -1183,7 +1197,7 @@
     {
      "day": 2,
      "file": "snapshots/2009/2009 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1200,7 +1214,7 @@
     {
      "day": 3,
      "file": "snapshots/2009/2009 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1217,7 +1231,7 @@
     {
      "day": 4,
      "file": "snapshots/2009/2009 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1412,7 +1426,7 @@
        "counts": false
       },
       {
-       "name": "Miguel Angel Jimenez",
+       "name": "Miguel Jimenez",
        "espn": "Miguel Angel Jiménez",
        "score": "+2",
        "status": "F",
@@ -1638,7 +1652,7 @@
        "counts": false
       },
       {
-       "name": "Jeev Milkha Singh",
+       "name": "Jeev Singh",
        "espn": null,
        "score": null,
        "status": "DNP",
@@ -1680,9 +1694,9 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Angel Jimenez",
+     "roster": "Miguel Jimenez",
      "espn": "Miguel Angel Jiménez",
-     "kind": "spelling",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -1701,7 +1715,7 @@
     },
     {
      "person": "Alan",
-     "roster": "Jeev Milkha Singh",
+     "roster": "Jeev Singh",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -1716,7 +1730,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "pga",
@@ -1735,7 +1749,7 @@
     {
      "day": 1,
      "file": "snapshots/2009/2009 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 2,
       "David": 4,
@@ -1752,7 +1766,7 @@
     {
      "day": 2,
      "file": "snapshots/2009/2009 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -1769,7 +1783,7 @@
     {
      "day": 3,
      "file": "snapshots/2009/2009 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -1786,7 +1800,7 @@
     {
      "day": 4,
      "file": "snapshots/2009/2009 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 3,
       "David": 1,
@@ -1981,7 +1995,7 @@
        "counts": true
       },
       {
-       "name": "Miguel Angel Jimenez",
+       "name": "Miguel Jimenez",
        "espn": "Miguel Angel Jiménez",
        "score": "+5",
        "status": "F",
@@ -2207,7 +2221,7 @@
        "counts": false
       },
       {
-       "name": "Jeev Milkha Singh",
+       "name": "Jeev Singh",
        "espn": "Jeev Milkha Singh",
        "score": "+11",
        "status": "F",
@@ -2249,9 +2263,9 @@
     },
     {
      "person": "David",
-     "roster": "Miguel Angel Jimenez",
+     "roster": "Miguel Jimenez",
      "espn": "Miguel Angel Jiménez",
-     "kind": "spelling",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -2267,12 +2281,19 @@
      "espn": null,
      "kind": "dnp",
      "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Jeev Singh",
+     "espn": "Jeev Milkha Singh",
+     "kind": "override",
+     "suggestion": null
     }
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   }
  ],
- "updated": "2026-11-10T17:56-05:00"
+ "updated": "2026-11-10T18:08-05:00"
 }

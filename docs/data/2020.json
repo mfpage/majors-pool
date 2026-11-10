@@ -80,7 +80,7 @@
     {
      "day": 1,
      "file": "snapshots/2020/2020 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -97,7 +97,7 @@
     {
      "day": 2,
      "file": "snapshots/2020/2020 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 2,
@@ -114,7 +114,7 @@
     {
      "day": 3,
      "file": "snapshots/2020/2020 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -131,7 +131,7 @@
     {
      "day": 4,
      "file": "snapshots/2020/2020 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 2,
@@ -205,7 +205,7 @@
        "counts": false
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": null,
        "status": "CUT",
@@ -245,7 +245,7 @@
        "counts": false
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": null,
        "status": "CUT",
@@ -572,6 +572,20 @@
    ],
    "name_check": [
     {
+     "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "Judy",
      "roster": "Charles Howell III",
      "espn": null,
@@ -595,7 +609,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "usopen",
@@ -614,7 +628,7 @@
     {
      "day": 1,
      "file": "snapshots/2020/2020 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -631,7 +645,7 @@
     {
      "day": 2,
      "file": "snapshots/2020/2020 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -648,7 +662,7 @@
     {
      "day": 3,
      "file": "snapshots/2020/2020 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -665,7 +679,7 @@
     {
      "day": 4,
      "file": "snapshots/2020/2020 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 1,
@@ -739,7 +753,7 @@
        "counts": false
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": null,
        "status": "CUT",
@@ -779,7 +793,7 @@
        "counts": false
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": "+10",
        "status": "F",
@@ -1106,6 +1120,20 @@
    ],
    "name_check": [
     {
+     "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "Judy",
      "roster": "Brooks Koepka",
      "espn": null,
@@ -1143,7 +1171,7 @@
    ],
    "field_size": 144,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "masters",
@@ -1162,7 +1190,7 @@
     {
      "day": 1,
      "file": "snapshots/2020/2020 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -1179,7 +1207,7 @@
     {
      "day": 2,
      "file": "snapshots/2020/2020 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -1196,7 +1224,7 @@
     {
      "day": 3,
      "file": "snapshots/2020/2020 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -1213,7 +1241,7 @@
     {
      "day": 4,
      "file": "snapshots/2020/2020 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 4,
       "Judy": 3,
@@ -1287,7 +1315,7 @@
        "counts": true
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "+1",
        "status": "F",
@@ -1327,7 +1355,7 @@
        "counts": false
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": "+2",
        "status": "F",
@@ -1655,6 +1683,13 @@
    "name_check": [
     {
      "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
      "roster": "Keegan Bradley",
      "espn": null,
      "kind": "dnp",
@@ -1665,6 +1700,13 @@
      "roster": "Sergio Garcia",
      "espn": null,
      "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -1684,8 +1726,8 @@
    ],
    "field_size": 92,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   }
  ],
- "updated": "2026-11-10T17:56-05:00"
+ "updated": "2026-11-10T18:09-05:00"
 }

@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2016/2016 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2016/2016 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2016/2016 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 4,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2016/2016 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -421,7 +421,7 @@
        "counts": false
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "E",
        "status": "F",
@@ -577,6 +577,13 @@
     },
     {
      "person": "David",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "David",
      "roster": "Francesco Molinari",
      "espn": null,
      "kind": "dnp",
@@ -592,7 +599,7 @@
    ],
    "field_size": 89,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "usopen",
@@ -611,7 +618,7 @@
     {
      "day": 1,
      "file": "snapshots/2016/2016 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -628,7 +635,7 @@
     {
      "day": 2,
      "file": "snapshots/2016/2016 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -645,7 +652,7 @@
     {
      "day": 3,
      "file": "snapshots/2016/2016 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 2,
@@ -662,7 +669,7 @@
     {
      "day": 4,
      "file": "snapshots/2016/2016 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -962,7 +969,7 @@
        "counts": false
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "+13",
        "status": "F",
@@ -1132,6 +1139,13 @@
     },
     {
      "person": "David",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "David",
      "roster": "Francesco Molinari",
      "espn": null,
      "kind": "dnp",
@@ -1140,7 +1154,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "open",
@@ -1159,7 +1173,7 @@
     {
      "day": 1,
      "file": "snapshots/2016/2016 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1176,7 +1190,7 @@
     {
      "day": 2,
      "file": "snapshots/2016/2016 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1193,7 +1207,7 @@
     {
      "day": 3,
      "file": "snapshots/2016/2016 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1210,7 +1224,7 @@
     {
      "day": 4,
      "file": "snapshots/2016/2016 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1510,7 +1524,7 @@
        "counts": false
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": null,
        "status": "CUT",
@@ -1677,11 +1691,18 @@
      "espn": null,
      "kind": "dnp",
      "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
     }
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "pga",
@@ -1700,7 +1721,7 @@
     {
      "day": 1,
      "file": "snapshots/2016/2016 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -1717,7 +1738,7 @@
     {
      "day": 2,
      "file": "snapshots/2016/2016 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -1734,7 +1755,7 @@
     {
      "day": 3,
      "file": "snapshots/2016/2016 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -1751,7 +1772,7 @@
     {
      "day": 4,
      "file": "snapshots/2016/2016 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -2051,7 +2072,7 @@
        "counts": false
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "-1",
        "status": "F",
@@ -2211,12 +2232,19 @@
      "espn": null,
      "kind": "dnp",
      "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
     }
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   }
  ],
- "updated": "2026-11-10T17:56-05:00"
+ "updated": "2026-11-10T18:09-05:00"
 }

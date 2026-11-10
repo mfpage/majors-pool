@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2001/2001 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2001/2001 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2001/2001 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 4,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2001/2001 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 4,
@@ -648,7 +648,7 @@
    ],
    "field_size": 95,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "usopen",
@@ -662,7 +662,7 @@
     {
      "day": 1,
      "file": "snapshots/2001/2001 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 3,
       "David": 4,
@@ -679,7 +679,7 @@
     {
      "day": 2,
      "file": "snapshots/2001/2001 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -696,7 +696,7 @@
     {
      "day": 3,
      "file": "snapshots/2001/2001 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 2,
       "David": 4,
@@ -713,7 +713,7 @@
     {
      "day": 4,
      "file": "snapshots/2001/2001 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -1219,7 +1219,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "open",
@@ -1233,7 +1233,7 @@
     {
      "day": 1,
      "file": "snapshots/2001/2001 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 4,
@@ -1250,7 +1250,7 @@
     {
      "day": 2,
      "file": "snapshots/2001/2001 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 4,
@@ -1267,7 +1267,7 @@
     {
      "day": 3,
      "file": "snapshots/2001/2001 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -1284,7 +1284,7 @@
     {
      "day": 4,
      "file": "snapshots/2001/2001 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -1832,7 +1832,7 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "pga",
@@ -1846,7 +1846,7 @@
     {
      "day": 1,
      "file": "snapshots/2001/2001 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1863,7 +1863,7 @@
     {
      "day": 2,
      "file": "snapshots/2001/2001 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1880,7 +1880,7 @@
     {
      "day": 3,
      "file": "snapshots/2001/2001 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1897,7 +1897,7 @@
     {
      "day": 4,
      "file": "snapshots/2001/2001 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -2389,8 +2389,8 @@
    ],
    "field_size": 151,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   }
  ],
- "updated": "2026-11-10T17:55-05:00"
+ "updated": "2026-11-10T18:08-05:00"
 }

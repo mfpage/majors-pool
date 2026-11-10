@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2007/2007 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 2,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2007/2007 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 2,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2007/2007 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2007/2007 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -445,7 +445,7 @@
        "counts": true
       },
       {
-       "name": "Miguel Angel Jimenez",
+       "name": "Miguel Jimenez",
        "espn": "Miguel Angel Jiménez",
        "score": "+16",
        "status": "F",
@@ -591,15 +591,15 @@
     },
     {
      "person": "Judy",
-     "roster": "Miguel Angel Jimenez",
+     "roster": "Miguel Jimenez",
      "espn": "Miguel Angel Jiménez",
-     "kind": "spelling",
+     "kind": "override",
      "suggestion": null
     }
    ],
    "field_size": 97,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "usopen",
@@ -618,7 +618,7 @@
     {
      "day": 1,
      "file": "snapshots/2007/2007 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 2,
@@ -635,7 +635,7 @@
     {
      "day": 2,
      "file": "snapshots/2007/2007 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 3,
@@ -652,7 +652,7 @@
     {
      "day": 3,
      "file": "snapshots/2007/2007 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -669,7 +669,7 @@
     {
      "day": 4,
      "file": "snapshots/2007/2007 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -993,7 +993,7 @@
        "counts": false
       },
       {
-       "name": "Miguel Angel Jimenez",
+       "name": "Miguel Jimenez",
        "espn": null,
        "score": null,
        "status": "DNP",
@@ -1160,7 +1160,7 @@
     },
     {
      "person": "Judy",
-     "roster": "Miguel Angel Jimenez",
+     "roster": "Miguel Jimenez",
      "espn": null,
      "kind": "dnp",
      "suggestion": null
@@ -1168,7 +1168,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "open",
@@ -1187,7 +1187,7 @@
     {
      "day": 1,
      "file": "snapshots/2007/2007 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -1204,7 +1204,7 @@
     {
      "day": 2,
      "file": "snapshots/2007/2007 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 4,
@@ -1221,7 +1221,7 @@
     {
      "day": 3,
      "file": "snapshots/2007/2007 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 2,
@@ -1238,7 +1238,7 @@
     {
      "day": 4,
      "file": "snapshots/2007/2007 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -1562,7 +1562,7 @@
        "counts": false
       },
       {
-       "name": "Miguel Angel Jimenez",
+       "name": "Miguel Jimenez",
        "espn": "Miguel Angel Jiménez",
        "score": "-2",
        "status": "F",
@@ -1722,15 +1722,15 @@
     },
     {
      "person": "Judy",
-     "roster": "Miguel Angel Jimenez",
+     "roster": "Miguel Jimenez",
      "espn": "Miguel Angel Jiménez",
-     "kind": "spelling",
+     "kind": "override",
      "suggestion": null
     }
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   },
   {
    "key": "pga",
@@ -1749,7 +1749,7 @@
     {
      "day": 1,
      "file": "snapshots/2007/2007 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 2,
@@ -1766,7 +1766,7 @@
     {
      "day": 2,
      "file": "snapshots/2007/2007 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -1783,7 +1783,7 @@
     {
      "day": 3,
      "file": "snapshots/2007/2007 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 4,
@@ -1800,7 +1800,7 @@
     {
      "day": 4,
      "file": "snapshots/2007/2007 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:55-05:00",
+     "saved": "2026-11-10T18:08-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -2124,7 +2124,7 @@
        "counts": true
       },
       {
-       "name": "Miguel Angel Jimenez",
+       "name": "Miguel Jimenez",
        "espn": "Miguel Angel Jiménez",
        "score": null,
        "status": "CUT",
@@ -2263,16 +2263,16 @@
     },
     {
      "person": "Judy",
-     "roster": "Miguel Angel Jimenez",
+     "roster": "Miguel Jimenez",
      "espn": "Miguel Angel Jiménez",
-     "kind": "spelling",
+     "kind": "override",
      "suggestion": null
     }
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:55-05:00"
+   "updated": "2026-11-10T18:08-05:00"
   }
  ],
- "updated": "2026-11-10T17:55-05:00"
+ "updated": "2026-11-10T18:08-05:00"
 }

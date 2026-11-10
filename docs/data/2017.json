@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2017/2017 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2017/2017 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2017/2017 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2017/2017 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -316,7 +316,7 @@
        "counts": false
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": null,
        "status": "CUT",
@@ -494,7 +494,7 @@
        "counts": true
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "+4",
        "status": "F",
@@ -569,6 +569,13 @@
      "suggestion": null
     },
     {
+     "person": "David",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "Michael",
      "roster": "Bryson DeChambeau",
      "espn": null,
@@ -581,11 +588,18 @@
      "espn": null,
      "kind": "dnp",
      "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
     }
    ],
    "field_size": 94,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "usopen",
@@ -604,7 +618,7 @@
     {
      "day": 1,
      "file": "snapshots/2017/2017 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 2,
       "David": 4,
@@ -621,7 +635,7 @@
     {
      "day": 2,
      "file": "snapshots/2017/2017 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -638,7 +652,7 @@
     {
      "day": 3,
      "file": "snapshots/2017/2017 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -655,7 +669,7 @@
     {
      "day": 4,
      "file": "snapshots/2017/2017 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -850,7 +864,7 @@
        "counts": false
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": "+2",
        "status": "F",
@@ -1028,7 +1042,7 @@
        "counts": true
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "+1",
        "status": "F",
@@ -1110,6 +1124,13 @@
      "suggestion": null
     },
     {
+     "person": "David",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "Michael",
      "roster": "Ryan Moore",
      "espn": null,
@@ -1125,6 +1146,13 @@
     },
     {
      "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
      "roster": "Andy Sullivan",
      "espn": null,
      "kind": "dnp",
@@ -1133,7 +1161,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "open",
@@ -1152,7 +1180,7 @@
     {
      "day": 1,
      "file": "snapshots/2017/2017 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 3,
       "David": 1,
@@ -1169,7 +1197,7 @@
     {
      "day": 2,
      "file": "snapshots/2017/2017 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 3,
       "David": 1,
@@ -1186,7 +1214,7 @@
     {
      "day": 3,
      "file": "snapshots/2017/2017 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1203,7 +1231,7 @@
     {
      "day": 4,
      "file": "snapshots/2017/2017 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 3,
       "David": 1,
@@ -1398,7 +1426,7 @@
        "counts": false
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": "-5",
        "status": "F",
@@ -1576,7 +1604,7 @@
        "counts": true
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "+3",
        "status": "F",
@@ -1658,6 +1686,13 @@
      "suggestion": null
     },
     {
+     "person": "David",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "Michael",
      "roster": "Brandt Snedeker",
      "espn": null,
@@ -1673,6 +1708,13 @@
     },
     {
      "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
      "roster": "Scott Piercy",
      "espn": null,
      "kind": "dnp",
@@ -1681,7 +1723,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "pga",
@@ -1700,7 +1742,7 @@
     {
      "day": 1,
      "file": "snapshots/2017/2017 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 3,
       "David": 4,
@@ -1717,7 +1759,7 @@
     {
      "day": 2,
      "file": "snapshots/2017/2017 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -1734,7 +1776,7 @@
     {
      "day": 3,
      "file": "snapshots/2017/2017 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1751,7 +1793,7 @@
     {
      "day": 4,
      "file": "snapshots/2017/2017 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -1946,7 +1988,7 @@
        "counts": false
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": null,
        "status": "CUT",
@@ -2124,7 +2166,7 @@
        "counts": false
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": null,
        "status": "CUT",
@@ -2206,10 +2248,24 @@
      "suggestion": null
     },
     {
+     "person": "David",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "Michael",
      "roster": "Brandt Snedeker",
      "espn": null,
      "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -2222,8 +2278,8 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   }
  ],
- "updated": "2026-11-10T17:56-05:00"
+ "updated": "2026-11-10T18:09-05:00"
 }

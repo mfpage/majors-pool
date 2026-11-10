@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2019/2019 Masters - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2019/2019 Masters - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2019/2019 Masters - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 3,
       "Alan": 4,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2019/2019 Masters - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 4,
@@ -308,7 +308,7 @@
        "counts": true
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "-5",
        "status": "F",
@@ -413,7 +413,7 @@
        "counts": false
       },
       {
-       "name": "Alex Noren",
+       "name": "Alexander Noren",
        "espn": "Alex Noren",
        "score": "+8",
        "status": "F",
@@ -510,7 +510,7 @@
        "counts": false
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": "-2",
        "status": "F",
@@ -563,9 +563,30 @@
    "name_check": [
     {
      "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
      "roster": "Thomas Pieters",
      "espn": null,
      "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Alexander Noren",
+     "espn": "Alex Noren",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -578,7 +599,7 @@
    ],
    "field_size": 87,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "pga",
@@ -597,7 +618,7 @@
     {
      "day": 1,
      "file": "snapshots/2019/2019 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -614,7 +635,7 @@
     {
      "day": 2,
      "file": "snapshots/2019/2019 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 3,
@@ -631,7 +652,7 @@
     {
      "day": 3,
      "file": "snapshots/2019/2019 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 4,
@@ -648,7 +669,7 @@
     {
      "day": 4,
      "file": "snapshots/2019/2019 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 3,
@@ -835,7 +856,7 @@
        "counts": true
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "+7",
        "status": "F",
@@ -940,7 +961,7 @@
        "counts": false
       },
       {
-       "name": "Alex Noren",
+       "name": "Alexander Noren",
        "espn": "Alex Noren",
        "score": "+9",
        "status": "F",
@@ -1037,7 +1058,7 @@
        "counts": true
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": "+12",
        "status": "F",
@@ -1089,10 +1110,31 @@
    ],
    "name_check": [
     {
+     "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Alexander Noren",
+     "espn": "Alex Noren",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "David",
      "roster": "Justin Thomas",
      "espn": null,
      "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -1105,7 +1147,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "usopen",
@@ -1124,7 +1166,7 @@
     {
      "day": 1,
      "file": "snapshots/2019/2019 US Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 2,
@@ -1141,7 +1183,7 @@
     {
      "day": 2,
      "file": "snapshots/2019/2019 US Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 1,
@@ -1158,7 +1200,7 @@
     {
      "day": 3,
      "file": "snapshots/2019/2019 US Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 1,
@@ -1175,7 +1217,7 @@
     {
      "day": 4,
      "file": "snapshots/2019/2019 US Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 1,
@@ -1362,7 +1404,7 @@
        "counts": true
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "-4",
        "status": "F",
@@ -1467,7 +1509,7 @@
        "counts": false
       },
       {
-       "name": "Alex Noren",
+       "name": "Alexander Noren",
        "espn": "Alex Noren",
        "score": null,
        "status": "CUT",
@@ -1564,7 +1606,7 @@
        "counts": true
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": "+6",
        "status": "F",
@@ -1616,6 +1658,27 @@
    ],
    "name_check": [
     {
+     "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Alexander Noren",
+     "espn": "Alex Noren",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
      "person": "David",
      "roster": "Thorbjorn Olesen",
      "espn": "Thorbjørn Olesen",
@@ -1625,7 +1688,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   },
   {
    "key": "open",
@@ -1644,7 +1707,7 @@
     {
      "day": 1,
      "file": "snapshots/2019/2019 British Open - Day 1.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 2,
@@ -1661,7 +1724,7 @@
     {
      "day": 2,
      "file": "snapshots/2019/2019 British Open - Day 2.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 1,
       "Alan": 2,
@@ -1678,7 +1741,7 @@
     {
      "day": 3,
      "file": "snapshots/2019/2019 British Open - Day 3.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 2,
       "Alan": 3,
@@ -1695,7 +1758,7 @@
     {
      "day": 4,
      "file": "snapshots/2019/2019 British Open - Day 4.csv",
-     "saved": "2026-11-10T17:56-05:00",
+     "saved": "2026-11-10T18:09-05:00",
      "ranks": {
       "Michael": 4,
       "Alan": 3,
@@ -1882,7 +1945,7 @@
        "counts": true
       },
       {
-       "name": "Matt Fitzpatrick",
+       "name": "Matthew Fitzpatrick",
        "espn": "Matt Fitzpatrick",
        "score": "-1",
        "status": "F",
@@ -1987,7 +2050,7 @@
        "counts": true
       },
       {
-       "name": "Alex Noren",
+       "name": "Alexander Noren",
        "espn": "Alex Noren",
        "score": "-3",
        "status": "F",
@@ -2084,7 +2147,7 @@
        "counts": true
       },
       {
-       "name": "Rafa Cabrera Bello",
+       "name": "Rafael Cabrera Bello",
        "espn": "Rafa Cabrera Bello",
        "score": null,
        "status": "CUT",
@@ -2137,6 +2200,13 @@
    "name_check": [
     {
      "person": "Alan",
+     "roster": "Matthew Fitzpatrick",
+     "espn": "Matt Fitzpatrick",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
      "roster": "Martin Kaymer",
      "espn": null,
      "kind": "dnp",
@@ -2144,9 +2214,23 @@
     },
     {
      "person": "Judy",
+     "roster": "Alexander Noren",
+     "espn": "Alex Noren",
+     "kind": "override",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
      "roster": "Kevin Na",
      "espn": null,
      "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Rafael Cabrera Bello",
+     "espn": "Rafa Cabrera Bello",
+     "kind": "override",
      "suggestion": null
     },
     {
@@ -2159,8 +2243,8 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T17:56-05:00"
+   "updated": "2026-11-10T18:09-05:00"
   }
  ],
- "updated": "2026-11-10T17:56-05:00"
+ "updated": "2026-11-10T18:09-05:00"
 }
