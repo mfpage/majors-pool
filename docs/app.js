@@ -11,7 +11,9 @@ function ordinal(n) { const s = ["th", "st", "nd", "rd"], v = n % 100; return n 
 function when(iso) {
   if (!iso) return "";
   const d = new Date(iso);
-  return d.toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }) + " ET";
+  const date = d.toLocaleDateString("en-US", { month: "2-digit", day: "2-digit", year: "numeric", timeZone: "America/New_York" });
+  const time = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/New_York" });
+  return `${date} ${time} ET`;
 }
 function dateRange(a, b) {
   if (!a) return "";
@@ -39,7 +41,7 @@ function day(isoDate) {
   return new Date(y, m - 1, d).toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 function statusText(g) {
-  if (g.out) return "";
+  if (g.out) return g.status;  // CUT, WD, DQ, DNS, DNP
   const s = g.status || "";
   if (/^\d+$/.test(s)) return "Thru " + s;
   if (/[AP]M$/i.test(s)) return s.replace(/\s+/, " ");
@@ -97,6 +99,24 @@ function render() {
   document.title = `Page Family Golf Pool ${data.year}`;
 }
 
+function getOrder() { try { return localStorage.getItem("poolOrder") || "draft"; } catch (e) { return "draft"; } }
+function setOrder(v) { try { localStorage.setItem("poolOrder", v); } catch (e) {} }
+function ordered(standings) {
+  return getOrder() === "rank" ? [...standings].sort((a, b) => a.rank - b.rank) : standings;
+}
+function orderToggle() {
+  const cur = getOrder();
+  return `<div class="order" role="group" aria-label="Order players by">
+    <button type="button" data-order="draft" aria-pressed="${cur === "draft"}">Draft order</button>
+    <button type="button" data-order="rank" aria-pressed="${cur === "rank"}">Ranking</button></div>`;
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-order]");
+  if (!b) return;
+  setOrder(b.dataset.order);
+  if (window.POOL_HEALTH) loadHealth(); else render();
+});
+
 function majorView(m, data) {
   if (!m) return "";
   let pill, meta = "";
@@ -107,7 +127,7 @@ function majorView(m, data) {
     const past = Number(state.year) < new Date().getFullYear();
     pill = `<span class="pill">${!m.event_id && past ? "Not played" : "Upcoming"}</span>`;
   }
-  if (m.updated) meta = `Updated ${when(m.updated)}${m.state === "live" ? " · checks every 15 minutes" : ""}`;
+  if (m.updated && m.state !== "final") meta = `Updated ${when(m.updated)}${m.state === "live" ? " · checks every 15 minutes" : ""}`;
 
   if (m.test) pill += ` <span class="pill">Test run · doesn't count</span>`;
   let html = `<section class="head"><h2>${esc(m.name)}</h2>${pill}<span class="meta">${meta}</span></section>`;
@@ -117,15 +137,15 @@ function majorView(m, data) {
 
   if (!m.standings) return html;  // not played yet, or never played: just the heading
 
-  html += `<section><h3>${m.state === "final" ? "Final standings" : "Standings"}</h3><div class="board">` +
-    m.standings.map((s) => `<div class="place ${s.rank === 1 ? "first" : ""}">
+  html += `<section><div class="section-head"><h3>${m.state === "final" ? "Final standings" : "Standings"}</h3>${orderToggle()}</div><div class="board">` +
+    ordered(m.standings).map((s) => `<div class="place ${s.rank === 1 ? "first" : ""}">
       <span class="rk">${ordinal(s.rank).toUpperCase()}</span>
       <span class="who">${esc(s.person)}</span>
       <span class="tot ${isUnder(s.total) ? "under" : ""}">${esc(s.total)}</span>
-      <span class="sub">${s.counting} counting · ${s.usable} of ${s.golfers.length} still in</span>
+      <span class="sub">${s.usable} ${s.usable === 1 ? "player" : "players"}</span>
     </div>`).join("") + `</div></section>`;
 
-  html += `<section><h3>Top 5</h3><div class="teams">` + m.standings.map((s) => {
+  html += `<section><h3>Top 5</h3><div class="teams">` + ordered(m.standings).map((s) => {
     const top = s.golfers.filter((g) => g.counts).sort((a, b) => scoreNum(a.score) - scoreNum(b.score));
     return `<div class="team"><h4>${esc(s.person)}<span class="${isUnder(s.total) ? "under" : ""}">${esc(s.total)}</span></h4><ol>` +
       (top.length ? top.map((g) => `<li class="counts"><span class="mark"></span>
@@ -135,12 +155,12 @@ function majorView(m, data) {
       `</ol></div>`;
   }).join("") + `</div></section>`;
 
-  html += `<section><h3>Teams</h3><div class="teams">` + m.standings.map((s) => `
+  html += `<section><h3>Teams</h3><div class="teams">` + ordered(m.standings).map((s) => `
     <div class="team"><h4>${esc(s.person)}<span>${ordinal(s.rank)}</span></h4><ol>` +
       s.golfers.map((g, i) => `<li class="${g.counts ? "counts" : ""} ${g.out ? "out" : ""} ${i % 4 === 0 && i ? "gap" : ""}">
         <span class="mark">${g.counts ? "●" : ""}</span>
         <span class="nm" title="${esc(g.espn && g.espn !== g.name ? `${g.name} (ESPN: ${g.espn})` : g.name)}">${esc(g.name)}</span>
-        <span class="sc ${!g.out && isUnder(g.score) ? "under" : ""}">${g.out ? esc(g.status) : esc(g.score)}</span>
+        <span class="sc ${!g.out && isUnder(g.score) ? "under" : ""}">${g.out ? "" : esc(g.score)}</span>
         <span class="st">${esc(statusText(g))}</span>
       </li>`).join("") + `</ol></div>`).join("") +
     `</div><p class="legend">● counts toward the best five. Red is under par.</p></section>`;
@@ -150,7 +170,7 @@ function majorView(m, data) {
     const s = snaps[d];
     if (!s) return `<div class="chip pending"><b>Day ${d}</b><small>${d === 2 ? "Saved when round 2 is done and the cut is posted" : `Saved when round ${d} is done`}</small></div>`;
     const leader = Object.entries(s.ranks).find(([, r]) => r === 1)?.[0];
-    return `<a class="chip" href="${encodeURI(s.file)}" download><b>Day ${d}</b><small>${esc(leader)} leads at ${esc(s.totals[leader])} · ${when(s.saved)}</small></a>`;
+    return `<a class="chip" href="${encodeURI(s.file)}" download><b>Day ${d}</b><small>${esc(leader)} leads at ${esc(s.totals[leader])}${m.state === "final" ? "" : " · " + when(s.saved)}</small></a>`;
   }).join("") + `</div></section>`;
 
   return html;
@@ -160,7 +180,7 @@ function overallView(data) {
   const majors = (data.majors || []).filter((m) => !m.test);
   const rows = data.overall || [];
   const played = majors.filter((m) => m.state === "live" || m.state === "final");
-  let html = `<section class="head"><h2>${data.year} Overall</h2><span class="meta">${data.updated ? "Updated " + when(data.updated) : ""}</span></section>`;
+  let html = `<section class="head"><h2>${data.year} Overall</h2><span class="meta">${data.updated && majors.some((m) => m.state === "live") ? "Updated " + when(data.updated) : ""}</span></section>`;
   if (!played.length) {
     return html + `<div class="empty"><b>No majors played yet.</b> Each player's finishing position in each major is added up here, and the lowest total wins.</div>`;
   }

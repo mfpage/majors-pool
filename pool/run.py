@@ -90,7 +90,8 @@ def process_major(entry: dict, rows: list, source: str, teams: dict, config: dic
             break
         day_st = standings(teams, {p: build_golfers(teams[p], matches[p], rows_by_name, day=day, par=par)
                                    for p in teams})
-        fname = f"{entry['name']} - Day {day}.csv"
+        season = (entry.get("start") or "")[:4] or str(now.year)
+        fname = f"{season} {entry['name']} - Day {day}.csv"
         snap_dir.mkdir(parents=True, exist_ok=True)
         (snap_dir / fname).write_text(day_csv(day_st), encoding="utf-8")
         entry.setdefault("snapshots", []).append({

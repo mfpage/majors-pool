@@ -91,7 +91,7 @@ h3 { font: 600 15px/1 var(--display); letter-spacing: .12em; text-transform: upp
 .team li .st { color: var(--muted); font-size: 12px; text-align: right; white-space: nowrap; }
 .team li.out .nm, .team li.out .sc { color: var(--muted); }
 .team li.out .nm { text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--muted) 60%, transparent); }
-.team li.out .sc { font-size: 14px; letter-spacing: .06em; }
+.team li.out .st { font-weight: 600; letter-spacing: .06em; }
 .legend { color: var(--muted); font-size: 12px; margin-top: 8px; }
 
 /* Day files */
@@ -142,3 +142,9 @@ tr:last-child td { border-bottom: 0; }
 .team li .hint { grid-column: 2 / -1; font-size: 12px; color: var(--muted); }
 .team li .hint b { color: var(--ink); }
 .team li.name-ok, .team li.name-missing { grid-template-columns: 14px minmax(0, 1fr) auto; }
+.section-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; margin-bottom: 10px; }
+.section-head h3 { margin: 0; }
+.order { display: inline-flex; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: var(--board); }
+.order button { font: 600 13px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; padding: 7px 12px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+.order button + button { border-left: 1px solid var(--rule); }
+.order button[aria-pressed="true"] { background: var(--green); color: var(--green-ink); }
