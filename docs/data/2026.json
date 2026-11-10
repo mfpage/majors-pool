@@ -56,7 +56,7 @@
   {
    "key": "test-the-players-championship",
    "name": "THE PLAYERS Championship",
-   "state": "live",
+   "state": "final",
    "test": true,
    "event_id": "401811937",
    "start": "2026-03-12",
@@ -65,29 +65,80 @@
     {
      "day": 1,
      "file": "snapshots/2026/THE PLAYERS Championship - Day 1.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
-      "David": 4,
-      "Michael": 1,
+      "David": 3,
+      "Michael": 4,
+      "Alan": 2,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "-10",
+      "Michael": "-5",
+      "Alan": "-13",
+      "Judy": "-18"
+     }
+    },
+    {
+     "day": 2,
+     "file": "snapshots/2026/THE PLAYERS Championship - Day 2.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 4,
+      "Alan": 3,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "-30",
+      "Michael": "-15",
+      "Alan": "-27",
+      "Judy": "-32"
+     }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2026/THE PLAYERS Championship - Day 3.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 4,
       "Alan": 3,
       "Judy": 2
      },
      "totals": {
-      "David": "-10",
-      "Michael": "-75",
-      "Alan": "-13",
-      "Judy": "-18"
+      "David": "-41",
+      "Michael": "-15",
+      "Alan": "-31",
+      "Judy": "-34"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2026/THE PLAYERS Championship - Day 4.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 4,
+      "Alan": 3,
+      "Judy": 2
+     },
+     "totals": {
+      "David": "-43",
+      "Michael": "-16",
+      "Alan": "-36",
+      "Judy": "-41"
      }
     }
    ],
-   "round": 2,
-   "source": "feed",
+   "round": 4,
+   "source": "leaderboard feed",
    "standings": [
     {
      "person": "David",
      "rank": 1,
      "total": "-43",
-     "usable": 10,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -141,9 +192,9 @@
       {
        "name": "Ben Griffin",
        "espn": "Ben Griffin",
-       "score": "+4",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -192,7 +243,7 @@
      "person": "Michael",
      "rank": 4,
      "total": "-16",
-     "usable": 9,
+     "usable": 5,
      "counting": 5,
      "golfers": [
       {
@@ -206,9 +257,9 @@
       {
        "name": "Collin Morikawa",
        "espn": "Collin Morikawa",
-       "score": "E",
-       "status": "",
-       "out": false,
+       "score": null,
+       "status": "WD",
+       "out": true,
        "counts": false
       },
       {
@@ -222,9 +273,9 @@
       {
        "name": "Shane Lowry",
        "espn": "Shane Lowry",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -262,9 +313,9 @@
       {
        "name": "Sungjae Im",
        "espn": "Sungjae Im",
-       "score": "+3",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -286,9 +337,9 @@
       {
        "name": "Harry Hall",
        "espn": "Harry Hall",
-       "score": "+4",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       }
      ]
@@ -297,7 +348,7 @@
      "person": "Alan",
      "rank": 3,
      "total": "-36",
-     "usable": 12,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -335,9 +386,9 @@
       {
        "name": "Harris English",
        "espn": "Harris English",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -367,9 +418,9 @@
       {
        "name": "Kurt Kitayama",
        "espn": "Kurt Kitayama",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -391,9 +442,9 @@
       {
        "name": "Rasmus Højgaard",
        "espn": "Rasmus Højgaard",
-       "score": "+3",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       }
      ]
@@ -402,7 +453,7 @@
      "person": "Judy",
      "rank": 2,
      "total": "-41",
-     "usable": 12,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -472,25 +523,25 @@
       {
        "name": "Michael Kim",
        "espn": "Michael Kim",
-       "score": "+10",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Andrew Novak",
        "espn": "Andrew Novak",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Sami Välimäki",
        "espn": "Sami Välimäki",
-       "score": "+8",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -543,12 +594,12 @@
    ],
    "field_size": 123,
    "error": null,
-   "updated": "2026-11-10T14:10-05:00"
+   "updated": "2026-11-10T14:24-05:00"
   },
   {
    "key": "masters",
    "name": "Masters",
-   "state": "live",
+   "state": "final",
    "event_id": "401811941",
    "start": "2026-04-09",
    "end": "2026-04-12",
@@ -556,7 +607,7 @@
     {
      "day": 1,
      "file": "snapshots/2026/Masters - Day 1.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -573,7 +624,7 @@
     {
      "day": 2,
      "file": "snapshots/2026/Masters - Day 2.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -586,16 +637,50 @@
       "Alan": "-7",
       "Judy": "-12"
      }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2026/Masters - Day 3.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 1,
+      "Alan": 4,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "-32",
+      "Michael": "-33",
+      "Alan": "-19",
+      "Judy": "-24"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2026/Masters - Day 4.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 1,
+      "Alan": 4,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "-34",
+      "Michael": "-40",
+      "Alan": "-15",
+      "Judy": "-34"
+     }
     }
    ],
-   "round": 3,
-   "source": "feed",
+   "round": 4,
+   "source": "leaderboard feed",
    "standings": [
     {
      "person": "David",
      "rank": 2,
      "total": "-34",
-     "usable": 12,
+     "usable": 10,
      "counting": 5,
      "golfers": [
       {
@@ -633,9 +718,9 @@
       {
        "name": "Bryson DeChambeau",
        "espn": "Bryson DeChambeau",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -657,9 +742,9 @@
       {
        "name": "Akshay Bhatia",
        "espn": "Akshay Bhatia",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -700,7 +785,7 @@
      "person": "Michael",
      "rank": 1,
      "total": "-40",
-     "usable": 12,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -778,25 +863,25 @@
       {
        "name": "Ryan Fox",
        "espn": "Ryan Fox",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Cameron Smith",
        "espn": "Cameron Smith",
-       "score": "+7",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Harry Hall",
        "espn": "Harry Hall",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       }
      ]
@@ -805,7 +890,7 @@
      "person": "Alan",
      "rank": 4,
      "total": "-15",
-     "usable": 12,
+     "usable": 10,
      "counting": 5,
      "golfers": [
       {
@@ -819,9 +904,9 @@
       {
        "name": "J.J. Spaun",
        "espn": "J.J. Spaun",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -891,9 +976,9 @@
       {
        "name": "Min Woo Lee",
        "espn": "Min Woo Lee",
-       "score": "+11",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -910,7 +995,7 @@
      "person": "Judy",
      "rank": 3,
      "total": "-34",
-     "usable": 12,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -940,9 +1025,9 @@
       {
        "name": "Robert MacIntyre",
        "espn": "Robert MacIntyre",
-       "score": "+7",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -980,25 +1065,25 @@
       {
        "name": "Michael Kim",
        "espn": "Michael Kim",
-       "score": "+8",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Andrew Novak",
        "espn": "Andrew Novak",
-       "score": "+7",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Sami Välimäki",
        "espn": "Sami Välimäki",
-       "score": "+11",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1015,12 +1100,12 @@
    "name_check": [],
    "field_size": 91,
    "error": null,
-   "updated": "2026-11-10T14:10-05:00"
+   "updated": "2026-11-10T14:24-05:00"
   },
   {
    "key": "pga",
    "name": "PGA Championship",
-   "state": "live",
+   "state": "final",
    "event_id": "401811947",
    "start": "2026-05-14",
    "end": "2026-05-17",
@@ -1028,7 +1113,7 @@
     {
      "day": 1,
      "file": "snapshots/2026/PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -1045,7 +1130,7 @@
     {
      "day": 2,
      "file": "snapshots/2026/PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -1058,16 +1143,50 @@
       "Alan": "-11",
       "Judy": "-6"
      }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2026/PGA Championship - Day 3.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 4,
+      "Alan": 3,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "-12",
+      "Michael": "-2",
+      "Alan": "-3",
+      "Judy": "-14"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2026/PGA Championship - Day 4.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 4,
+      "Alan": 3,
+      "Judy": 2
+     },
+     "totals": {
+      "David": "-17",
+      "Michael": "-5",
+      "Alan": "-10",
+      "Judy": "-11"
+     }
     }
    ],
-   "round": 3,
-   "source": "feed",
+   "round": 4,
+   "source": "leaderboard feed",
    "standings": [
     {
      "person": "David",
      "rank": 1,
      "total": "-17",
-     "usable": 12,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -1105,9 +1224,9 @@
       {
        "name": "Bryson DeChambeau",
        "espn": "Bryson DeChambeau",
-       "score": "+7",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1129,9 +1248,9 @@
       {
        "name": "Akshay Bhatia",
        "espn": "Akshay Bhatia",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1145,9 +1264,9 @@
       {
        "name": "Jacob Bridgeman",
        "espn": "Jacob Bridgeman",
-       "score": "+8",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1172,7 +1291,7 @@
      "person": "Michael",
      "rank": 4,
      "total": "-5",
-     "usable": 12,
+     "usable": 7,
      "counting": 5,
      "golfers": [
       {
@@ -1194,9 +1313,9 @@
       {
        "name": "Viktor Hovland",
        "espn": "Viktor Hovland",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1218,9 +1337,9 @@
       {
        "name": "Tyrrell Hatton",
        "espn": "Tyrrell Hatton",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1234,17 +1353,17 @@
       {
        "name": "Wyndham Clark",
        "espn": "Wyndham Clark",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Sungjae Im",
        "espn": "Sungjae Im",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1266,9 +1385,9 @@
       {
        "name": "Harry Hall",
        "espn": "Harry Hall",
-       "score": "+7",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       }
      ]
@@ -1277,23 +1396,23 @@
      "person": "Alan",
      "rank": 3,
      "total": "-10",
-     "usable": 12,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
        "name": "Tommy Fleetwood",
        "espn": "Tommy Fleetwood",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "J.J. Spaun",
        "espn": "J.J. Spaun",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1331,9 +1450,9 @@
       {
        "name": "Keegan Bradley",
        "espn": "Keegan Bradley",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1382,7 +1501,7 @@
      "person": "Judy",
      "rank": 2,
      "total": "-11",
-     "usable": 12,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -1396,9 +1515,9 @@
       {
        "name": "Russell Henley",
        "espn": "Russell Henley",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1412,9 +1531,9 @@
       {
        "name": "Robert MacIntyre",
        "espn": "Robert MacIntyre",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1436,9 +1555,9 @@
       {
        "name": "Sepp Straka",
        "espn": "Sepp Straka",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1487,12 +1606,12 @@
    "name_check": [],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T14:10-05:00"
+   "updated": "2026-11-10T14:24-05:00"
   },
   {
    "key": "usopen",
    "name": "US Open",
-   "state": "live",
+   "state": "final",
    "event_id": "401811952",
    "start": "2026-06-18",
    "end": "2026-06-21",
@@ -1500,7 +1619,7 @@
     {
      "day": 1,
      "file": "snapshots/2026/US Open - Day 1.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -1517,7 +1636,7 @@
     {
      "day": 2,
      "file": "snapshots/2026/US Open - Day 2.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -1530,16 +1649,50 @@
       "Alan": "+5",
       "Judy": "+4"
      }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2026/US Open - Day 3.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 1,
+      "Alan": 4,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "+6",
+      "Michael": "+2",
+      "Alan": "+20",
+      "Judy": "+16"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2026/US Open - Day 4.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 2,
+      "Alan": 4,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "+6",
+      "Michael": "+10",
+      "Alan": "+28",
+      "Judy": "+25"
+     }
     }
    ],
-   "round": 3,
-   "source": "feed",
+   "round": 4,
+   "source": "leaderboard feed",
    "standings": [
     {
      "person": "David",
      "rank": 1,
      "total": "+6",
-     "usable": 12,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -1561,9 +1714,9 @@
       {
        "name": "Jon Rahm",
        "espn": "Jon Rahm",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1577,17 +1730,17 @@
       {
        "name": "Bryson DeChambeau",
        "espn": "Bryson DeChambeau",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Patrick Cantlay",
        "espn": "Patrick Cantlay",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1625,9 +1778,9 @@
       {
        "name": "Brooks Koepka",
        "espn": "Brooks Koepka",
-       "score": "+10",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1644,7 +1797,7 @@
      "person": "Michael",
      "rank": 2,
      "total": "+10",
-     "usable": 12,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -1666,17 +1819,17 @@
       {
        "name": "Viktor Hovland",
        "espn": "Viktor Hovland",
-       "score": "+5",
-       "status": "F",
-       "out": false,
-       "counts": true
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
       },
       {
        "name": "Shane Lowry",
        "espn": "Shane Lowry",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1725,22 +1878,22 @@
        "score": "+5",
        "status": "F",
        "out": false,
-       "counts": false
+       "counts": true
       },
       {
        "name": "Cameron Smith",
        "espn": "Cameron Smith",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Harry Hall",
        "espn": "Harry Hall",
-       "score": "+11",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       }
      ]
@@ -1748,8 +1901,8 @@
     {
      "person": "Alan",
      "rank": 4,
-     "total": "+21",
-     "usable": 11,
+     "total": "+28",
+     "usable": 5,
      "counting": 5,
      "golfers": [
       {
@@ -1763,9 +1916,9 @@
       {
        "name": "J.J. Spaun",
        "espn": "J.J. Spaun",
-       "score": "+8",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1782,23 +1935,23 @@
        "score": "+8",
        "status": "F",
        "out": false,
-       "counts": false
+       "counts": true
       },
       {
        "name": "Harris English",
        "espn": "Harris English",
-       "score": "+5",
-       "status": "F",
-       "out": false,
-       "counts": true
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
       },
       {
        "name": "Alex Noren",
        "espn": "Alex Noren",
-       "score": "+6",
-       "status": "F",
-       "out": false,
-       "counts": true
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
       },
       {
        "name": "Keegan Bradley",
@@ -1806,14 +1959,14 @@
        "score": "+6",
        "status": "F",
        "out": false,
-       "counts": false
+       "counts": true
       },
       {
        "name": "Si Woo Kim",
        "espn": "Si Woo Kim",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1822,22 +1975,22 @@
        "score": "+9",
        "status": "F",
        "out": false,
-       "counts": false
+       "counts": true
       },
       {
        "name": "Ryan Gerard",
        "espn": "Ryan Gerard",
-       "score": "+5",
-       "status": "F",
-       "out": false,
-       "counts": true
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
       },
       {
        "name": "Min Woo Lee",
        "espn": "Min Woo Lee",
-       "score": "+7",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1853,8 +2006,8 @@
     {
      "person": "Judy",
      "rank": 3,
-     "total": "+20",
-     "usable": 11,
+     "total": "+25",
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -1887,7 +2040,7 @@
        "score": "+7",
        "status": "F",
        "out": false,
-       "counts": false
+       "counts": true
       },
       {
        "name": "Maverick McNealy",
@@ -1903,14 +2056,14 @@
        "score": "+8",
        "status": "F",
        "out": false,
-       "counts": false
+       "counts": true
       },
       {
        "name": "Sepp Straka",
        "espn": "Sepp Straka",
-       "score": "+7",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -1932,10 +2085,10 @@
       {
        "name": "Andrew Novak",
        "espn": "Andrew Novak",
-       "score": "+5",
-       "status": "F",
-       "out": false,
-       "counts": true
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
       },
       {
        "name": "Sami Välimäki",
@@ -1948,10 +2101,10 @@
       {
        "name": "Nick Taylor",
        "espn": "Nick Taylor",
-       "score": "+5",
-       "status": "F",
-       "out": false,
-       "counts": true
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
       }
      ]
     }
@@ -1974,12 +2127,12 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T14:10-05:00"
+   "updated": "2026-11-10T14:24-05:00"
   },
   {
    "key": "open",
    "name": "British Open",
-   "state": "live",
+   "state": "final",
    "event_id": "401811957",
    "start": "2026-07-16",
    "end": "2026-07-19",
@@ -1987,7 +2140,7 @@
     {
      "day": 1,
      "file": "snapshots/2026/British Open - Day 1.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
       "David": 4,
       "Michael": 2,
@@ -2004,7 +2157,7 @@
     {
      "day": 2,
      "file": "snapshots/2026/British Open - Day 2.csv",
-     "saved": "2026-11-10T14:10-05:00",
+     "saved": "2026-11-10T14:24-05:00",
      "ranks": {
       "David": 2,
       "Michael": 3,
@@ -2017,16 +2170,50 @@
       "Alan": "-24",
       "Judy": "-9"
      }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2026/British Open - Day 3.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 3,
+      "Alan": 2,
+      "Judy": 4
+     },
+     "totals": {
+      "David": "-30",
+      "Michael": "-21",
+      "Alan": "-26",
+      "Judy": "-8"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2026/British Open - Day 4.csv",
+     "saved": "2026-11-10T14:24-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 3,
+      "Alan": 1,
+      "Judy": 4
+     },
+     "totals": {
+      "David": "-26",
+      "Michael": "-25",
+      "Alan": "-30",
+      "Judy": "-12"
+     }
     }
    ],
-   "round": 3,
-   "source": "feed",
+   "round": 4,
+   "source": "leaderboard feed",
    "standings": [
     {
      "person": "David",
      "rank": 2,
      "total": "-26",
-     "usable": 12,
+     "usable": 9,
      "counting": 5,
      "golfers": [
       {
@@ -2056,9 +2243,9 @@
       {
        "name": "Matt Fitzpatrick",
        "espn": "Matt Fitzpatrick",
-       "score": "+4",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -2088,9 +2275,9 @@
       {
        "name": "Akshay Bhatia",
        "espn": "Akshay Bhatia",
-       "score": "+4",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -2120,9 +2307,9 @@
       {
        "name": "Brian Harman",
        "espn": "Brian Harman",
-       "score": "+9",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       }
      ]
@@ -2131,7 +2318,7 @@
      "person": "Michael",
      "rank": 3,
      "total": "-25",
-     "usable": 12,
+     "usable": 8,
      "counting": 5,
      "golfers": [
       {
@@ -2153,9 +2340,9 @@
       {
        "name": "Viktor Hovland",
        "espn": "Viktor Hovland",
-       "score": "+4",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -2193,9 +2380,9 @@
       {
        "name": "Wyndham Clark",
        "espn": "Wyndham Clark",
-       "score": "+3",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -2217,17 +2404,17 @@
       {
        "name": "Cameron Smith",
        "espn": "Cameron Smith",
-       "score": "+2",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Harry Hall",
        "espn": "Harry Hall",
-       "score": "+4",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       }
      ]
@@ -2236,7 +2423,7 @@
      "person": "Alan",
      "rank": 1,
      "total": "-30",
-     "usable": 12,
+     "usable": 10,
      "counting": 5,
      "golfers": [
       {
@@ -2274,9 +2461,9 @@
       {
        "name": "Harris English",
        "espn": "Harris English",
-       "score": "+2",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -2330,9 +2517,9 @@
       {
        "name": "Rasmus Højgaard",
        "espn": "Rasmus Højgaard",
-       "score": "+6",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       }
      ]
@@ -2341,7 +2528,7 @@
      "person": "Judy",
      "rank": 4,
      "total": "-12",
-     "usable": 12,
+     "usable": 7,
      "counting": 5,
      "golfers": [
       {
@@ -2363,9 +2550,9 @@
       {
        "name": "Justin Rose",
        "espn": "Justin Rose",
-       "score": "+3",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -2379,9 +2566,9 @@
       {
        "name": "Maverick McNealy",
        "espn": "Maverick McNealy",
-       "score": "+3",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -2411,25 +2598,25 @@
       {
        "name": "Michael Kim",
        "espn": "Michael Kim",
-       "score": "+5",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Andrew Novak",
        "espn": "Andrew Novak",
-       "score": "+2",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
        "name": "Sami Välimäki",
        "espn": "Sami Välimäki",
-       "score": "+2",
-       "status": "F",
-       "out": false,
+       "score": null,
+       "status": "CUT",
+       "out": true,
        "counts": false
       },
       {
@@ -2446,7 +2633,7 @@
    "name_check": [],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T14:10-05:00"
+   "updated": "2026-11-10T14:24-05:00"
   },
   {
    "key": "test-austin-championship",
@@ -2457,7 +2644,7 @@
    "start": "2026-11-12",
    "end": "2026-11-15",
    "round": 1,
-   "source": "feed",
+   "source": "leaderboard feed",
    "standings": [
     {
      "person": "David",
@@ -2558,7 +2745,7 @@
        "name": "Brian Harman",
        "espn": "Brian Harman",
        "score": "E",
-       "status": "",
+       "status": "1:24 PM",
        "out": false,
        "counts": true
       }
@@ -2768,7 +2955,7 @@
        "name": "Rasmus Højgaard",
        "espn": "Rasmus Højgaard",
        "score": "E",
-       "status": "",
+       "status": "8:22 AM",
        "out": false,
        "counts": true
       }
@@ -2857,7 +3044,7 @@
        "name": "Andrew Novak",
        "espn": "Andrew Novak",
        "score": "E",
-       "status": "",
+       "status": "8:33 AM",
        "out": false,
        "counts": true
       },
@@ -2865,7 +3052,7 @@
        "name": "Sami Välimäki",
        "espn": "Sami Välimäki",
        "score": "E",
-       "status": "",
+       "status": "8:44 AM",
        "out": false,
        "counts": true
       },
@@ -2873,7 +3060,7 @@
        "name": "Nick Taylor",
        "espn": "Nick Taylor",
        "score": "E",
-       "status": "",
+       "status": "1:13 PM",
        "out": false,
        "counts": true
       }
@@ -3185,8 +3372,8 @@
    ],
    "field_size": 120,
    "error": null,
-   "updated": "2026-11-10T14:10-05:00"
+   "updated": "2026-11-10T14:24-05:00"
   }
  ],
- "updated": "2026-11-10T14:10-05:00"
+ "updated": "2026-11-10T14:24-05:00"
 }
