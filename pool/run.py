@@ -226,7 +226,24 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
 
 # --------------------------------------------------------------------------
 def probe(event_id: str) -> None:
-    """Print what each ESPN source returns for an event, to check the parsing."""
+    """Print what each ESPN source returns for an event, and save ESPN's raw
+    responses to docs/debug/<event_id>/ so they can be inspected."""
+    out = DOCS / "debug" / str(event_id)
+    out.mkdir(parents=True, exist_ok=True)
+    raw = [
+        ("page.html", espn.HTML_URL.format(event_id=event_id), None),
+        ("feed.json", espn.FEED_EVENT_URL.format(event_id=event_id), None),
+        ("feed-alt.json", espn.FEED_LEADERBOARD_URL, {"league": "pga", "event": event_id}),
+    ]
+    for fname, url, params in raw:
+        try:
+            r = espn.requests.get(url, params=params, headers=espn.HEADERS, timeout=espn.TIMEOUT)
+            (out / fname).write_text(r.text, encoding="utf-8")
+            print(f"saved {fname}: HTTP {r.status_code}, {len(r.text):,} characters")
+        except Exception as exc:
+            (out / (fname + ".error.txt")).write_text(repr(exc), encoding="utf-8")
+            print(f"{fname}: FAILED {exc!r}")
+
     for name, fn in (("html", espn.fetch_html), ("feed", espn.fetch_feed), ("feed-alt", espn.fetch_feed_alt)):
         print(f"\n=== {name} ===")
         try:
