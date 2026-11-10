@@ -169,7 +169,7 @@ function majorView(m, data) {
         <span class="sc ${!g.out && isUnder(g.score) ? "under" : ""}">${g.out ? "" : esc(g.score)}</span>
         <span class="st">${esc(statusText(g))}</span>
       </li>`).join("") + `</ol></div>`).join("") +
-    `</div><p class="legend">● counts toward the best five. Red is under par.</p></section>`;
+    `</div><p class="legend">● Top five</p></section>`;
 
   const snaps = Object.fromEntries((m.snapshots || []).map((s) => [s.day, s]));
   html += `<section><h3>End-of-day files</h3><div class="days">` + [1, 2, 3, 4].map((d) => {
@@ -236,13 +236,11 @@ function renderHealth() {
   let html = "";
   if (tab === "tournament") {
     html = h.event
-      ? `<p class="note">ESPN's current tournament, scored with the pool's rosters as if it were a major. Checked ${when(h.updated)}.</p>` + majorView(h.event, h)
+      ? majorView(h.event, h)
       : `<div class="empty"><b>No tournament on ESPN right now.</b></div>`;
   } else if (tab === "roster") {
     html = `<section class="head"><h2>${found} of ${roster.length} found</h2><span class="meta">${h.roster_year} season</span></section>
-      <p class="note">Green: ESPN has listed this exact name in at least one tournament field this season (hover to see where).
-      Red: not found yet, which is normal until he plays. If ESPN lists a near match (only accents or punctuation different,
-      one letter off, or first and last name swapped), it's shown so you can fix the teams file.</p>
+
       <div class="teams">` +
       h.people.map((p) => `<div class="team"><h4>${esc(p)}</h4><ol>` +
         roster.filter((r) => r.person === p).map((r) => r.found
@@ -250,15 +248,17 @@ function renderHealth() {
           : `<li class="name-missing"><span class="mark">●</span><span class="nm">${esc(r.name)}</span><span class="st">Not yet</span>
              ${r.hint ? `<span class="hint">ESPN lists <b>${esc(r.hint)}</b>${
                { spelling: " (accents or punctuation differ)", typo: " (one letter off)", flipped: " (names swapped)" }[r.kind] || ""} at ${esc(r.where)}</span>` : ""}</li>`
-        ).join("") + `</ol></div>`).join("") + `</div>`;
+        ).join("") + `</ol></div>`).join("") + `</div>
+      <p class="note legend-note">Green: ESPN has listed this exact name in at least one tournament field this season (hover to see where).
+      Red: not found yet, which is normal until he plays. If ESPN lists a near match (only accents or punctuation different,
+      one letter off, or first and last name swapped), it's shown so you can fix the teams file.</p>`;
   } else {
     const icon = { pass: "Pass", warn: "Warning", fail: "Failed" };
     const head = { pass: "Everything is working", warn: "Working, with warnings", fail: "Something is broken" }[overall];
     html = `<section class="head"><h2>${head}</h2><span class="meta">Checked ${when(h.updated)} against ${esc(h.event_name || "no tournament")}</span></section>
       <div class="checks">` + h.checks.map((c) =>
         `<div class="check ${c.status === "pass" ? "spelling" : c.status === "warn" ? "likely" : "dnp"}"><span class="tag">${icon[c.status]}</span>
-         <span><b>${esc(c.name)}.</b> ${esc(c.detail)}</span></div>`).join("") + `</div>
-      <p class="note">A run is marked failed on GitHub only when a check newly fails, so you hear about each problem once.</p>`;
+         <span><b>${esc(c.name)}.</b> ${esc(c.detail)}</span></div>`).join("") + `</div>`;
   }
   $("#main").innerHTML = html;
 }
