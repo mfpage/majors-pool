@@ -280,6 +280,35 @@ def probe(event_id: str) -> None:
             print(f"FAILED: {type(exc).__name__}: {exc}")
 
 
+def name_report(year: int) -> None:
+    """After a backfill: any rostered name that wasn't matched exactly in a
+    single major that season, with ESPN's near match if there was one."""
+    p = DOCS / "data" / f"{year}.json"
+    if not p.exists():
+        return
+    data = json.loads(p.read_text(encoding="utf-8"))
+    played = [m for m in data.get("majors", []) if m.get("standings")]
+    if not played:
+        print(f"[{year}] names: no majors could be read, so no name check.")
+        return
+    exact = {g["name"] for m in played for s in m["standings"] for g in s["golfers"] if g["espn"] == g["name"]}
+    notes = {}
+    for m in played:
+        for c in m.get("name_check", []):
+            if c["roster"] in exact:
+                continue
+            if c["espn"]:
+                notes.setdefault(c["roster"], f"matched to ESPN's {c['espn']} ({c['kind']}) in {m['name']}")
+            else:
+                notes.setdefault(c["roster"], "not in any major field" + (f"; ESPN has {c['suggestion']}" if c["suggestion"] else ""))
+    if not notes:
+        print(f"[{year}] names: all matched ESPN exactly.")
+        return
+    print(f"[{year}] names to look at ({len(notes)}):")
+    for name, note in notes.items():
+        print(f"    {name}: {note}")
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--probe", metavar="EVENT_ID")
@@ -309,6 +338,7 @@ def main(argv=None):
         for y in years:
             print(f"\n=== Backfilling {y or 'current season'} ===")
             update(backfill=True, year=y)
+            name_report(y or pick_year(datetime.now(TZ)))
         return
     update()
 

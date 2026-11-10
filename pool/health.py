@@ -21,6 +21,7 @@ KNOWN_STATUSES = {
     "STATUS_DQ", "STATUS_SUSPENDED", "STATUS_DELAYED", "STATUS_FINAL",
 }
 WRITE_EVERY = timedelta(minutes=60)  # unless results change, save at most hourly
+CATCH_UP_PER_RUN = 8                  # earlier tournaments read per run for the roster check
 
 
 def _check(name, status, detail):
@@ -43,7 +44,7 @@ def roster_status(prev: dict, year: int, teams: dict, fields: list) -> tuple[dic
     from .names import match_roster
     state = prev.get("roster") if prev.get("roster_year") == year else None
     state = dict(state or {})
-    rank = {"spelling": 3, "likely": 2, "dnp": 1}
+    rank = {"spelling": 4, "flipped": 3, "typo": 2, "dnp": 1}
     for tournament, when, field in fields:
         if not field:
             continue
@@ -57,7 +58,7 @@ def roster_status(prev: dict, year: int, teams: dict, fields: list) -> tuple[dic
                     state[name] = {"found": tournament, "date": when}
                     continue
                 m = match_roster([name], field)[0]
-                hint = m.espn_name or m.suggestion
+                hint = m.espn_name or (m.suggestion if m.suggestion and "override" not in m.suggestion else None)
                 if hint and rank.get(m.kind, 0) >= rec.get("rank", 0):
                     rec.update({"hint": hint, "rank": rank[m.kind], "kind": m.kind, "where": tournament})
     rows = []
@@ -205,6 +206,24 @@ def run(now: datetime, docs: Path, slug: str, teams: dict, config: dict,
     seen_fields = list(fields or [])
     if rows is not None and entry:
         seen_fields.append((entry["name"], now.date().isoformat(), [r.name for r in rows]))
+    # Catch up on the season so far: while any name is unfound, read a few of
+    # this year's earlier tournaments each run, oldest first.
+    scanned = list(prev.get("roster_scanned") or []) if prev.get("roster_year") == year else []
+    known = prev.get("roster") if prev.get("roster_year") == year else {}
+    all_names = {n for names in teams.values() for n in names}
+    if any(not (known or {}).get(n, {}).get("found") for n in all_names):
+        try:
+            past = [e for e in espn.calendar(year)
+                    if e[2] and e[2].year == year and e[2] <= now.date() and e[1] not in scanned]
+            for label, eid, start, _ in sorted(past, key=lambda e: e[2])[:CATCH_UP_PER_RUN]:
+                scanned.append(eid)
+                try:
+                    names = [r.name for r in espn.fetch_leaderboard_feed(eid)]
+                    seen_fields.append((label, start.isoformat(), names))
+                except Exception as exc:
+                    print(f"[health] couldn't read {label} for the roster check: {exc}")
+        except Exception as exc:
+            print(f"[health] couldn't read the season's schedule for the roster check: {exc}")
     roster_state, roster_rows = roster_status(prev, year, teams, seen_fields)
     unseen = [r["name"] for r in roster_rows if not r["found"]]
     checks.append(_check("Roster names",
@@ -218,6 +237,7 @@ def run(now: datetime, docs: Path, slug: str, teams: dict, config: dict,
 
     result = {"checks": checks, "failing": sorted(failing), "event": entry,
               "roster_year": year, "roster": roster_state, "roster_rows": roster_rows,
+              "roster_scanned": scanned,
               "event_name": entry["name"] if entry else None,
               "people": list(teams), "year": now.year}
     signature = json.dumps([(c["name"], c["status"], c["detail"] if c["name"] == "Roster names" else "")

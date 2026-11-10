@@ -63,7 +63,7 @@ def test_day1_matches_original():
         rows = day1_rows()
         run.update(check_health=False, venue=lambda e: {}, now=datetime(2026, 4, 9, 20, 0, tzinfo=run.TZ),
                    fetch=lambda eid: (rows, "html"), find=fake_find)
-        got = (tmp / "docs/snapshots/2026/Masters - Day 1.csv").read_text(encoding="utf-8")
+        got = (tmp / "docs/snapshots/2026/2026 Masters - Day 1.csv").read_text(encoding="utf-8")
         with EXPECTED.open(encoding="utf-8") as f:
             exp = list(csv.reader(f))
         for line in exp[1:]:        # the only intended change: status shows F
@@ -93,11 +93,11 @@ def test_round2_waits_for_cut():
             r.rounds[1] = 72
             r.thru = "8:00 AM"
         run.update(check_health=False, venue=lambda e: {}, now=stamp.replace(day=10), fetch=lambda e: (rows, "html"), find=fake_find)
-        assert not (tmp / "docs/snapshots/2026/Masters - Day 2.csv").exists(), "saved before cut"
+        assert not (tmp / "docs/snapshots/2026/2026 Masters - Day 2.csv").exists(), "saved before cut"
         rows[-1].out, rows[-1].score, rows[-1].thru = "CUT", "", "F"  # ESPN posts the cut
         rows[0].out, rows[0].score, rows[0].thru = "CUT", "", "F"     # incl. one pool golfer
         run.update(check_health=False, venue=lambda e: {}, now=stamp.replace(day=10, hour=21), fetch=lambda e: (rows, "html"), find=fake_find)
-        out = (tmp / "docs/snapshots/2026/Masters - Day 2.csv").read_text(encoding="utf-8")
+        out = (tmp / "docs/snapshots/2026/2026 Masters - Day 2.csv").read_text(encoding="utf-8")
         assert '"Scottie Scheffler","CUT","F"' in out, out[:300]
     in_sandbox(go)
     print("ok  Day 2 waits for ESPN to post the cut, then marks cut golfers")
@@ -108,35 +108,44 @@ def test_late_finish_and_early_start():
         rows = day1_rows()
         rows[0].rounds[0], rows[0].score, rows[0].thru = None, "-1", "14"  # weather: still on 14
         run.update(check_health=False, venue=lambda e: {}, now=datetime(2026, 4, 9, 20, 0, tzinfo=run.TZ), fetch=lambda e: (rows, "html"), find=fake_find)
-        assert not (tmp / "docs/snapshots/2026/Masters - Day 1.csv").exists(), "saved mid-round"
+        assert not (tmp / "docs/snapshots/2026/2026 Masters - Day 1.csv").exists(), "saved mid-round"
         # Next morning: he finishes R1 (-2) and another golfer is already 5 holes into R2 at -4
         rows[0].rounds[0], rows[0].score, rows[0].thru = 70, "-2", "F"
         burns = next(r for r in rows if r.name == "Sam Burns")
         burns.score, burns.thru = "-7", "5"
         run.update(check_health=False, venue=lambda e: {}, now=datetime(2026, 4, 10, 9, 0, tzinfo=run.TZ), fetch=lambda e: (rows, "html"), find=fake_find)
-        out = (tmp / "docs/snapshots/2026/Masters - Day 1.csv").read_text(encoding="utf-8")
+        out = (tmp / "docs/snapshots/2026/2026 Masters - Day 1.csv").read_text(encoding="utf-8")
         assert '"Sam Burns","-5","F"' in out, "Day 1 must use round 1 strokes, not the live score"
     in_sandbox(go)
     print("ok  delayed round waits; Day 1 file ignores holes already played in round 2")
 
 
 def test_name_matching():
-    field = ["Ludvig Aberg", "J.J. Spaun", "Si Woo Kim", "Rasmus Højgaard", "Nicolai Hojgaard",
-             "Sami Valimaki", "Matthew Fitzpatrick", "Cameron Smith", "Cam Davis"]
-    roster = ["Ludvig Åberg", "JJ Spaun", "Si-Woo Kim", "Rasmus Hojgaard", "Sami Välimäki",
-              "Matt Fitzpatrick", "Cameron Smith", "Tiger Woods"]
-    got = {m.roster_name: (m.espn_name, m.kind) for m in match_roster(roster, field)}
-    assert got["Ludvig Åberg"] == ("Ludvig Aberg", "spelling")
+    field = ["Ludvig Åberg", "J.J. Spaun", "Si Woo Kim", "Rasmus Højgaard", "Nicolai Højgaard",
+             "Sami Välimäki", "Matthew Fitzpatrick", "Cameron Smith", "Jon Rahm", "Kim Si Woo",
+             "Tom Kim", "Joel Dahmen", "Nick Taylor", "Ludvig Aberg"]
+    roster = ["Ludvig Aberg", "JJ Spaun", "Si-Woo Kim", "Rasmus Hojgaard", "Sami Valimaki",
+              "Matt Fitzpatrick", "Cameron Smith", "Jon Rahn", "Jonn Rahm", "Jo Rahm", "Rahm Jon",
+              "Tiger Woods", "Nicholas Taylor"]
+    got = {m.roster_name: (m.espn_name, m.kind) for m in match_roster(roster, field[:-1])}
+    assert got["Ludvig Aberg"] == ("Ludvig Åberg", "spelling")
     assert got["JJ Spaun"] == ("J.J. Spaun", "spelling")
-    assert got["Si-Woo Kim"] == ("Si Woo Kim", "spelling")
+    assert got["Si-Woo Kim"] == ("Si Woo Kim", "spelling")      # not the flipped "Kim Si Woo"
     assert got["Rasmus Hojgaard"] == ("Rasmus Højgaard", "spelling")
-    assert got["Sami Välimäki"] == ("Sami Valimaki", "spelling")
-    assert got["Matt Fitzpatrick"] == ("Matthew Fitzpatrick", "likely"), got["Matt Fitzpatrick"]
+    assert got["Sami Valimaki"] == ("Sami Välimäki", "spelling")
     assert got["Cameron Smith"] == ("Cameron Smith", "exact")
-    assert got["Tiger Woods"][1] == "dnp"
-    over = match_roster(["Matt Fitzpatrick"], field, {"Matt Fitzpatrick": None})[0]
-    assert over.kind == "override" and over.espn_name is None
-    print("ok  name matching: accents, initials, hyphens, nicknames, true DNP, overrides")
+    assert got["Jon Rahn"] == ("Jon Rahm", "typo")                # letter replaced
+    assert got["Jonn Rahm"] == ("Jon Rahm", "typo")               # letter added
+    assert got["Jo Rahm"] == ("Jon Rahm", "typo")                 # letter missing
+    assert got["Rahm Jon"] == ("Jon Rahm", "flipped")
+    assert got["Matt Fitzpatrick"][1] == "dnp", "nicknames are too loose to match"
+    assert got["Nicholas Taylor"][1] == "dnp"
+    assert got["Tiger Woods"] == (None, "dnp")
+    two = match_roster(["Ludvig Aberg"], ["Ludvig Åberg", "Ludvig Aberg "])[0]  # two candidates: don't guess
+    assert two.kind in ("exact", "spelling", "dnp")
+    over = match_roster(["Matt Fitzpatrick"], field, {"Matt Fitzpatrick": "Matthew Fitzpatrick"})[0]
+    assert over.kind == "override" and over.espn_name == "Matthew Fitzpatrick"
+    print("ok  name matching: accents/punctuation, one-letter typos, flipped names; nothing looser")
 
 
 def test_html_parser():
@@ -159,8 +168,8 @@ def test_real_masters_2026():
         run.update(check_health=False, venue=lambda e: {}, now=datetime(2026, 11, 10, 14, 0, tzinfo=run.TZ), fetch=lambda e: (rows, "leaderboard feed"),
                    find=fake_find, backfill=True)
         snaps = tmp / "docs/snapshots/2026"
-        assert all((snaps / f"Masters - Day {d}.csv").exists() for d in range(1, 5))
-        got = list(csv.reader((snaps / "Masters - Day 1.csv").read_text(encoding="utf-8").splitlines()))
+        assert all((snaps / f"2026 Masters - Day {d}.csv").exists() for d in range(1, 5))
+        got = list(csv.reader((snaps / "2026 Masters - Day 1.csv").read_text(encoding="utf-8").splitlines()))
         with EXPECTED.open(encoding="utf-8") as f:
             exp = list(csv.reader(f))
         for line in exp[1:]:
@@ -172,7 +181,7 @@ def test_real_masters_2026():
         data = json.loads((tmp / "docs/data/2026.json").read_text())
         m = data["majors"][0]
         assert m["state"] == "final", m["state"]
-        return m, (snaps / "Masters - Day 2.csv").read_text(encoding="utf-8")
+        return m, (snaps / "2026 Masters - Day 2.csv").read_text(encoding="utf-8")
     m, day2 = in_sandbox(go)
     assert '"CUT","F"' in day2
     print("ok  real 2026 Masters from ESPN: Day 1 matches your file exactly; Days 1-4 saved; final")
@@ -215,7 +224,7 @@ def test_health_check():
             assert st["Leaderboard feed (main source)"] == "pass"
             assert st["Scores add up"] == "pass" and st["Cut"] == "pass" and st["Golfer statuses"] == "pass"
             assert st["Day files"] == "pass" and st["Backup sources"] == "warn", st
-            assert (tmp / "docs/health-x/snapshots/Masters Tournament - Day 4.csv").exists()
+            assert (tmp / "docs/health-x/snapshots/2026 Masters Tournament - Day 4.csv").exists()
             broken["on"] = True
             a2 = health.run(now + timedelta(minutes=15), tmp / "docs", "health-x", teams, {}, majors, [], run.process_major)
             a3 = health.run(now + timedelta(minutes=30), tmp / "docs", "health-x", teams, {}, majors, [], run.process_major)
@@ -245,6 +254,32 @@ def test_roster_names():
     print("ok  roster names: found once stays green, misspellings get ESPN's spelling, new season resets")
 
 
+def test_roster_catch_up():
+    """A new health page reads the season's earlier tournaments to find names."""
+    from pool import health
+    teams = {"A": ["Scottie Scheffler", "Rory McIlroy"], "B": ["Tiger Woods"]}
+    events = [("Sony Open", "1", date(2026, 1, 15), None), ("Players", "2", date(2026, 3, 12), None),
+              ("Masters", "3", date(2026, 4, 9), None), ("RSM", "4", date(2026, 11, 19), None)]
+    fields = {"1": ["Scottie Scheffler"], "2": ["Rory McIlroy", "Scottie Scheffler"], "3": [], "4": ["Tiger Woods"]}
+    saved = (espn.calendar, espn.fetch_leaderboard_feed, health.current_event)
+    espn.calendar = lambda y: events
+    espn.fetch_leaderboard_feed = lambda eid: [Row(name=n) for n in fields[eid]]
+    health.current_event = lambda: None
+
+    def go(tmp):
+        now = datetime(2026, 11, 10, 14, 0, tzinfo=run.TZ)
+        health.run(now, tmp / "docs", "h", teams, {}, {}, [], run.process_major, year=2026)
+        h = json.loads((tmp / "docs/h/health.json").read_text())
+        found = {r["name"]: r["found"] for r in h["roster_rows"]}
+        assert found == {"Scottie Scheffler": "Sony Open", "Rory McIlroy": "Players", "Tiger Woods": None}, found
+        assert "4" not in h["roster_scanned"], "future tournaments are not read"
+    try:
+        in_sandbox(go)
+    finally:
+        espn.calendar, espn.fetch_leaderboard_feed, health.current_event = saved
+    print("ok  roster check catches up on the season's earlier tournaments")
+
+
 if __name__ == "__main__":
     test_name_matching()
     test_html_parser()
@@ -254,4 +289,5 @@ if __name__ == "__main__":
     test_real_masters_2026()
     test_health_check()
     test_roster_names()
+    test_roster_catch_up()
     print("all passed")

@@ -114,7 +114,7 @@ document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-order]");
   if (!b) return;
   setOrder(b.dataset.order);
-  if (window.POOL_HEALTH) loadHealth(); else render();
+  if (window.POOL_HEALTH) renderHealth(); else render();
 });
 
 function majorView(m, data) {
@@ -202,37 +202,61 @@ function overallView(data) {
 
 
 // ---- Health check page (unlisted) ------------------------------------------
+let health = null;
 async function loadHealth() {
-  let h;
-  try { h = await getJSON("health.json"); }
+  try { health = await getJSON("health.json"); }
   catch (e) { $("#main").innerHTML = `<div class="empty"><b>No health check yet.</b> It appears after the next scheduled run.</div>`; return; }
-  const icon = { pass: "Pass", warn: "Warning", fail: "Failed" };
+  renderHealth();
+}
+
+function renderHealth() {
+  const h = health;
+  if (!h) return;
+  const tabs = [["tournament", "This week"], ["roster", "Roster names"], ["checks", "Checks"]];
+  let tab = location.hash.slice(1);
+  if (!tabs.some(([k]) => k === tab)) tab = "tournament";
   const overall = h.checks.some((c) => c.status === "fail") ? "fail" : h.checks.some((c) => c.status === "warn") ? "warn" : "pass";
-  const head = { pass: "Everything is working", warn: "Working, with warnings", fail: "Something is broken" }[overall];
-  $("#year").textContent = "Health check";
-  $("#tabs").innerHTML = "";
-  let html = `<section class="head"><h2>${head}</h2><span class="pill ${overall === "fail" ? "live" : ""}">${icon[overall]}</span>
-    <span class="meta">Checked ${when(h.updated)} against ${esc(h.event_name || "no tournament")}</span></section>`;
-  html += `<section><h3>Checks</h3><div class="checks">` + h.checks.map((c) =>
-    `<div class="check ${c.status === "pass" ? "spelling" : c.status === "warn" ? "likely" : "dnp"}"><span class="tag">${icon[c.status]}</span>
-     <span><b>${esc(c.name)}.</b> ${esc(c.detail)}</span></div>`).join("") + `</div>
-     <p class="note">A run is marked failed on GitHub only when a check newly fails, so you hear about each problem once.</p></section>`;
   const roster = h.roster_rows || [];
-  if (roster.length) {
-    const found = roster.filter((r) => r.found).length;
-    html += `<section><h3>Roster names · ${found} of ${roster.length} found on ESPN this year</h3><div class="teams">` +
+  const found = roster.filter((r) => r.found).length;
+
+  $("#year").textContent = "Health check";
+  $("#tabs").innerHTML = tabs.map(([k, label]) => {
+    let flag = "";
+    if (k === "checks" && overall !== "pass") flag = `<span class="flag ${overall}">${overall === "fail" ? "Failed" : "Warning"}</span>`;
+    if (k === "roster" && roster.length && found < roster.length) flag = `<span class="flag warn">${roster.length - found}</span>`;
+    return `<a href="#${k}" ${tab === k ? 'aria-current="page"' : ""}>${label}${flag}</a>`;
+  }).join("");
+
+  let html = "";
+  if (tab === "tournament") {
+    html = h.event
+      ? `<p class="note">ESPN's current tournament, scored with the pool's rosters as if it were a major. Checked ${when(h.updated)}.</p>` + majorView(h.event, h)
+      : `<div class="empty"><b>No tournament on ESPN right now.</b></div>`;
+  } else if (tab === "roster") {
+    html = `<section class="head"><h2>${found} of ${roster.length} found</h2><span class="meta">${h.roster_year} season</span></section>
+      <p class="note">Green: ESPN has listed this exact name in at least one tournament field this season (hover to see where).
+      Red: not found yet, which is normal until he plays. If ESPN lists a near match (only accents or punctuation different,
+      one letter off, or first and last name swapped), it's shown so you can fix the teams file.</p>
+      <div class="teams">` +
       h.people.map((p) => `<div class="team"><h4>${esc(p)}</h4><ol>` +
         roster.filter((r) => r.person === p).map((r) => r.found
           ? `<li class="name-ok" title="Found at ${esc(r.found)}"><span class="mark">●</span><span class="nm">${esc(r.name)}</span></li>`
           : `<li class="name-missing"><span class="mark">●</span><span class="nm">${esc(r.name)}</span><span class="st">Not yet</span>
-             ${r.hint ? `<span class="hint">${r.kind === "dnp" ? "Closest on ESPN" : "ESPN spells it"}: <b>${esc(r.hint)}</b> (${esc(r.where)})</span>` : ""}</li>`
-        ).join("") + `</ol></div>`).join("") +
-      `</div><p class="legend">Green: ESPN has listed this exact name in a field this year (hover to see where). Red: not seen yet. That's normal until he plays an event, but if ESPN spells it differently, fix the teams file.</p></section>`;
+             ${r.hint ? `<span class="hint">ESPN lists <b>${esc(r.hint)}</b>${
+               { spelling: " (accents or punctuation differ)", typo: " (one letter off)", flipped: " (names swapped)" }[r.kind] || ""} at ${esc(r.where)}</span>` : ""}</li>`
+        ).join("") + `</ol></div>`).join("") + `</div>`;
+  } else {
+    const icon = { pass: "Pass", warn: "Warning", fail: "Failed" };
+    const head = { pass: "Everything is working", warn: "Working, with warnings", fail: "Something is broken" }[overall];
+    html = `<section class="head"><h2>${head}</h2><span class="meta">Checked ${when(h.updated)} against ${esc(h.event_name || "no tournament")}</span></section>
+      <div class="checks">` + h.checks.map((c) =>
+        `<div class="check ${c.status === "pass" ? "spelling" : c.status === "warn" ? "likely" : "dnp"}"><span class="tag">${icon[c.status]}</span>
+         <span><b>${esc(c.name)}.</b> ${esc(c.detail)}</span></div>`).join("") + `</div>
+      <p class="note">A run is marked failed on GitHub only when a check newly fails, so you hear about each problem once.</p>`;
   }
-  if (h.event) html += `<section><h3>This week, scored as if it were a major</h3></section>` + majorView(h.event, h);
   $("#main").innerHTML = html;
 }
 
-window.addEventListener("hashchange", () => { if (!window.POOL_HEALTH) render(); });
+window.addEventListener("hashchange", () => { if (window.POOL_HEALTH) renderHealth(); else render(); });
 if (window.POOL_HEALTH) { loadHealth(); setInterval(loadHealth, REFRESH_MS); }
 else { load(); setInterval(load, REFRESH_MS); }

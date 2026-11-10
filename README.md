@@ -87,15 +87,19 @@ seasons come from final round scores.
 
 ## When something looks wrong
 
-**Checking roster names.** The health page lists all 48 rostered golfers.
-A name turns green once ESPN has listed that exact spelling in any
-tournament's field that year; most turn green weeks before the Masters, since
-every tournament is checked, not just majors. A red name hasn't been seen yet.
-That's normal until he plays an event, but if ESPN spells him differently the
-page shows ESPN's spelling, and you fix the teams file. (Scoring still matches
-accents and small spelling differences automatically, so a red name doesn't
-change anyone's score.) To force a match by hand, `config.json` also takes
-overrides:
+**Checking roster names.** The health page's Roster names tab lists all 48
+rostered golfers. A name turns green once ESPN has listed that exact spelling
+in any tournament's field that season. Every tournament counts, including
+ones played before the health check was set up: it catches up on the season
+so far, a few tournaments per run. A red name hasn't been found yet, which is
+normal until he plays. If ESPN lists a near match, the page shows it so you
+can fix the teams file.
+
+Scoring uses the same rules to match names automatically, and nothing looser:
+only accents or punctuation different (Aberg / Åberg), one letter different
+(added, missing or replaced), or first and last name swapped, and only when
+exactly one golfer in the field fits. To force a match by hand, `config.json`
+also takes overrides:
 
 ```json
 "name_overrides": {

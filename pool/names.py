@@ -1,16 +1,22 @@
 """Matching rostered golfers to names on the ESPN leaderboard.
 
-This automates the manual DNP check: a golfer only counts as DNP if nobody in
-the field is a plausible match. Accent and punctuation differences
-(Aberg/Åberg, JJ/J.J.) match automatically; looser matches are used but
-flagged so you can confirm them; overrides in config.json settle anything.
+Only three kinds of difference are accepted, and only when exactly one golfer
+in the field fits:
+
+- spelling: identical apart from accents, umlauts, apostrophes, periods,
+  hyphens and spacing (Aberg / Åberg, JJ / J.J., Si-Woo / Si Woo)
+- typo:     otherwise one letter different: replaced, added or missing
+            (Jon Rahn / Jon Rahm)
+- flipped:  the same words in a different order (Rahm Jon / Jon Rahm)
+
+Anything else counts as not in the field (DNP). Overrides in config.json
+settle any case by hand.
 """
 from __future__ import annotations
 
 import re
 import unicodedata
 from dataclasses import dataclass
-from difflib import SequenceMatcher
 
 # Letters that Unicode does not split into "base letter + accent"
 SPECIAL = str.maketrans({
@@ -20,7 +26,7 @@ SPECIAL = str.maketrans({
 
 
 def plain(name: str) -> str:
-    """Lowercase, no accents, words separated by single spaces."""
+    """Lowercase, no accents or punctuation, words separated by single spaces."""
     s = unicodedata.normalize("NFKD", name.translate(SPECIAL))
     s = "".join(ch for ch in s if not unicodedata.combining(ch)).lower()
     s = re.sub(r"[.'’`]", "", s)          # J.J. -> jj, O'Hair -> ohair
@@ -33,22 +39,45 @@ def key(name: str) -> str:
     return plain(name).replace(" ", "")
 
 
+def one_letter_apart(a: str, b: str) -> bool:
+    """True if a and b differ by exactly one replaced, added or missing letter."""
+    if a == b or abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        return sum(x != y for x, y in zip(a, b)) == 1
+    if len(a) > len(b):
+        a, b = b, a
+    i = 0
+    while i < len(a) and a[i] == b[i]:
+        i += 1
+    return a[i:] == b[i + 1:]
+
+
 @dataclass
 class Match:
     roster_name: str
     espn_name: str | None   # None means not in the field (DNP)
-    kind: str               # exact | override | spelling | likely | dnp
-    suggestion: str | None = None  # closest field name when kind == dnp
+    kind: str               # exact | override | spelling | typo | flipped | dnp
+    suggestion: str | None = None  # a near miss that wasn't unique enough to use
+
+
+def find_close(name: str, field: list[str]) -> tuple[str | None, list[str]]:
+    """The rule that fits (spelling, typo, flipped) and the field names that fit it."""
+    k, words = key(name), sorted(plain(name).split())
+    for kind, test in (
+        ("spelling", lambda f: key(f) == k),
+        ("flipped", lambda f: sorted(plain(f).split()) == words and key(f) != k),
+        ("typo", lambda f: one_letter_apart(key(f), k)),
+    ):
+        hits = [f for f in field if test(f)]
+        if hits:
+            return kind, hits
+    return None, []
 
 
 def match_roster(roster: list[str], field: list[str], overrides: dict | None = None) -> list[Match]:
     overrides = overrides or {}
     field_set = set(field)
-    by_key: dict[str, list[str]] = {}
-    for f in field:
-        by_key.setdefault(key(f), []).append(f)
-    plain_field = [(f, plain(f)) for f in field]
-
     results = []
     for name in roster:
         if name in overrides:
@@ -63,28 +92,10 @@ def match_roster(roster: list[str], field: list[str], overrides: dict | None = N
         if name in field_set:
             results.append(Match(name, name, "exact"))
             continue
-        same = by_key.get(key(name), [])
-        if len(same) == 1:
-            results.append(Match(name, same[0], "spelling"))
-            continue
-
-        p = plain(name)
-        scored = sorted(((SequenceMatcher(None, p, pf).ratio(), f) for f, pf in plain_field), reverse=True)
-        best = scored[0] if scored else (0, None)
-        second = scored[1][0] if len(scored) > 1 else 0
-        if best[0] >= 0.88 and best[0] - second >= 0.05:
-            results.append(Match(name, best[1], "likely"))
-            continue
-
-        # Same surname and first initial, and only one such golfer
-        parts = p.split()
-        if len(parts) >= 2:
-            cands = [f for f, pf in plain_field
-                     if pf.split() and pf.split()[-1] == parts[-1] and pf[0] == parts[0][0]]
-            if len(cands) == 1:
-                results.append(Match(name, cands[0], "likely"))
-                continue
-
-        suggestion = best[1] if best[0] >= 0.6 else None
-        results.append(Match(name, None, "dnp", suggestion=suggestion))
+        kind, hits = find_close(name, field)
+        if len(hits) == 1:
+            results.append(Match(name, hits[0], kind))
+        else:
+            # several equally close names: don't guess, but mention the first
+            results.append(Match(name, None, "dnp", suggestion=hits[0] if hits else None))
     return results
