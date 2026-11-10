@@ -165,6 +165,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 const SHORT = { masters: "Masters", pga: "PGA", usopen: "US Open", open: "The Open" };
 const tabLabel = (m) => m.test ? "Test · " + m.name.replace(/\s+(Championship|Tournament|Classic)$/i, "") : (SHORT[m.key] || m.name);
 
+function scoreNum(s) { return s === "E" ? 0 : Number(s); }
 function isUnder(score) { return typeof score === "string" && score.startsWith("-"); }
 function ordinal(n) { const s = ["th", "st", "nd", "rd"], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
 function when(iso) {
@@ -262,6 +263,16 @@ function majorView(m, data) {
       <span class="tot ${isUnder(s.total) ? "under" : ""}">${esc(s.total)}</span>
       <span class="sub">${s.counting} counting · ${s.usable} of ${s.golfers.length} still in</span>
     </div>`).join("") + `</div></section>`;
+
+  html += `<section><h3>Top 5</h3><div class="teams">` + ranked.map((s) => {
+    const top = s.golfers.filter((g) => g.counts).sort((a, b) => scoreNum(a.score) - scoreNum(b.score));
+    return `<div class="team"><h4>${esc(s.person)}<span class="${isUnder(s.total) ? "under" : ""}">${esc(s.total)}</span></h4><ol>` +
+      (top.length ? top.map((g) => `<li class="counts"><span class="mark"></span>
+        <span class="nm">${esc(g.name)}</span>
+        <span class="sc ${isUnder(g.score) ? "under" : ""}">${esc(g.score)}</span>
+        <span class="st">${esc(statusText(g))}</span></li>`).join("") : `<li><span></span><span class="nm">No golfers left</span></li>`) +
+      `</ol></div>`;
+  }).join("") + `</div></section>`;
 
   html += `<section><h3>Teams</h3><div class="teams">` + m.standings.map((s) => `
     <div class="team"><h4>${esc(s.person)}<span>${ordinal(s.rank)}</span></h4><ol>` +
