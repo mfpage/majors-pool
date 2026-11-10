@@ -1,0 +1,2264 @@
+{
+ "year": 2010,
+ "people": [
+  "David",
+  "Michael",
+  "Alan",
+  "Judy"
+ ],
+ "overall": [
+  {
+   "person": "David",
+   "ranks": {
+    "masters": 1,
+    "usopen": 2,
+    "open": 3,
+    "pga": 2
+   },
+   "total": 8,
+   "place": 1
+  },
+  {
+   "person": "Judy",
+   "ranks": {
+    "masters": 3,
+    "usopen": 3,
+    "open": 1,
+    "pga": 1
+   },
+   "total": 8,
+   "place": 1
+  },
+  {
+   "person": "Michael",
+   "ranks": {
+    "masters": 4,
+    "usopen": 1,
+    "open": 2,
+    "pga": 4
+   },
+   "total": 11,
+   "place": 3
+  },
+  {
+   "person": "Alan",
+   "ranks": {
+    "masters": 2,
+    "usopen": 4,
+    "open": 4,
+    "pga": 3
+   },
+   "total": 13,
+   "place": 4
+  }
+ ],
+ "majors": [
+  {
+   "key": "masters",
+   "name": "Masters",
+   "state": "final",
+   "event_id": "774",
+   "start": "2010-04-08",
+   "end": "2010-04-11",
+   "venue": {
+    "course": "Augusta National Golf Club",
+    "place": "Augusta, GA",
+    "par": 0,
+    "yards": 0
+   },
+   "snapshots": [
+    {
+     "day": 1,
+     "file": "snapshots/2010/2010 Masters - Day 1.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 4,
+      "Alan": 2,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "-15",
+      "Michael": "-9",
+      "Alan": "-13",
+      "Judy": "-11"
+     }
+    },
+    {
+     "day": 2,
+     "file": "snapshots/2010/2010 Masters - Day 2.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 4,
+      "Alan": 2,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "-21",
+      "Michael": "-6",
+      "Alan": "-10",
+      "Judy": "-9"
+     }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2010/2010 Masters - Day 3.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 3,
+      "Alan": 4,
+      "Judy": 2
+     },
+     "totals": {
+      "David": "-27",
+      "Michael": "-8",
+      "Alan": "-6",
+      "Judy": "-14"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2010/2010 Masters - Day 4.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 4,
+      "Alan": 2,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "-37",
+      "Michael": "-11",
+      "Alan": "-20",
+      "Judy": "-13"
+     }
+    }
+   ],
+   "round": 4,
+   "source": "leaderboard feed",
+   "standings": [
+    {
+     "person": "David",
+     "rank": 1,
+     "total": "-37",
+     "usable": 7,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Phil Mickelson",
+       "espn": "Phil Mickelson",
+       "score": "-16",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Lee Westwood",
+       "espn": "Lee Westwood",
+       "score": "-13",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Rory McIlroy",
+       "espn": "Rory McIlroy",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ian Poulter",
+       "espn": "Ian Poulter",
+       "score": "-5",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Ernie Els",
+       "espn": "Ernie Els",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Angel Cabrera",
+       "espn": "Ángel Cabrera",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Tim Clark",
+       "espn": "Tim Clark",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Oliver Wilson",
+       "espn": "Oliver Wilson",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ross Fisher",
+       "espn": "Ross Fisher",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Chad Campbell",
+       "espn": "Chad Campbell",
+       "score": "+10",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Ryan Moore",
+       "espn": "Ryan Moore",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Ryo Ishikawa",
+       "espn": "Ryo Ishikawa",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Michael",
+     "rank": 4,
+     "total": "-11",
+     "usable": 6,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Tiger Woods",
+       "espn": "Tiger Woods",
+       "score": "-11",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jim Furyk",
+       "espn": "Jim Furyk",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Henrik Stenson",
+       "espn": "Henrik Stenson",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Geoff Ogilvy",
+       "espn": "Geoff Ogilvy",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Robert Allenby",
+       "espn": "Robert Allenby",
+       "score": "+10",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Luke Donald",
+       "espn": "Luke Donald",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Kenny Perry",
+       "espn": "Kenny Perry",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Graeme McDowell",
+       "espn": "Graeme McDowell",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ben Curtis",
+       "espn": "Ben Curtis",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Dustin Johnson",
+       "espn": "Dustin Johnson",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Chris Wood",
+       "espn": "Chris Wood",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Nick Watney",
+       "espn": "Nick Watney",
+       "score": "-8",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "Alan",
+     "rank": 2,
+     "total": "-20",
+     "usable": 7,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Padraig Harrington",
+       "espn": "Padraig Harrington",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Steve Stricker",
+       "espn": "Steve Stricker",
+       "score": "+3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Anthony Kim",
+       "espn": "Anthony Kim",
+       "score": "-12",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Camilo Villegas",
+       "espn": "Camilo Villegas",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Vijay Singh",
+       "espn": "Vijay Singh",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Adam Scott",
+       "espn": "Adam Scott",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Mike Weir",
+       "espn": "Mike Weir",
+       "score": "+8",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Justin Leonard",
+       "espn": "Justin Leonard",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Justin Rose",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Stuart Appleby",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Y.E. Yang",
+       "espn": "Y.E. Yang",
+       "score": "-7",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "Judy",
+     "rank": 3,
+     "total": "-13",
+     "usable": 8,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Stewart Cink",
+       "espn": "Stewart Cink",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Retief Goosen",
+       "espn": "Retief Goosen",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Paul Casey",
+       "espn": "Paul Casey",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Sergio Garcia",
+       "espn": "Sergio Garcia",
+       "score": "+10",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Zach Johnson",
+       "espn": "Zach Johnson",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Sean O'Hair",
+       "espn": "Sean O'Hair",
+       "score": "+3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Hunter Mahan",
+       "espn": "Hunter Mahan",
+       "score": "-7",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Lucas Glover",
+       "espn": "Lucas Glover",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Rory Sabbatini",
+       "espn": "Rory Sabbatini",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "David Toms",
+       "espn": "David Toms",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "K.J. Choi",
+       "espn": "K.J. Choi",
+       "score": "-11",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Davis Love III",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      }
+     ]
+    }
+   ],
+   "name_check": [
+    {
+     "person": "David",
+     "roster": "Angel Cabrera",
+     "espn": "Ángel Cabrera",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Justin Rose",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Stuart Appleby",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Davis Love III",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    }
+   ],
+   "field_size": 95,
+   "error": null,
+   "updated": "2026-11-10T16:30-05:00"
+  },
+  {
+   "key": "usopen",
+   "name": "US Open",
+   "state": "final",
+   "event_id": "797",
+   "start": "2010-06-17",
+   "end": "2010-06-20",
+   "venue": {
+    "course": "Blue Course",
+    "place": "",
+    "par": 71,
+    "yards": 7040
+   },
+   "snapshots": [
+    {
+     "day": 1,
+     "file": "snapshots/2010/2010 US Open - Day 1.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 3,
+      "Michael": 2,
+      "Alan": 4,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "+4",
+      "Michael": "+2",
+      "Alan": "+6",
+      "Judy": "E"
+     }
+    },
+    {
+     "day": 2,
+     "file": "snapshots/2010/2010 US Open - Day 2.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 2,
+      "Alan": 4,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "E",
+      "Michael": "+9",
+      "Alan": "+23",
+      "Judy": "+14"
+     }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2010/2010 US Open - Day 3.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 1,
+      "Alan": 4,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "+14",
+      "Michael": "+5",
+      "Alan": "+45",
+      "Judy": "+28"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2010/2010 US Open - Day 4.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 1,
+      "Alan": 4,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "+28",
+      "Michael": "+23",
+      "Alan": "+55",
+      "Judy": "+44"
+     }
+    }
+   ],
+   "round": 4,
+   "source": "leaderboard feed",
+   "standings": [
+    {
+     "person": "David",
+     "rank": 2,
+     "total": "+28",
+     "usable": 8,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Phil Mickelson",
+       "espn": "Phil Mickelson",
+       "score": "+3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Lee Westwood",
+       "espn": "Lee Westwood",
+       "score": "+8",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Rory McIlroy",
+       "espn": "Rory McIlroy",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ian Poulter",
+       "espn": "Ian Poulter",
+       "score": "+14",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Ernie Els",
+       "espn": "Ernie Els",
+       "score": "+2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Angel Cabrera",
+       "espn": "Ángel Cabrera",
+       "score": "+9",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Tim Clark",
+       "espn": "Tim Clark",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Oliver Wilson",
+       "espn": "Oliver Wilson",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ross Fisher",
+       "espn": "Ross Fisher",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Chad Campbell",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ryan Moore",
+       "espn": "Ryan Moore",
+       "score": "+12",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Ryo Ishikawa",
+       "espn": "Ryo Ishikawa",
+       "score": "+12",
+       "status": "F",
+       "out": false,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Michael",
+     "rank": 1,
+     "total": "+23",
+     "usable": 10,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Tiger Woods",
+       "espn": "Tiger Woods",
+       "score": "+3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jim Furyk",
+       "espn": "Jim Furyk",
+       "score": "+8",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Henrik Stenson",
+       "espn": "Henrik Stenson",
+       "score": "+11",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Geoff Ogilvy",
+       "espn": "Geoff Ogilvy",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Robert Allenby",
+       "espn": "Robert Allenby",
+       "score": "+11",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Luke Donald",
+       "espn": "Luke Donald",
+       "score": "+14",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Kenny Perry",
+       "espn": "Kenny Perry",
+       "score": "+12",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Graeme McDowell",
+       "espn": "Graeme McDowell",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Ben Curtis",
+       "espn": "Ben Curtis",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Dustin Johnson",
+       "espn": "Dustin Johnson",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Chris Wood",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Nick Watney",
+       "espn": "Nick Watney",
+       "score": "+21",
+       "status": "F",
+       "out": false,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Alan",
+     "rank": 4,
+     "total": "+55",
+     "usable": 7,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Padraig Harrington",
+       "espn": "Padraig Harrington",
+       "score": "+9",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Steve Stricker",
+       "espn": "Steve Stricker",
+       "score": "+15",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Anthony Kim",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Camilo Villegas",
+       "espn": "Camilo Villegas",
+       "score": "+18",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Vijay Singh",
+       "espn": "Vijay Singh",
+       "score": "+13",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Adam Scott",
+       "espn": "Adam Scott",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Mike Weir",
+       "espn": "Mike Weir",
+       "score": "+23",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Justin Leonard",
+       "espn": "Justin Leonard",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Justin Rose",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Stuart Appleby",
+       "espn": "Stuart Appleby",
+       "score": "+11",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Y.E. Yang",
+       "espn": "Y.E. Yang",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Judy",
+     "rank": 3,
+     "total": "+44",
+     "usable": 10,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Stewart Cink",
+       "espn": "Stewart Cink",
+       "score": "+13",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Retief Goosen",
+       "espn": "Retief Goosen",
+       "score": "+15",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Paul Casey",
+       "espn": "Paul Casey",
+       "score": "+13",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Sergio Garcia",
+       "espn": "Sergio Garcia",
+       "score": "+9",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Zach Johnson",
+       "espn": "Zach Johnson",
+       "score": "+22",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Sean O'Hair",
+       "espn": "Sean O'Hair",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Hunter Mahan",
+       "espn": "Hunter Mahan",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Lucas Glover",
+       "espn": "Lucas Glover",
+       "score": "+15",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Rory Sabbatini",
+       "espn": "Rory Sabbatini",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "David Toms",
+       "espn": "David Toms",
+       "score": "+12",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "K.J. Choi",
+       "espn": "K.J. Choi",
+       "score": "+14",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Davis Love III",
+       "espn": "Davis Love III",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    }
+   ],
+   "name_check": [
+    {
+     "person": "David",
+     "roster": "Angel Cabrera",
+     "espn": "Ángel Cabrera",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Chad Campbell",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "Chris Wood",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Anthony Kim",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Justin Rose",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    }
+   ],
+   "field_size": 155,
+   "error": null,
+   "updated": "2026-11-10T16:30-05:00"
+  },
+  {
+   "key": "open",
+   "name": "British Open",
+   "state": "final",
+   "event_id": "798",
+   "start": "2010-07-15",
+   "end": "2010-07-18",
+   "venue": {
+    "course": "St Andrews Links (Old Course)",
+    "place": "St. Andrews, Scotland",
+    "par": 72,
+    "yards": 7305
+   },
+   "snapshots": [
+    {
+     "day": 1,
+     "file": "snapshots/2010/2010 British Open - Day 1.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 2,
+      "Alan": 4,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "-26",
+      "Michael": "-20",
+      "Alan": "-16",
+      "Judy": "-19"
+     }
+    },
+    {
+     "day": 2,
+     "file": "snapshots/2010/2010 British Open - Day 2.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 4,
+      "Michael": 2,
+      "Alan": 3,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "-10",
+      "Michael": "-18",
+      "Alan": "-14",
+      "Judy": "-19"
+     }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2010/2010 British Open - Day 3.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 3,
+      "Michael": 2,
+      "Alan": 4,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "-16",
+      "Michael": "-23",
+      "Alan": "-7",
+      "Judy": "-28"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2010/2010 British Open - Day 4.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 3,
+      "Michael": 2,
+      "Alan": 4,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "-19",
+      "Michael": "-26",
+      "Alan": "-3",
+      "Judy": "-26"
+     }
+    }
+   ],
+   "round": 4,
+   "source": "leaderboard feed",
+   "standings": [
+    {
+     "person": "David",
+     "rank": 3,
+     "total": "-19",
+     "usable": 6,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Phil Mickelson",
+       "espn": "Phil Mickelson",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Lee Westwood",
+       "espn": "Lee Westwood",
+       "score": "-9",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Rory McIlroy",
+       "espn": "Rory McIlroy",
+       "score": "-8",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Ian Poulter",
+       "espn": "Ian Poulter",
+       "score": "+3",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Ernie Els",
+       "espn": "Ernie Els",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Angel Cabrera",
+       "espn": "Ángel Cabrera",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Tim Clark",
+       "espn": "Tim Clark",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Oliver Wilson",
+       "espn": "Oliver Wilson",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ross Fisher",
+       "espn": "Ross Fisher",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Chad Campbell",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ryan Moore",
+       "espn": "Ryan Moore",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ryo Ishikawa",
+       "espn": "Ryo Ishikawa",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "Michael",
+     "rank": 2,
+     "total": "-26",
+     "usable": 7,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Tiger Woods",
+       "espn": "Tiger Woods",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jim Furyk",
+       "espn": "Jim Furyk",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Henrik Stenson",
+       "espn": "Henrik Stenson",
+       "score": "-8",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Geoff Ogilvy",
+       "espn": "Geoff Ogilvy",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Robert Allenby",
+       "espn": "Robert Allenby",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Luke Donald",
+       "espn": "Luke Donald",
+       "score": "-5",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Kenny Perry",
+       "espn": "Kenny Perry",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Graeme McDowell",
+       "espn": "Graeme McDowell",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Ben Curtis",
+       "espn": "Ben Curtis",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Dustin Johnson",
+       "espn": "Dustin Johnson",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Chris Wood",
+       "espn": "Chris Wood",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Nick Watney",
+       "espn": "Nick Watney",
+       "score": "-6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "Alan",
+     "rank": 4,
+     "total": "-3",
+     "usable": 6,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Padraig Harrington",
+       "espn": "Padraig Harrington",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Steve Stricker",
+       "espn": "Steve Stricker",
+       "score": "+2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Anthony Kim",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Camilo Villegas",
+       "espn": "Camilo Villegas",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Vijay Singh",
+       "espn": "Vijay Singh",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Adam Scott",
+       "espn": "Adam Scott",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Mike Weir",
+       "espn": "Mike Weir",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Justin Leonard",
+       "espn": "Justin Leonard",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Justin Rose",
+       "espn": "Justin Rose",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Stuart Appleby",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Y.E. Yang",
+       "espn": "Y.E. Yang",
+       "score": "+3",
+       "status": "F",
+       "out": false,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Judy",
+     "rank": 1,
+     "total": "-26",
+     "usable": 8,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Stewart Cink",
+       "espn": "Stewart Cink",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Retief Goosen",
+       "espn": "Retief Goosen",
+       "score": "-7",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Paul Casey",
+       "espn": "Paul Casey",
+       "score": "-8",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Sergio Garcia",
+       "espn": "Sergio Garcia",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Zach Johnson",
+       "espn": "Zach Johnson",
+       "score": "+8",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Sean O'Hair",
+       "espn": "Sean O'Hair",
+       "score": "-6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Hunter Mahan",
+       "espn": "Hunter Mahan",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Lucas Glover",
+       "espn": "Lucas Glover",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Rory Sabbatini",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "David Toms",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "K.J. Choi",
+       "espn": "K.J. Choi",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Davis Love III",
+       "espn": "Davis Love III",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      }
+     ]
+    }
+   ],
+   "name_check": [
+    {
+     "person": "David",
+     "roster": "Angel Cabrera",
+     "espn": "Ángel Cabrera",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Chad Campbell",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Anthony Kim",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Stuart Appleby",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Rory Sabbatini",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "David Toms",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    }
+   ],
+   "field_size": 156,
+   "error": null,
+   "updated": "2026-11-10T16:30-05:00"
+  },
+  {
+   "key": "pga",
+   "name": "PGA Championship",
+   "state": "final",
+   "event_id": "799",
+   "start": "2010-08-12",
+   "end": "2010-08-15",
+   "venue": {
+    "course": "Whistling Straits (Straits Course)",
+    "place": "Kohler, WI",
+    "par": 72,
+    "yards": 7507
+   },
+   "snapshots": [
+    {
+     "day": 1,
+     "file": "snapshots/2010/2010 PGA Championship - Day 1.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 2,
+      "Alan": 3,
+      "Judy": 4
+     },
+     "totals": {
+      "David": "-10",
+      "Michael": "-7",
+      "Alan": "-1",
+      "Judy": "+2"
+     }
+    },
+    {
+     "day": 2,
+     "file": "snapshots/2010/2010 PGA Championship - Day 2.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 1,
+      "Michael": 4,
+      "Alan": 2,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "-14",
+      "Michael": "-21",
+      "Alan": "-8",
+      "Judy": "-6"
+     }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2010/2010 PGA Championship - Day 3.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 4,
+      "Alan": 3,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "-18",
+      "Michael": "-34",
+      "Alan": "-13",
+      "Judy": "-23"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2010/2010 PGA Championship - Day 4.csv",
+     "saved": "2026-11-10T16:30-05:00",
+     "ranks": {
+      "David": 2,
+      "Michael": 4,
+      "Alan": 3,
+      "Judy": 1
+     },
+     "totals": {
+      "David": "-16",
+      "Michael": "-18",
+      "Alan": "-12",
+      "Judy": "-21"
+     }
+    }
+   ],
+   "round": 4,
+   "source": "leaderboard feed",
+   "standings": [
+    {
+     "person": "David",
+     "rank": 2,
+     "total": "-16",
+     "usable": 6,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Phil Mickelson",
+       "espn": "Phil Mickelson",
+       "score": "-6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Lee Westwood",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Rory McIlroy",
+       "espn": "Rory McIlroy",
+       "score": "-10",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Ian Poulter",
+       "espn": "Ian Poulter",
+       "score": null,
+       "status": "WD",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ernie Els",
+       "espn": "Ernie Els",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Angel Cabrera",
+       "espn": "Ángel Cabrera",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Tim Clark",
+       "espn": "Tim Clark",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Oliver Wilson",
+       "espn": "Oliver Wilson",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ross Fisher",
+       "espn": "Ross Fisher",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Chad Campbell",
+       "espn": "Chad Campbell",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Ryan Moore",
+       "espn": "Ryan Moore",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Ryo Ishikawa",
+       "espn": "Ryo Ishikawa",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Michael",
+     "rank": 4,
+     "total": "-18",
+     "usable": 4,
+     "counting": 4,
+     "golfers": [
+      {
+       "name": "Tiger Woods",
+       "espn": "Tiger Woods",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jim Furyk",
+       "espn": "Jim Furyk",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Henrik Stenson",
+       "espn": "Henrik Stenson",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Geoff Ogilvy",
+       "espn": "Geoff Ogilvy",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Robert Allenby",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Luke Donald",
+       "espn": "Luke Donald",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Kenny Perry",
+       "espn": "Kenny Perry",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Graeme McDowell",
+       "espn": "Graeme McDowell",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ben Curtis",
+       "espn": "Ben Curtis",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Dustin Johnson",
+       "espn": "Dustin Johnson",
+       "score": "-9",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Chris Wood",
+       "espn": "Chris Wood",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Nick Watney",
+       "espn": "Nick Watney",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "Alan",
+     "rank": 3,
+     "total": "-12",
+     "usable": 6,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Padraig Harrington",
+       "espn": "Padraig Harrington",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Steve Stricker",
+       "espn": "Steve Stricker",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Anthony Kim",
+       "espn": "Anthony Kim",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Camilo Villegas",
+       "espn": "Camilo Villegas",
+       "score": "-8",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Vijay Singh",
+       "espn": "Vijay Singh",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Adam Scott",
+       "espn": "Adam Scott",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Mike Weir",
+       "espn": "Mike Weir",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Justin Leonard",
+       "espn": "Justin Leonard",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Justin Rose",
+       "espn": "Justin Rose",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Stuart Appleby",
+       "espn": "Stuart Appleby",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Y.E. Yang",
+       "espn": "Y.E. Yang",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Judy",
+     "rank": 1,
+     "total": "-21",
+     "usable": 8,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Stewart Cink",
+       "espn": "Stewart Cink",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Retief Goosen",
+       "espn": "Retief Goosen",
+       "score": "+2",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Paul Casey",
+       "espn": "Paul Casey",
+       "score": "-6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Sergio Garcia",
+       "espn": "Sergio Garcia",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Zach Johnson",
+       "espn": "Zach Johnson",
+       "score": "-10",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Sean O'Hair",
+       "espn": "Sean O'Hair",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Hunter Mahan",
+       "espn": "Hunter Mahan",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Lucas Glover",
+       "espn": "Lucas Glover",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Rory Sabbatini",
+       "espn": "Rory Sabbatini",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "David Toms",
+       "espn": "David Toms",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "K.J. Choi",
+       "espn": "K.J. Choi",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Davis Love III",
+       "espn": "Davis Love III",
+       "score": "+2",
+       "status": "F",
+       "out": false,
+       "counts": false
+      }
+     ]
+    }
+   ],
+   "name_check": [
+    {
+     "person": "David",
+     "roster": "Lee Westwood",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Angel Cabrera",
+     "espn": "Ángel Cabrera",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "Robert Allenby",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
+     "suggestion": null
+    }
+   ],
+   "field_size": 156,
+   "error": null,
+   "updated": "2026-11-10T16:30-05:00"
+  }
+ ],
+ "updated": "2026-11-10T16:30-05:00"
+}

@@ -69,8 +69,8 @@
    "snapshots": [
     {
      "day": 1,
-     "file": "snapshots/2026/Masters - Day 1.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 Masters - Day 1.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -86,8 +86,8 @@
     },
     {
      "day": 2,
-     "file": "snapshots/2026/Masters - Day 2.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 Masters - Day 2.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -103,8 +103,8 @@
     },
     {
      "day": 3,
-     "file": "snapshots/2026/Masters - Day 3.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 Masters - Day 3.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -120,8 +120,8 @@
     },
     {
      "day": 4,
-     "file": "snapshots/2026/Masters - Day 4.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 Masters - Day 4.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -563,7 +563,7 @@
    "name_check": [],
    "field_size": 91,
    "error": null,
-   "updated": "2026-11-10T15:02-05:00"
+   "updated": "2026-11-10T16:31-05:00"
   },
   {
    "key": "pga",
@@ -581,8 +581,8 @@
    "snapshots": [
     {
      "day": 1,
-     "file": "snapshots/2026/PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 PGA Championship - Day 1.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -598,8 +598,8 @@
     },
     {
      "day": 2,
-     "file": "snapshots/2026/PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 PGA Championship - Day 2.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -615,8 +615,8 @@
     },
     {
      "day": 3,
-     "file": "snapshots/2026/PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 PGA Championship - Day 3.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 4,
@@ -632,8 +632,8 @@
     },
     {
      "day": 4,
-     "file": "snapshots/2026/PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 PGA Championship - Day 4.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 1,
       "Michael": 4,
@@ -1075,7 +1075,7 @@
    "name_check": [],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T15:02-05:00"
+   "updated": "2026-11-10T16:31-05:00"
   },
   {
    "key": "usopen",
@@ -1093,8 +1093,8 @@
    "snapshots": [
     {
      "day": 1,
-     "file": "snapshots/2026/US Open - Day 1.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 US Open - Day 1.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -1110,8 +1110,8 @@
     },
     {
      "day": 2,
-     "file": "snapshots/2026/US Open - Day 2.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 US Open - Day 2.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -1127,8 +1127,8 @@
     },
     {
      "day": 3,
-     "file": "snapshots/2026/US Open - Day 3.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 US Open - Day 3.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -1144,8 +1144,8 @@
     },
     {
      "day": 4,
-     "file": "snapshots/2026/US Open - Day 4.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 US Open - Day 4.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -1590,7 +1590,7 @@
      "roster": "Rasmus Højgaard",
      "espn": null,
      "kind": "dnp",
-     "suggestion": "Nicolai Højgaard"
+     "suggestion": null
     },
     {
      "person": "Judy",
@@ -1602,7 +1602,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T15:02-05:00"
+   "updated": "2026-11-10T16:31-05:00"
   },
   {
    "key": "open",
@@ -1620,8 +1620,8 @@
    "snapshots": [
     {
      "day": 1,
-     "file": "snapshots/2026/British Open - Day 1.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 British Open - Day 1.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 4,
       "Michael": 2,
@@ -1637,8 +1637,8 @@
     },
     {
      "day": 2,
-     "file": "snapshots/2026/British Open - Day 2.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 British Open - Day 2.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 3,
@@ -1654,8 +1654,8 @@
     },
     {
      "day": 3,
-     "file": "snapshots/2026/British Open - Day 3.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 British Open - Day 3.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 1,
       "Michael": 3,
@@ -1671,8 +1671,8 @@
     },
     {
      "day": 4,
-     "file": "snapshots/2026/British Open - Day 4.csv",
-     "saved": "2026-11-10T15:02-05:00",
+     "file": "snapshots/2026/2026 British Open - Day 4.csv",
+     "saved": "2026-11-10T16:31-05:00",
      "ranks": {
       "David": 2,
       "Michael": 3,
@@ -2114,8 +2114,8 @@
    "name_check": [],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T15:02-05:00"
+   "updated": "2026-11-10T16:31-05:00"
   }
  ],
- "updated": "2026-11-10T15:02-05:00"
+ "updated": "2026-11-10T16:31-05:00"
 }

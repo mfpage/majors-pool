@@ -1,0 +1,58 @@
+{
+ "year": 1999,
+ "people": [
+  "Judy",
+  "David",
+  "Michael",
+  "Alan"
+ ],
+ "overall": [
+  {
+   "person": "Judy",
+   "ranks": {},
+   "total": 0,
+   "place": 1
+  },
+  {
+   "person": "David",
+   "ranks": {},
+   "total": 0,
+   "place": 1
+  },
+  {
+   "person": "Michael",
+   "ranks": {},
+   "total": 0,
+   "place": 1
+  },
+  {
+   "person": "Alan",
+   "ranks": {},
+   "total": 0,
+   "place": 1
+  }
+ ],
+ "majors": [
+  {
+   "key": "masters",
+   "name": "Masters",
+   "state": "upcoming"
+  },
+  {
+   "key": "pga",
+   "name": "PGA Championship",
+   "state": "upcoming"
+  },
+  {
+   "key": "usopen",
+   "name": "US Open",
+   "state": "upcoming"
+  },
+  {
+   "key": "open",
+   "name": "British Open",
+   "state": "upcoming"
+  }
+ ],
+ "updated": "2026-11-10T16:30-05:00"
+}
