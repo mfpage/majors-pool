@@ -242,6 +242,29 @@ def _int(x):
 
 
 # ---- Source 2 and 3: ESPN's JSON feed ------------------------------------
+def fetch_venue(event_id: str) -> dict:
+    """Course, location, par and yardage for an event (from the leaderboard feed)."""
+    return venue_from(_get(FEED_LEADERBOARD_URL, params={"league": "pga", "event": event_id}).json())
+
+
+def venue_from(data: dict) -> dict:
+    events = data.get("events") or []
+    courses = (events[0].get("courses") or []) if events else []
+    if not courses:
+        return {}
+    c = next((x for x in courses if x.get("host")), courses[0])
+    addr = c.get("address") or {}
+    place = [addr.get("city")]
+    country = addr.get("country") or ""
+    place.append(addr.get("state") if country in ("USA", "US", "United States") else country)
+    return {
+        "course": c.get("name") or "",
+        "place": ", ".join(p for p in place if p),
+        "par": c.get("shotsToPar"),
+        "yards": c.get("totalYards"),
+    }
+
+
 def fetch_leaderboard_feed(event_id: str) -> list[Row]:
     """ESPN's leaderboard feed: the same data as the leaderboard on espn.com,
     with each golfer's status (finished, cut, withdrawn), hole and round."""

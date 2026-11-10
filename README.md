@@ -1,4 +1,4 @@
-# Majors Pool
+# Page Family Golf Pool
 
 A web page with live standings for the golf pool on the four majors. GitHub
 updates it every 15 minutes during each major and saves an end-of-day CSV
@@ -44,46 +44,58 @@ finished the round. Nothing needs to run on your computer.
    - Click **Update pool → Run workflow**, choose **check-schedule**, and run it.
      Open the finished run to see the four majors and their ESPN ids.
    - Run it again with **backfill**. This scores all four 2026 majors from ESPN
-     and fills in the page, including the Day 1–4 files. Compare a couple of
+     and fills in the page, including the Day 1–4 files. Backfill always
+     rebuilds the season from scratch, so it's safe to run again. Compare a couple of
      them against the files you made by hand. (Backfilled day files come from
      final round scores, so they'll match what you sent at the time.)
 
 From then on it runs by itself. Outside major weeks each run takes a few
 seconds and changes nothing.
 
-## Test tournaments
+## Health check (only you need this)
 
-A test tournament is scored exactly like a major, with the same rosters, and
-gets its own tab marked "Test". It saves day files but never counts toward
-Overall. `config.json` sets them by name (any part of ESPN's tournament name):
+Every run also scores whatever ESPN shows as this week's tournament, with the
+pool's rosters, as if it were a major, and checks each step: the four majors
+are on ESPN's schedule, the data sources read, every golfer's status is
+recognized, round scores add up, the cut is picked up, and day files save.
 
-```json
-"test_tournaments": {
-  "every_year": ["THE PLAYERS Championship"],
-  "2026": ["Good Good Championship"]
-}
-```
+Results are on an unlisted page that nothing links to:
+`https://<your-username>.github.io/majors-pool/health-4e2e646b/`
+(The repository is public, so it's unlisted rather than private.)
 
-- **every_year** runs each season. THE PLAYERS in mid-March is a month before
-  the Masters, has a strong field (so the name check is meaningful), and shows
-  whether ESPN's format still reads correctly.
-- **A year** runs only that season, for one-off tests like this weekend.
-
-The test needs that year's teams file in place, so upload it before THE PLAYERS.
+When a check newly fails, that run is marked failed in the Actions tab, and
+GitHub notifies you the way it does for any failed workflow (email or the
+GitHub mobile app, under your GitHub notification settings). You hear about
+each problem once, not every 15 minutes. If it's a problem with ESPN, run
+**probe-event** with the tournament id shown on the health page and share the
+output.
 
 ## Each year
 
 Upload `teams/<year> Teams.csv` (same format as 2026) before the Masters. The
-page switches to the new season automatically, and earlier seasons stay
-available in the season menu.
+page switches to the new season automatically, and earlier seasons stay in
+the Season menu.
+
+## Adding past seasons
+
+Upload a teams file for each past year (for example `teams/2019 Teams.csv`),
+then run the workflow with **backfill** and type `all` (every year with a teams
+file) or one year (like `2019`) in the year box. It scores those seasons from
+ESPN, with day files, and they appear in the Season menu. Backfilling a year
+rebuilds it from scratch, so it's safe to run again. Day files for past
+seasons come from final round scores.
 
 ## When something looks wrong
 
-**A golfer shows as DNP but is playing.** The page's **Name check** section
-lists every golfer whose name didn't match ESPN exactly, and what it did about
-it: accent and punctuation differences are matched automatically, looser
-matches are marked **Please confirm**, and golfers with no match count as DNP
-with the closest name shown. To fix a match by hand, edit `config.json`:
+**Checking roster names.** The health page lists all 48 rostered golfers.
+A name turns green once ESPN has listed that exact spelling in any
+tournament's field that year; most turn green weeks before the Masters, since
+every tournament is checked, not just majors. A red name hasn't been seen yet.
+That's normal until he plays an event, but if ESPN spells him differently the
+page shows ESPN's spelling, and you fix the teams file. (Scoring still matches
+accents and small spelling differences automatically, so a red name doesn't
+change anyone's score.) To force a match by hand, `config.json` also takes
+overrides:
 
 ```json
 "name_overrides": {
@@ -92,8 +104,8 @@ with the closest name shown. To fix a match by hand, edit `config.json`:
 }
 ```
 
-The name on the left is as written in the teams file; the right is ESPN's
-spelling, or `null` to force DNP.
+The left side is as written in the teams file; the right is ESPN's spelling,
+or `null` to force DNP.
 
 **The page shows "Couldn't read ESPN".** The job reads ESPN two different
 ways (the leaderboard page, then ESPN's data feed) and uses whichever works.

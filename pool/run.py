@@ -19,7 +19,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import espn
+from . import espn, health
 from .names import match_roster
 from .output import day_csv
 from .scoring import (Standing, build_golfers, estimate_par, fmt_score, overall,
@@ -74,7 +74,7 @@ def process_major(entry: dict, rows: list, source: str, teams: dict, config: dic
     overrides = config.get("name_overrides", {})
 
     matches = {p: match_roster(roster, field, overrides) for p, roster in teams.items()}
-    par = estimate_par(rows)
+    par = (entry.get("venue") or {}).get("par") or estimate_par(rows)
 
     live = standings(teams, {p: build_golfers(teams[p], matches[p], rows_by_name)
                              for p in teams})
@@ -142,14 +142,15 @@ def in_window(entry: dict, today, force: bool = False) -> bool:
 
 
 def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.find_majors,
-           backfill: bool = False) -> bool:
+           backfill: bool = False, check_health: bool = True, year: int | None = None,
+           venue=espn.fetch_venue) -> bool:
     """Run one update. Returns True if anything on the site changed.
 
     backfill=True reads every major for the year regardless of dates, to
     fill in a season already played (day files then come from final scores)."""
     now = now or datetime.now(TZ)
     config = load_config()
-    year = pick_year(now)
+    year = year or pick_year(now)
     if year is None:
         print("No teams file found in teams/. Nothing to do.")
         return False
@@ -169,27 +170,28 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
     data["people"] = list(teams)
     majors = {m["key"]: m for m in data.get("majors", [])}
 
-    tests_cfg = config.get("test_tournaments", {})
-    test_names = list(tests_cfg.get("every_year", [])) + list(tests_cfg.get(str(year), []))
-    events = find(year, config.get("event_ids", {}).get(str(year), {}), test_names)
-    test_keys = sorted(k for k in events if k.startswith("test-"))
-    for key in ORDER + test_keys:
-        if key.startswith("test-"):
-            entry = majors.setdefault(key, {"key": key, "name": events[key].name,
-                                            "state": "upcoming", "test": True})
-        else:
-            entry = majors.setdefault(key, {"key": key, "name": espn.MAJORS[key][0], "state": "upcoming"})
+    events = find(year, config.get("event_ids", {}).get(str(year), {}))
+    for key in list(majors):
+        if key not in ORDER:
+            del majors[key]  # leftovers from the old test-tournament setup
+    for key in ORDER:
+        entry = majors.setdefault(key, {"key": key, "name": espn.MAJORS[key][0], "state": "upcoming"})
         ev = events.get(key)
         if ev:
             entry["event_id"] = ev.event_id
             entry["start"] = ev.start.isoformat() if ev.start else entry.get("start")
             entry["end"] = ev.end.isoformat() if ev.end else entry.get("end")
 
-    # Calendar order when dates are known (test tournaments sit among them)
-    ordered = sorted(majors.values(), key=lambda m: (m.get("start") or "9999",
-                                                     ORDER.index(m["key"]) if m["key"] in ORDER else 9))
+    # Calendar order (Masters, PGA, US Open, Open) when dates are known
+    ordered = sorted(majors.values(), key=lambda m: (m.get("start") or "9999", ORDER.index(m["key"])))
 
+    fields = []  # every field read this run, for the roster name check
     for entry in ordered:
+        if entry.get("event_id") and not entry.get("venue"):
+            try:  # course, location and par, once per major
+                entry["venue"] = venue(entry["event_id"]) or None
+            except Exception as exc:
+                print(f"[{entry['name']}] couldn't read the course details yet: {exc}")
         if not entry.get("event_id") or not in_window(entry, now.date(), backfill):
             continue
         try:
@@ -200,13 +202,12 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
             entry["error_detail"] = str(exc)[:500]
             continue
         process_major(entry, rows, source, teams, config, now, DOCS / "snapshots" / str(year))
+        fields.append((entry["name"], now.date().isoformat(), [r.name for r in rows]))
         entry.pop("error_detail", None)
 
     # Overall pool: final positions, plus the live position for a major under way
     ranks = {}
     for entry in ordered:
-        if entry.get("test"):
-            continue  # test tournaments never count toward the pool
         if entry.get("state") in ("live", "final") and entry.get("standings"):
             ranks[entry["key"]] = {s["person"]: s["rank"] for s in entry["standings"]}
     data["overall"] = overall(list(teams), ranks)
@@ -222,6 +223,17 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
         print(f"Updated {data_path.relative_to(ROOT)}")
     else:
         print("No changes.")
+
+    # Health check on this week's tournament (unlisted page)
+    if check_health and not backfill and config.get("health_page"):
+        try:
+            alert = health.run(now, DOCS, config["health_page"], teams, config, events, ordered, process_major,
+                               fields=fields, year=year)
+        except Exception as exc:
+            print(f"[health] the health check itself crashed: {exc!r}")
+            alert = True
+        if alert:
+            (ROOT / ".alert").write_text("A health check newly failed. See the health page.\n")
 
     # Weekly heartbeat so GitHub doesn't pause the schedule in the off-season
     week = now.strftime("%G-W%V")
@@ -271,15 +283,14 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--probe", metavar="EVENT_ID")
     ap.add_argument("--schedule", metavar="YEAR", type=int)
-    ap.add_argument("--backfill", action="store_true")
+    ap.add_argument("--backfill", nargs="?", const="current", metavar="YEAR",
+                    help="rebuild a season from ESPN: a year, 'all', or nothing for the current one")
     args = ap.parse_args(argv)
     if args.probe:
         probe(args.probe)
         return
     if args.schedule:
-        tc = load_config().get("test_tournaments", {})
-        names = list(tc.get("every_year", [])) + list(tc.get(str(args.schedule), []))
-        for k, ev in espn.find_majors(args.schedule, tests=names).items():
+        for k, ev in espn.find_majors(args.schedule).items():
             print(f"{k:8} {ev.name:18} id={ev.event_id} {ev.start} to {ev.end}")
         today = datetime.now(TZ).date()
         print("\nEverything ESPN lists from last week through the next two months:")
@@ -287,7 +298,18 @@ def main(argv=None):
             if start and today - timedelta(days=7) <= start <= today + timedelta(days=60):
                 print(f"  {start}  id={eid}  {label}")
         return
-    update(backfill=args.backfill)
+    if args.backfill:
+        if args.backfill == "all":
+            years = sorted(int(p.name[:4]) for p in (ROOT / "teams").glob("* Teams.csv") if p.name[:4].isdigit())
+        elif args.backfill == "current":
+            years = [None]
+        else:
+            years = [int(args.backfill)]
+        for y in years:
+            print(f"\n=== Backfilling {y or 'current season'} ===")
+            update(backfill=True, year=y)
+        return
+    update()
 
 
 if __name__ == "__main__":

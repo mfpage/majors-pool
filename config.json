@@ -1,12 +1,5 @@
 {
-  "test_tournaments": {
-    "every_year": [
-      "THE PLAYERS Championship"
-    ],
-    "2026": [
-      "Austin Championship"
-    ]
-  },
+  "health_page": "health-4e2e646b",
   "event_ids": {
     "2026": {}
   },
