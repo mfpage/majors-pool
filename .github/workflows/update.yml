@@ -31,7 +31,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -66,7 +66,7 @@ jobs:
           fi
           git commit -m "Update standings"
           for attempt in 1 2 3; do
-            git pull --rebase && git push && exit 0
+            git pull --rebase -X theirs && git push && exit 0   # on a clash, this run's results win
             sleep 5
           done
           exit 1
