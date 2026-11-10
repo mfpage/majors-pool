@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2016/2016 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2016/2016 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 4,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2016/2016 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 4,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2016/2016 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 4,
@@ -599,7 +599,7 @@
    ],
    "field_size": 89,
    "error": null,
-   "updated": "2026-11-10T16:31-05:00"
+   "updated": "2026-11-10T16:57-05:00"
   },
   {
    "key": "usopen",
@@ -618,7 +618,7 @@
     {
      "day": 1,
      "file": "snapshots/2016/2016 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -635,7 +635,7 @@
     {
      "day": 2,
      "file": "snapshots/2016/2016 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -652,7 +652,7 @@
     {
      "day": 3,
      "file": "snapshots/2016/2016 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 2,
@@ -669,7 +669,7 @@
     {
      "day": 4,
      "file": "snapshots/2016/2016 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1154,7 +1154,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:31-05:00"
+   "updated": "2026-11-10T16:57-05:00"
   },
   {
    "key": "open",
@@ -1173,7 +1173,7 @@
     {
      "day": 1,
      "file": "snapshots/2016/2016 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1190,7 +1190,7 @@
     {
      "day": 2,
      "file": "snapshots/2016/2016 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1207,7 +1207,7 @@
     {
      "day": 3,
      "file": "snapshots/2016/2016 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1224,7 +1224,7 @@
     {
      "day": 4,
      "file": "snapshots/2016/2016 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1702,7 +1702,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:31-05:00"
+   "updated": "2026-11-10T16:57-05:00"
   },
   {
    "key": "pga",
@@ -1721,7 +1721,7 @@
     {
      "day": 1,
      "file": "snapshots/2016/2016 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -1738,7 +1738,7 @@
     {
      "day": 2,
      "file": "snapshots/2016/2016 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 3,
       "Judy": 1,
@@ -1755,7 +1755,7 @@
     {
      "day": 3,
      "file": "snapshots/2016/2016 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -1772,7 +1772,7 @@
     {
      "day": 4,
      "file": "snapshots/2016/2016 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:57-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -2243,8 +2243,8 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:31-05:00"
+   "updated": "2026-11-10T16:57-05:00"
   }
  ],
- "updated": "2026-11-10T16:31-05:00"
+ "updated": "2026-11-10T16:57-05:00"
 }

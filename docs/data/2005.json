@@ -70,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2005/2005 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 2,
       "David": 1,
@@ -87,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2005/2005 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 1,
       "David": 2,
@@ -104,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2005/2005 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 1,
       "David": 2,
@@ -121,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2005/2005 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 1,
       "David": 2,
@@ -599,7 +599,7 @@
    ],
    "field_size": 93,
    "error": null,
-   "updated": "2026-11-10T16:47-05:00"
+   "updated": "2026-11-10T16:56-05:00"
   },
   {
    "key": "usopen",
@@ -618,7 +618,7 @@
     {
      "day": 1,
      "file": "snapshots/2005/2005 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -635,7 +635,7 @@
     {
      "day": 2,
      "file": "snapshots/2005/2005 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -652,7 +652,7 @@
     {
      "day": 3,
      "file": "snapshots/2005/2005 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -669,7 +669,7 @@
     {
      "day": 4,
      "file": "snapshots/2005/2005 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -1175,7 +1175,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:47-05:00"
+   "updated": "2026-11-10T16:56-05:00"
   },
   {
    "key": "open",
@@ -1194,7 +1194,7 @@
     {
      "day": 1,
      "file": "snapshots/2005/2005 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -1211,7 +1211,7 @@
     {
      "day": 2,
      "file": "snapshots/2005/2005 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 3,
       "David": 4,
@@ -1228,7 +1228,7 @@
     {
      "day": 3,
      "file": "snapshots/2005/2005 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 3,
       "David": 4,
@@ -1245,7 +1245,7 @@
     {
      "day": 4,
      "file": "snapshots/2005/2005 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 3,
       "David": 4,
@@ -1758,7 +1758,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:47-05:00"
+   "updated": "2026-11-10T16:56-05:00"
   },
   {
    "key": "pga",
@@ -1777,7 +1777,7 @@
     {
      "day": 1,
      "file": "snapshots/2005/2005 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -1794,7 +1794,7 @@
     {
      "day": 2,
      "file": "snapshots/2005/2005 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -1811,7 +1811,7 @@
     {
      "day": 3,
      "file": "snapshots/2005/2005 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -1828,7 +1828,7 @@
     {
      "day": 4,
      "file": "snapshots/2005/2005 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:47-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Judy": 4,
       "David": 3,
@@ -2313,8 +2313,8 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:47-05:00"
+   "updated": "2026-11-10T16:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:47-05:00"
+ "updated": "2026-11-10T16:56-05:00"
 }

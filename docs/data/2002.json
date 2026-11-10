@@ -8,23 +8,25 @@
  ],
  "overall": [
   {
-   "person": "David",
-   "ranks": {
-    "masters": 3,
-    "usopen": 1,
-    "pga": 1
-   },
-   "total": 5,
-   "place": 1
-  },
-  {
    "person": "Alan",
    "ranks": {
     "masters": 1,
     "usopen": 2,
+    "open": 1,
     "pga": 3
    },
-   "total": 6,
+   "total": 7,
+   "place": 1
+  },
+  {
+   "person": "David",
+   "ranks": {
+    "masters": 3,
+    "usopen": 1,
+    "open": 3,
+    "pga": 1
+   },
+   "total": 8,
    "place": 2
   },
   {
@@ -32,9 +34,10 @@
    "ranks": {
     "masters": 2,
     "usopen": 4,
+    "open": 4,
     "pga": 2
    },
-   "total": 8,
+   "total": 12,
    "place": 3
   },
   {
@@ -42,9 +45,10 @@
    "ranks": {
     "masters": 4,
     "usopen": 3,
+    "open": 2,
     "pga": 4
    },
-   "total": 11,
+   "total": 13,
    "place": 4
   }
  ],
@@ -66,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2002/2002 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 4,
       "Michael": 2,
@@ -83,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2002/2002 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -100,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2002/2002 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -117,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2002/2002 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 3,
       "Michael": 4,
@@ -630,7 +634,7 @@
    ],
    "field_size": 98,
    "error": null,
-   "updated": "2026-11-10T16:30-05:00"
+   "updated": "2026-11-10T16:56-05:00"
   },
   {
    "key": "usopen",
@@ -644,7 +648,7 @@
     {
      "day": 1,
      "file": "snapshots/2002/2002 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 2,
       "Michael": 3,
@@ -661,7 +665,7 @@
     {
      "day": 2,
      "file": "snapshots/2002/2002 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 3,
       "Michael": 1,
@@ -678,7 +682,7 @@
     {
      "day": 3,
      "file": "snapshots/2002/2002 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 3,
       "Michael": 1,
@@ -695,7 +699,7 @@
     {
      "day": 4,
      "file": "snapshots/2002/2002 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 3,
@@ -1201,7 +1205,592 @@
    ],
    "field_size": 158,
    "error": null,
-   "updated": "2026-11-10T16:30-05:00"
+   "updated": "2026-11-10T16:56-05:00"
+  },
+  {
+   "key": "open",
+   "name": "British Open",
+   "state": "final",
+   "event_id": "94",
+   "start": "2002-07-18",
+   "end": "2002-07-21",
+   "venue": null,
+   "snapshots": [
+    {
+     "day": 1,
+     "file": "snapshots/2002/2002 British Open - Day 1.csv",
+     "saved": "2026-11-10T16:56-05:00",
+     "ranks": {
+      "David": 4,
+      "Michael": 2,
+      "Alan": 1,
+      "Judy": 3
+     },
+     "totals": {
+      "David": "E",
+      "Michael": "-4",
+      "Alan": "-12",
+      "Judy": "-4"
+     }
+    },
+    {
+     "day": 2,
+     "file": "snapshots/2002/2002 British Open - Day 2.csv",
+     "saved": "2026-11-10T16:56-05:00",
+     "ranks": {
+      "David": 3,
+      "Michael": 4,
+      "Alan": 1,
+      "Judy": 2
+     },
+     "totals": {
+      "David": "-13",
+      "Michael": "-3",
+      "Alan": "-15",
+      "Judy": "-14"
+     }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2002/2002 British Open - Day 3.csv",
+     "saved": "2026-11-10T16:56-05:00",
+     "ranks": {
+      "David": 4,
+      "Michael": 1,
+      "Alan": 3,
+      "Judy": 2
+     },
+     "totals": {
+      "David": "+10",
+      "Michael": "-4",
+      "Alan": "+4",
+      "Judy": "+1"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2002/2002 British Open - Day 4.csv",
+     "saved": "2026-11-10T16:56-05:00",
+     "ranks": {
+      "David": 3,
+      "Michael": 2,
+      "Alan": 1,
+      "Judy": 4
+     },
+     "totals": {
+      "David": "-2",
+      "Michael": "-14",
+      "Alan": "-14",
+      "Judy": "-1"
+     }
+    }
+   ],
+   "round": 4,
+   "source": "leaderboard feed",
+   "standings": [
+    {
+     "person": "David",
+     "rank": 3,
+     "total": "-2",
+     "usable": 8,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Tiger Woods",
+       "espn": "Tiger Woods",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jim Furyk",
+       "espn": "Jim Furyk",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Mike Weir",
+       "espn": "Mike Weir",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Colin Montgomerie",
+       "espn": "Colin Montgomerie",
+       "score": "+13",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Darren Clarke",
+       "espn": "Darren Clarke",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Scott Verplank",
+       "espn": "Scott Verplank",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Hal Sutton",
+       "espn": "Hal Sutton",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Bernhard Langer",
+       "espn": "Bernhard Langer",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Scott Hoch",
+       "espn": "Scott Hoch",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jose Maria Olazabal",
+       "espn": "José María Olazábal",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Jose Coceres",
+       "espn": "José Coceres",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Joe Durant",
+       "espn": "Joe Durant",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Michael",
+     "rank": 2,
+     "total": "-14",
+     "usable": 6,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "David Duval",
+       "espn": "David Duval",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Sergio Garcia",
+       "espn": "Sergio Garcia",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Davis Love III",
+       "espn": "Davis Love III",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Nick Price",
+       "espn": "Nick Price",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Tom Lehman",
+       "espn": "Tom Lehman",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Justin Leonard",
+       "espn": "Justin Leonard",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Kirk Triplett",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Lee Westwood",
+       "espn": "Lee Westwood",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Chris Perry",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "John Huston",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Kenny Perry",
+       "espn": "Kenny Perry",
+       "score": null,
+       "status": "DNS",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Loren Roberts",
+       "espn": "Loren Roberts",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Alan",
+     "rank": 1,
+     "total": "-14",
+     "usable": 7,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Phil Mickelson",
+       "espn": "Phil Mickelson",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "David Toms",
+       "espn": "David Toms",
+       "score": "+14",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Padraig Harrington",
+       "espn": "Padraig Harrington",
+       "score": "-5",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Stewart Cink",
+       "espn": "Stewart Cink",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Retief Goosen",
+       "espn": "Retief Goosen",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Robert Allenby",
+       "espn": "Robert Allenby",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Chad Campbell",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Stuart Appleby",
+       "espn": "Stuart Appleby",
+       "score": "-6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Thomas Bjorn",
+       "espn": "Thomas Bjørn",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Miguel Angel Jimenez",
+       "espn": "Miguel Angel Jiménez",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Steve Lowery",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Toshimitzu Izawa",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Judy",
+     "rank": 4,
+     "total": "-1",
+     "usable": 8,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Vijay Singh",
+       "espn": "Vijay Singh",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ernie Els",
+       "espn": "Ernie Els",
+       "score": "-6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Mark Calcavecchia",
+       "espn": "Mark Calcavecchia",
+       "score": "+11",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Jesper Parnevik",
+       "espn": "Jesper Parnevik",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Chris DiMarco",
+       "espn": "Chris DiMarco",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Bob Estes",
+       "espn": "Bob Estes",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Rocco Mediate",
+       "espn": "Rocco Mediate",
+       "score": "+3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Angel Cabrera",
+       "espn": "Ángel Cabrera",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Brad Faxon",
+       "espn": "Brad Faxon",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Paul Azinger",
+       "espn": "Paul Azinger",
+       "score": null,
+       "status": "DNS",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Shingo Katayama",
+       "espn": "Shingo Katayama",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Steve Stricker",
+       "espn": "Steve Stricker",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": false
+      }
+     ]
+    }
+   ],
+   "name_check": [
+    {
+     "person": "David",
+     "roster": "Jose Maria Olazabal",
+     "espn": "José María Olazábal",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Jose Coceres",
+     "espn": "José Coceres",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "Kirk Triplett",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "Chris Perry",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "John Huston",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Chad Campbell",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Thomas Bjorn",
+     "espn": "Thomas Bjørn",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Miguel Angel Jimenez",
+     "espn": "Miguel Angel Jiménez",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Steve Lowery",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Toshimitzu Izawa",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Angel Cabrera",
+     "espn": "Ángel Cabrera",
+     "kind": "spelling",
+     "suggestion": null
+    }
+   ],
+   "field_size": 159,
+   "error": null,
+   "updated": "2026-11-10T16:56-05:00"
   },
   {
    "key": "pga",
@@ -1215,7 +1804,7 @@
     {
      "day": 1,
      "file": "snapshots/2002/2002 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 2,
@@ -1232,7 +1821,7 @@
     {
      "day": 2,
      "file": "snapshots/2002/2002 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 2,
       "Michael": 1,
@@ -1249,7 +1838,7 @@
     {
      "day": 3,
      "file": "snapshots/2002/2002 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 3,
@@ -1266,7 +1855,7 @@
     {
      "day": 4,
      "file": "snapshots/2002/2002 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "David": 1,
       "Michael": 4,
@@ -1758,13 +2347,8 @@
    ],
    "field_size": 158,
    "error": null,
-   "updated": "2026-11-10T16:30-05:00"
-  },
-  {
-   "key": "open",
-   "name": "British Open",
-   "state": "upcoming"
+   "updated": "2026-11-10T16:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:30-05:00"
+ "updated": "2026-11-10T16:56-05:00"
 }

@@ -12,9 +12,10 @@
    "ranks": {
     "masters": 1,
     "usopen": 1,
+    "open": 1,
     "pga": 1
    },
-   "total": 3,
+   "total": 4,
    "place": 1
   },
   {
@@ -22,9 +23,10 @@
    "ranks": {
     "masters": 2,
     "usopen": 3,
+    "open": 3,
     "pga": 2
    },
-   "total": 7,
+   "total": 10,
    "place": 2
   },
   {
@@ -32,9 +34,10 @@
    "ranks": {
     "masters": 4,
     "usopen": 2,
+    "open": 4,
     "pga": 3
    },
-   "total": 9,
+   "total": 13,
    "place": 3
   },
   {
@@ -42,10 +45,11 @@
    "ranks": {
     "masters": 3,
     "usopen": 4,
+    "open": 2,
     "pga": 4
    },
-   "total": 11,
-   "place": 4
+   "total": 13,
+   "place": 3
   }
  ],
  "majors": [
@@ -66,7 +70,7 @@
     {
      "day": 1,
      "file": "snapshots/2004/2004 Masters - Day 1.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -83,7 +87,7 @@
     {
      "day": 2,
      "file": "snapshots/2004/2004 Masters - Day 2.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -100,7 +104,7 @@
     {
      "day": 3,
      "file": "snapshots/2004/2004 Masters - Day 3.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -117,7 +121,7 @@
     {
      "day": 4,
      "file": "snapshots/2004/2004 Masters - Day 4.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 4,
@@ -609,7 +613,7 @@
    ],
    "field_size": 100,
    "error": null,
-   "updated": "2026-11-10T16:30-05:00"
+   "updated": "2026-11-10T16:56-05:00"
   },
   {
    "key": "usopen",
@@ -623,7 +627,7 @@
     {
      "day": 1,
      "file": "snapshots/2004/2004 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -640,7 +644,7 @@
     {
      "day": 2,
      "file": "snapshots/2004/2004 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 1,
@@ -657,7 +661,7 @@
     {
      "day": 3,
      "file": "snapshots/2004/2004 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 2,
@@ -674,7 +678,7 @@
     {
      "day": 4,
      "file": "snapshots/2004/2004 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 2,
@@ -1166,7 +1170,592 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:30-05:00"
+   "updated": "2026-11-10T16:56-05:00"
+  },
+  {
+   "key": "open",
+   "name": "British Open",
+   "state": "final",
+   "event_id": "174",
+   "start": "2004-07-15",
+   "end": "2004-07-18",
+   "venue": null,
+   "snapshots": [
+    {
+     "day": 1,
+     "file": "snapshots/2004/2004 British Open - Day 1.csv",
+     "saved": "2026-11-10T16:56-05:00",
+     "ranks": {
+      "Alan": 2,
+      "Judy": 4,
+      "David": 3,
+      "Michael": 1
+     },
+     "totals": {
+      "Alan": "-7",
+      "Judy": "-3",
+      "David": "-7",
+      "Michael": "-8"
+     }
+    },
+    {
+     "day": 2,
+     "file": "snapshots/2004/2004 British Open - Day 2.csv",
+     "saved": "2026-11-10T16:56-05:00",
+     "ranks": {
+      "Alan": 1,
+      "Judy": 3,
+      "David": 2,
+      "Michael": 4
+     },
+     "totals": {
+      "Alan": "-13",
+      "Judy": "-10",
+      "David": "-10",
+      "Michael": "-3"
+     }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2004/2004 British Open - Day 3.csv",
+     "saved": "2026-11-10T16:56-05:00",
+     "ranks": {
+      "Alan": 1,
+      "Judy": 4,
+      "David": 2,
+      "Michael": 3
+     },
+     "totals": {
+      "Alan": "-17",
+      "Judy": "-4",
+      "David": "-9",
+      "Michael": "-4"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2004/2004 British Open - Day 4.csv",
+     "saved": "2026-11-10T16:56-05:00",
+     "ranks": {
+      "Alan": 1,
+      "Judy": 4,
+      "David": 3,
+      "Michael": 2
+     },
+     "totals": {
+      "Alan": "-11",
+      "Judy": "+3",
+      "David": "-2",
+      "Michael": "-9"
+     }
+    }
+   ],
+   "round": 4,
+   "source": "leaderboard feed",
+   "standings": [
+    {
+     "person": "Alan",
+     "rank": 1,
+     "total": "-11",
+     "usable": 8,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Tiger Woods",
+       "espn": "Tiger Woods",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Retief Goosen",
+       "espn": "Retief Goosen",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Phil Mickelson",
+       "espn": "Phil Mickelson",
+       "score": "-9",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Stuart Appleby",
+       "espn": "Stuart Appleby",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Robert Allenby",
+       "espn": "Robert Allenby",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Jerry Kelly",
+       "espn": "Jerry Kelly",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Chris DiMarco",
+       "espn": "Chris DiMarco",
+       "score": "+12",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Chris Riley",
+       "espn": "Chris Riley",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Thomas Bjorn",
+       "espn": "Thomas Bjørn",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Scott Hoch",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Steve Flesch",
+       "espn": "Steve Flesch",
+       "score": "+8",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "K.J. Choi",
+       "espn": "K.J. Choi",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "Judy",
+     "rank": 4,
+     "total": "+3",
+     "usable": 7,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Vijay Singh",
+       "espn": "Vijay Singh",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Mike Weir",
+       "espn": "Mike Weir",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Kenny Perry",
+       "espn": "Kenny Perry",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Charles Howell III",
+       "espn": "Charles Howell III",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Nick Price",
+       "espn": "Nick Price",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Peter Lonard",
+       "espn": "Peter Lonard",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Bob Estes",
+       "espn": "Bob Estes",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Fred Funk",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Brad Faxon",
+       "espn": "Brad Faxon",
+       "score": "+10",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Loren Roberts",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Angel Cabrera",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Len Mattiace",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "David",
+     "rank": 3,
+     "total": "-2",
+     "usable": 6,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Ernie Els",
+       "espn": "Ernie Els",
+       "score": "-10",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Sergio Garcia",
+       "espn": "Sergio Garcia",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Padraig Harrington",
+       "espn": "Padraig Harrington",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Chad Campbell",
+       "espn": "Chad Campbell",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Adam Scott",
+       "espn": "Adam Scott",
+       "score": "+6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Ben Curtis",
+       "espn": "Ben Curtis",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Darren Clarke",
+       "espn": "Darren Clarke",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Fredrik Jacobson",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ian Poulter",
+       "espn": "Ian Poulter",
+       "score": "+2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Shaun Micheel",
+       "espn": "Shaun Micheel",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Fred Couples",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Colin Montgomerie",
+       "espn": "Colin Montgomerie",
+       "score": "+2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "Michael",
+     "rank": 2,
+     "total": "-9",
+     "usable": 7,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Davis Love III",
+       "espn": "Davis Love III",
+       "score": "-5",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jim Furyk",
+       "espn": "Jim Furyk",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "David Toms",
+       "espn": "David Toms",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Justin Leonard",
+       "espn": "Justin Leonard",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Paul Casey",
+       "espn": "Paul Casey",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Scott Verplank",
+       "espn": "Scott Verplank",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jonathan Kaye",
+       "espn": "Jonathan Kaye",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Rocco Mediate",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Kirk Triplett",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Stewart Cink",
+       "espn": "Stewart Cink",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "David Duval",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Shigeki Maruyama",
+       "espn": "Shigeki Maruyama",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": false
+      }
+     ]
+    }
+   ],
+   "name_check": [
+    {
+     "person": "Alan",
+     "roster": "Thomas Bjorn",
+     "espn": "Thomas Bjørn",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Scott Hoch",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Fred Funk",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Loren Roberts",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Angel Cabrera",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Judy",
+     "roster": "Len Mattiace",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Fredrik Jacobson",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Fred Couples",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "Rocco Mediate",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "Kirk Triplett",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "David Duval",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    }
+   ],
+   "field_size": 156,
+   "error": null,
+   "updated": "2026-11-10T16:56-05:00"
   },
   {
    "key": "pga",
@@ -1180,7 +1769,7 @@
     {
      "day": 1,
      "file": "snapshots/2004/2004 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1197,7 +1786,7 @@
     {
      "day": 2,
      "file": "snapshots/2004/2004 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 2,
       "Judy": 3,
@@ -1214,7 +1803,7 @@
     {
      "day": 3,
      "file": "snapshots/2004/2004 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1231,7 +1820,7 @@
     {
      "day": 4,
      "file": "snapshots/2004/2004 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:30-05:00",
+     "saved": "2026-11-10T16:56-05:00",
      "ranks": {
       "Alan": 1,
       "Judy": 3,
@@ -1723,13 +2312,8 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:30-05:00"
-  },
-  {
-   "key": "open",
-   "name": "British Open",
-   "state": "upcoming"
+   "updated": "2026-11-10T16:56-05:00"
   }
  ],
- "updated": "2026-11-10T16:30-05:00"
+ "updated": "2026-11-10T16:56-05:00"
 }
