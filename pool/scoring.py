@@ -94,17 +94,24 @@ def build_golfers(roster: list[str], matches: list[Match], rows_by_name: dict[st
         if row is None:
             out.append(Golfer(name, None, None, "DNP", True))
             continue
-        if row.out == "CUT" and day == 1 and par and row.rounds[0]:
+        if row.out == "CUT" and day == 1 and row.rounds[0]:
             # Only matters when filling in a past major: the cut came after Day 1
-            out.append(Golfer(name, row.name, row.rounds[0] - par, "F", False))
-            continue
+            r1 = parse_score(row.round_to_par[0] or "")
+            if r1 is None and par:
+                r1 = row.rounds[0] - par
+            if r1 is not None:
+                out.append(Golfer(name, row.name, r1, "F", False))
+                continue
         if row.out:
             out.append(Golfer(name, row.name, None, row.out, True))
             continue
         score = parse_score(row.score)
-        if day is not None and par:
+        if day is not None:
+            per_round = [parse_score(x) if x else None for x in row.round_to_par[:day]]
             done = row.rounds[:day]
-            if all(done):
+            if all(v is not None for v in per_round):
+                score = sum(per_round)
+            elif par and all(done):
                 score = sum(done) - par * day
         if score is None:
             score = 0  # not started yet: level par, as ESPN shows it

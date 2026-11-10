@@ -157,6 +157,13 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
 
     data_path = DOCS / "data" / f"{year}.json"
     data = json.loads(data_path.read_text(encoding="utf-8")) if data_path.exists() else {}
+    if backfill:
+        # Rebuild the season from scratch: forget saved results and day files
+        data = {}
+        snap_dir = DOCS / "snapshots" / str(year)
+        if snap_dir.exists():
+            for f in snap_dir.glob("*.csv"):
+                f.unlink()
     before = json.dumps(data, sort_keys=True)
     data.setdefault("year", year)
     data["people"] = list(teams)
@@ -244,7 +251,8 @@ def probe(event_id: str) -> None:
             (out / (fname + ".error.txt")).write_text(repr(exc), encoding="utf-8")
             print(f"{fname}: FAILED {exc!r}")
 
-    for name, fn in (("html", espn.fetch_html), ("feed", espn.fetch_feed), ("feed-alt", espn.fetch_feed_alt)):
+    for name, fn in (("leaderboard feed", espn.fetch_leaderboard_feed), ("leaderboard page", espn.fetch_html),
+                     ("scoreboard feed", espn.fetch_feed)):
         print(f"\n=== {name} ===")
         try:
             rows = fn(event_id)

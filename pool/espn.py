@@ -32,7 +32,7 @@ TIMEOUT = 30
 SCHEDULE_URL = "https://site.api.espn.com/apis/site/v2/sports/golf/pga/scoreboard"
 FEED_EVENT_URL = "https://site.api.espn.com/apis/site/v2/sports/golf/pga/scoreboard/{event_id}"
 FEED_LEADERBOARD_URL = "https://site.web.api.espn.com/apis/site/v2/sports/golf/leaderboard"
-HTML_URL = "https://www.espn.com/golf/leaderboard?tournamentId={event_id}"
+HTML_URL = "https://www.espn.com/golf/leaderboard/_/tournamentId/{event_id}"
 
 OUT_STATUSES = ("CUT", "WD", "DQ", "DNS", "DNP")
 
@@ -53,8 +53,9 @@ class Row:
     score: str = ""            # to par as shown: "-5", "E", "+2", "" before start
     thru: str = ""             # "F", "12", "1:44 PM", ""
     out: str = ""              # one of OUT_STATUSES, or ""
-    rounds: list = field(default_factory=lambda: [None, None, None, None])  # strokes per round
+    rounds: list = field(default_factory=lambda: [None, None, None, None])  # strokes per finished round
     total: int | None = None   # total strokes
+    round_to_par: list = field(default_factory=lambda: [None, None, None, None])  # per finished round, if known
 
 
 @dataclass
@@ -151,7 +152,8 @@ def _parse_date(value):
 def fetch_leaderboard(event_id: str) -> tuple[list[Row], str]:
     """Return (rows, source_name). Raises FetchError if every source fails."""
     problems = []
-    for source, fn in (("html", fetch_html), ("feed", fetch_feed), ("feed-alt", fetch_feed_alt)):
+    for source, fn in (("leaderboard feed", fetch_leaderboard_feed), ("leaderboard page", fetch_html),
+                       ("scoreboard feed", fetch_feed)):
         try:
             rows = fn(event_id)
             ok, why = looks_valid(rows)
@@ -240,102 +242,130 @@ def _int(x):
 
 
 # ---- Source 2 and 3: ESPN's JSON feed ------------------------------------
-def fetch_feed(event_id: str) -> list[Row]:
-    data = _get(FEED_EVENT_URL.format(event_id=event_id)).json()
-    comps = data.get("competitions") or []
-    if not comps:
-        raise FetchError("no competitions in feed")
-    return [parse_feed_competitor(c) for c in comps[0].get("competitors") or []]
-
-
-def fetch_feed_alt(event_id: str) -> list[Row]:
+def fetch_leaderboard_feed(event_id: str) -> list[Row]:
+    """ESPN's leaderboard feed: the same data as the leaderboard on espn.com,
+    with each golfer's status (finished, cut, withdrawn), hole and round."""
     data = _get(FEED_LEADERBOARD_URL, params={"league": "pga", "event": event_id}).json()
+    return parse_leaderboard_feed(data)
+
+
+def parse_leaderboard_feed(data: dict) -> list[Row]:
     events = data.get("events") or []
     if not events:
         raise FetchError("no events in leaderboard feed")
     comps = events[0].get("competitions") or []
     if not comps:
         raise FetchError("no competitions in leaderboard feed")
-    return [parse_feed_competitor(c) for c in comps[0].get("competitors") or []]
+    return [_leaderboard_row(c) for c in comps[0].get("competitors") or []]
+
+
+def _tee_time(iso: str | None) -> str:
+    if not iso:
+        return ""
+    try:
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        t = datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(ZoneInfo("America/New_York"))
+        return t.strftime("%-I:%M %p")
+    except Exception:
+        return ""
+
+
+def _out_status(stype: dict, display: str) -> str:
+    words = " ".join(str(stype.get(k, "")) for k in ("name", "description", "shortDetail")).upper()
+    display = (display or "").upper()
+    if display in OUT_STATUSES:
+        return display
+    if "CUT" in words and "MADE" not in words:
+        return "CUT"
+    if "WITHDR" in words or re.search(r"\bWD\b", words):
+        return "WD"
+    if "DISQUAL" in words or re.search(r"\bDQ\b", words):
+        return "DQ"
+    if "DID NOT START" in words or re.search(r"\bDNS\b", words):
+        return "DNS"
+    return ""
+
+
+def _leaderboard_row(c: dict) -> Row:
+    athlete = c.get("athlete") or {}
+    name = athlete.get("displayName") or athlete.get("fullName") or ""
+    status = c.get("status") or {}
+    stype = status.get("type") or {}
+    display = str(status.get("displayValue") or "")
+    out = _out_status(stype, display)
+
+    period = status.get("period") if isinstance(status.get("period"), int) else None
+    thru = status.get("thru")
+    thru = thru if isinstance(thru, int) else None
+    finished_now = thru == 18 or stype.get("name") == "STATUS_FINISH" or display.upper() == "F"
+
+    rounds, to_par = [None] * 4, [None] * 4
+    for ls in c.get("linescores") or []:
+        p = ls.get("period")
+        val = ls.get("value")
+        if not isinstance(p, int) or not 1 <= p <= 4 or not isinstance(val, (int, float)) or val <= 0:
+            continue
+        complete = period is None or p < period or (p == period and finished_now)
+        if complete:
+            rounds[p - 1] = int(val)
+            rp = ls.get("displayValue")
+            to_par[p - 1] = rp if isinstance(rp, str) else None
+
+    if out:
+        shown = "F"
+    elif finished_now:
+        shown = "F"
+    elif thru and 0 < thru < 18:
+        shown = str(thru)
+    else:
+        shown = _tee_time(status.get("teeTime")) or ""
+
+    pos = status.get("position") or {}
+    return Row(
+        name=name,
+        pos=str(pos.get("displayName") or "") if isinstance(pos, dict) else "",
+        score="" if out else _text(c.get("score")),
+        thru=shown,
+        out=out,
+        rounds=rounds,
+        total=sum(r for r in rounds if r) or None,
+        round_to_par=to_par,
+    )
+
+
+def fetch_feed(event_id: str) -> list[Row]:
+    """ESPN's scoreboard feed: a last resort. It has scores and rounds but no
+    status, so cut golfers are inferred from the rounds they didn't play."""
+    data = _get(FEED_EVENT_URL.format(event_id=event_id)).json()
+    comps = data.get("competitions") or []
+    if not comps:
+        raise FetchError("no competitions in feed")
+    rows = []
+    for c in comps[0].get("competitors") or []:
+        athlete = c.get("athlete") or {}
+        rounds, to_par = [None] * 4, [None] * 4
+        for ls in c.get("linescores") or []:
+            p, val, holes = ls.get("period"), ls.get("value"), ls.get("linescores")
+            if isinstance(p, int) and 1 <= p <= 4 and isinstance(val, (int, float)) and val > 0 \
+                    and isinstance(holes, list) and len(holes) >= 18:
+                rounds[p - 1] = int(val)
+                to_par[p - 1] = ls.get("displayValue")
+        rows.append(Row(name=athlete.get("displayName") or "", pos=str(c.get("order") or ""),
+                        score=_text(c.get("score")), thru="F", rounds=rounds,
+                        total=sum(r for r in rounds if r) or None, round_to_par=to_par))
+    if any(r.rounds[2] for r in rows):  # round 3 played: anyone who stopped after 2 was cut
+        for r in rows:
+            if r.rounds[0] and r.rounds[1] and not r.rounds[2]:
+                r.out, r.score = "CUT", ""
+    return rows
+
+
+def fetch_feed_alt(event_id: str) -> list[Row]:  # kept for the probe command
+    return fetch_leaderboard_feed(event_id)
 
 
 def _text(v):
     if isinstance(v, dict):
         return str(v.get("displayValue") or v.get("value") or "")
     return "" if v is None else str(v)
-
-
-def _feed_thru(status: dict, holes_this_round) -> str:
-    """Turn the feed's status into the table's THRU value: F, a hole, or a tee time."""
-    raw = ""
-    for key in ("thru", "displayValue", "detail"):
-        v = status.get(key)
-        if v not in (None, ""):
-            raw = str(v).strip()
-            break
-    tee = re.search(r"\d{1,2}:\d{2}\s*[AP]M", raw, re.I)
-    if tee:
-        return tee.group(0).upper()
-    if raw.upper().startswith("F"):
-        return "F"
-    hole = re.search(r"\d+", raw)
-    if hole:
-        n = int(hole.group(0))
-        return "F" if n >= 18 else (str(n) if n > 0 else "")
-    if holes_this_round:
-        return "F" if holes_this_round >= 18 else str(holes_this_round)
-    return ""
-
-
-def parse_feed_competitor(c: dict) -> Row:
-    athlete = c.get("athlete") or {}
-    name = athlete.get("displayName") or athlete.get("fullName") or ""
-    status = c.get("status") or {}
-    stype = status.get("type") or {}
-    status_words = " ".join(str(stype.get(k, "")) for k in ("name", "description", "shortDetail", "state")).upper()
-
-    score = _text(c.get("score"))
-    out = ""
-    if score.upper() in OUT_STATUSES:
-        out = score.upper()
-    elif "CUT" in status_words:
-        out = "CUT"
-    elif "WITHDR" in status_words or re.search(r"\bWD\b", status_words):
-        out = "WD"
-    elif "DISQUAL" in status_words or re.search(r"\bDQ\b", status_words):
-        out = "DQ"
-
-    # Round strokes: a round counts once all 18 holes are in, when the feed
-    # gives hole-by-hole detail; otherwise rounds before the current one count.
-    current_period = status.get("period")
-    rounds = [None, None, None, None]
-    holes_this_round = None
-    for ls in c.get("linescores") or []:
-        p = ls.get("period")
-        if not isinstance(p, int) or not 1 <= p <= 4:
-            continue
-        holes = ls.get("linescores")
-        val = ls.get("value")
-        if isinstance(holes, list) and holes:
-            if p == current_period or holes_this_round is None:
-                holes_this_round = len(holes)
-            complete = len(holes) >= 18
-        else:
-            complete = current_period is None or p < current_period
-        if complete and isinstance(val, (int, float)) and val > 0:
-            rounds[p - 1] = int(val)
-
-    thru = _feed_thru(status, holes_this_round)
-
-    pos = ""
-    pos_obj = status.get("position") or {}
-    if isinstance(pos_obj, dict):
-        pos = str(pos_obj.get("displayName") or "")
-    if not pos and c.get("order") is not None:
-        pos = str(c.get("order"))
-
-    return Row(
-        name=name, pos=pos, score="" if out else score,
-        thru="F" if out else thru.replace("*", ""), out=out, rounds=rounds,
-        total=sum(r for r in rounds if r) or None,
-    )
