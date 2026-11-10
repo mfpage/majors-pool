@@ -3,5 +3,14 @@
   "event_ids": {
     "2026": {}
   },
-  "name_overrides": {}
+  "name_overrides": {
+    "_note": "ESPN has since renamed these golfers on its older leaderboards. The teams files keep the names as recorded; these are used only when that name isn't found.",
+    "Miguel Jimenez": "Miguel Angel Jimenez",
+    "Matthew Fitzpatrick": "Matt Fitzpatrick",
+    "Rafael Cabrera Bello": "Rafa Cabrera Bello",
+    "Alexander Noren": "Alex Noren",
+    "Gonzalo Fdez-Castano": "Gonzalo Fernandez-Castano",
+    "Fredrik Jacobson": "Freddie Jacobson",
+    "Jeev Singh": "Jeev Milkha Singh"
+  }
 }

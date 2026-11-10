@@ -150,6 +150,13 @@ def test_name_matching():
     assert two.kind in ("exact", "spelling", "dnp")
     over = match_roster(["Matt Fitzpatrick"], field, {"Matt Fitzpatrick": "Matthew Fitzpatrick"})[0]
     assert over.kind == "override" and over.espn_name == "Matthew Fitzpatrick"
+    renamed = {"Miguel Jimenez": "Miguel Angel Jimenez", "Matthew Fitzpatrick": "Matt Fitzpatrick"}
+    now = match_roster(["Miguel Jimenez", "Matthew Fitzpatrick"], ["Miguel Ángel Jiménez", "Matt Fitzpatrick"], renamed)
+    assert [(m.espn_name, m.kind) for m in now] == [("Miguel Ángel Jiménez", "override"), ("Matt Fitzpatrick", "override")]
+    then = match_roster(["Matthew Fitzpatrick"], ["Matthew Fitzpatrick"], renamed)[0]
+    assert (then.espn_name, then.kind) == ("Matthew Fitzpatrick", "exact"), "the name as written wins when ESPN still uses it"
+    forced = match_roster(["Tiger Woods"], ["Tiger Woods"], {"Tiger Woods": None})[0]
+    assert forced.espn_name is None
     print("ok  name matching: accents/punctuation, one-letter typos, flipped names; nothing looser")
 
 

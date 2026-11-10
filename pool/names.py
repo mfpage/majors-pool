@@ -88,15 +88,26 @@ def match_roster(roster: list[str], field: list[str], overrides: dict | None = N
     field_set = set(field)
     results = []
     for name in roster:
-        if name in overrides:
-            target = overrides[name]
-            if target is None:
-                results.append(Match(name, None, "override"))
-            elif target in field_set:
-                results.append(Match(name, target, "override"))
-            else:
-                results.append(Match(name, None, "dnp", suggestion=f"override '{target}' not in field"))
+        if name in overrides and overrides[name] is None:
+            results.append(Match(name, None, "override"))  # forced DNP
             continue
+        if name in overrides and name not in field_set:
+            # ESPN's later name for him: used only when the name as written isn't
+            # in the field (e.g. "Matthew" Fitzpatrick in older seasons, "Matt" now)
+            targets = overrides[name] if isinstance(overrides[name], list) else [overrides[name]]
+            hit = None
+            for t in targets:
+                if t in field_set:
+                    hit = t
+                else:
+                    kind, hits = find_close(t, field)
+                    if kind == "spelling" and len(hits) == 1:
+                        hit = hits[0]
+                if hit:
+                    break
+            if hit:
+                results.append(Match(name, hit, "override"))
+                continue
         if name in field_set:
             results.append(Match(name, name, "exact"))
             continue
