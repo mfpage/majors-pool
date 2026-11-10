@@ -141,6 +141,11 @@ def test_name_matching():
     assert got["Matt Fitzpatrick"][1] == "dnp", "nicknames are too loose to match"
     assert got["Nicholas Taylor"][1] == "dnp"
     assert got["Tiger Woods"] == (None, "dnp")
+    extra = {m.roster_name: (m.espn_name, m.kind) for m in
+             match_roster(["Nick Faldo", "Frank Lickliter", "Davis Love"],
+                          ["Sir Nick Faldo", "Frank Lickliter II", "Davis Love III"])}
+    assert extra == {"Nick Faldo": ("Sir Nick Faldo", "spelling"), "Frank Lickliter": ("Frank Lickliter II", "spelling"),
+                     "Davis Love": ("Davis Love III", "spelling")}, extra
     two = match_roster(["Ludvig Aberg"], ["Ludvig Åberg", "Ludvig Aberg "])[0]  # two candidates: don't guess
     assert two.kind in ("exact", "spelling", "dnp")
     over = match_roster(["Matt Fitzpatrick"], field, {"Matt Fitzpatrick": "Matthew Fitzpatrick"})[0]
@@ -280,6 +285,38 @@ def test_roster_catch_up():
     print("ok  roster check catches up on the season's earlier tournaments")
 
 
+def test_wikipedia_parser():
+    from pool import wikipedia
+    html = (HERE / "fixtures" / "wiki-sample.html").read_text(encoding="utf-8")
+    rows, par = wikipedia.parse_leaderboard(html)
+    by = {r.name: r for r in rows}
+    assert par == 72, par
+    assert by["José María Olazábal"].rounds == [70, 66, 73, 71] and by["José María Olazábal"].score == "-8"
+    assert by["José María Olazábal"].round_to_par == ["-2", "-6", "+1", "-1"]
+    assert by["Steve Pate"].rounds == [71, 75, 65, 69] and by["Greg Norman"].score == "-4"
+    assert by["Thomas Bjørn"].out == "CUT" and by["Fred Funk"].out == "CUT" and by["Fred Funk"].rounds[:2] == [76, 73]
+    assert by["Jack Nicklaus"].out == "WD"
+    venue, start, end = wikipedia.parse_infobox(html, 1999)
+    assert venue == {"course": "Augusta National Golf Club", "place": "Augusta, Georgia", "par": 72, "yards": 6985}, venue
+    assert (start, end) == (date(1999, 4, 8), date(1999, 4, 11))
+    print("ok  Wikipedia leaderboard parser: rounds, ties, cut, withdrawals, course details")
+
+
+def test_european_tour_copy():
+    """Michael's saved europeantour.com leaderboard for the 2000 PGA Championship."""
+    from pool import history
+    rows, par = history.parse((HERE / "fixtures" / "et-2000-pga.html").read_text(encoding="utf-8"))
+    by = {r.name: r for r in rows}
+    assert len(rows) == 150 and par == 72
+    assert by["Tiger Woods"].rounds == [66, 67, 70, 67] and by["Tiger Woods"].score == "-18"
+    assert by["Thomas Bjørn"].round_to_par == ["E", "-4", "-5", "-4"]
+    assert sum(r.out == "CUT" for r in rows) == 65 and by["Ben Crenshaw"].out == "WD"
+    assert "Jean Van De Velde" in by and "Davis Love III" in by
+    m = match_roster(["Blaine McCallister"], list(by))[0]
+    assert m.kind == "exact" and m.espn_name == "Blaine Mccallister"
+    print("ok  saved European Tour leaderboard: 150 golfers, rounds, cut, withdrawals, names")
+
+
 if __name__ == "__main__":
     test_name_matching()
     test_html_parser()
@@ -290,4 +327,6 @@ if __name__ == "__main__":
     test_health_check()
     test_roster_names()
     test_roster_catch_up()
+    test_wikipedia_parser()
+    test_european_tour_copy()
     print("all passed")

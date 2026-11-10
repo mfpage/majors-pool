@@ -94,13 +94,16 @@ def build_golfers(roster: list[str], matches: list[Match], rows_by_name: dict[st
         if row is None:
             out.append(Golfer(name, None, None, "DNP", True))
             continue
-        if row.out == "CUT" and day == 1 and row.rounds[0]:
-            # Only matters when filling in a past major: the cut came after Day 1
-            r1 = parse_score(row.round_to_par[0] or "")
-            if r1 is None and par:
-                r1 = row.rounds[0] - par
-            if r1 is not None:
-                out.append(Golfer(name, row.name, r1, "F", False))
+        if day is not None and row.out in ("CUT", "WD") and all(row.rounds[:day]) and \
+                (row.out == "WD" or day == 1):
+            # Filling in a past major: he was still in at the end of this day
+            # (cut golfers until the cut after day 2; withdrawals until the
+            # round they didn't finish)
+            parts = [parse_score(x) if x else None for x in row.round_to_par[:day]]
+            if any(v is None for v in parts) and par:
+                parts = [r - par for r in row.rounds[:day]]
+            if all(v is not None for v in parts):
+                out.append(Golfer(name, row.name, sum(parts), "F", False))
                 continue
         if row.out:
             out.append(Golfer(name, row.name, None, row.out, True))

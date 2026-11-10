@@ -85,6 +85,22 @@ ESPN, with day files, and they appear in the Season menu. Backfilling a year
 rebuilds it from scratch, so it's safe to run again. Day files for past
 seasons come from final round scores.
 
+## 1999 and 2000
+
+ESPN's data starts in 2001. For 1999 and 2000, backfill reads leaderboards
+saved from europeantour.com in the `history/` folder, named like
+`history/2000 PGA Championship.html` (year, then Masters, PGA Championship,
+US Open or British Open). To save one: open the tournament's leaderboard on
+europeantour.com, undock Chrome's inspector into its own window so the page
+stays full width (R1-R4 columns showing), and in the Console run
+
+```
+copy(document.querySelector("table.VueTables__table").outerHTML)
+```
+
+then paste into a new file with that name. Any major without a saved file
+falls back to Wikipedia.
+
 ## When something looks wrong
 
 **Checking roster names.** The health page's Roster names tab lists all 48

@@ -34,9 +34,16 @@ def plain(name: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+SUFFIX = re.compile(r"\s+(jr|sr|ii|iii|iv)$")
+TITLE = re.compile(r"^(sir|dr)\s+")
+
+
 def key(name: str) -> str:
-    """plain() with the spaces removed, so 'Si Woo' == 'Si-Woo' == 'Siwoo'."""
-    return plain(name).replace(" ", "")
+    """plain() with the spaces removed, so 'Si Woo' == 'Si-Woo' == 'Siwoo'.
+    Titles and suffixes are dropped too: 'Sir Nick Faldo' == 'Nick Faldo',
+    'Frank Lickliter II' == 'Frank Lickliter'."""
+    p = TITLE.sub("", SUFFIX.sub("", plain(name)))
+    return p.replace(" ", "")
 
 
 def one_letter_apart(a: str, b: str) -> bool:
@@ -63,10 +70,11 @@ class Match:
 
 def find_close(name: str, field: list[str]) -> tuple[str | None, list[str]]:
     """The rule that fits (spelling, typo, flipped) and the field names that fit it."""
-    k, words = key(name), sorted(plain(name).split())
+    k = key(name)
+    words = sorted(TITLE.sub("", SUFFIX.sub("", plain(name))).split())
     for kind, test in (
         ("spelling", lambda f: key(f) == k),
-        ("flipped", lambda f: sorted(plain(f).split()) == words and key(f) != k),
+        ("flipped", lambda f: sorted(TITLE.sub("", SUFFIX.sub("", plain(f))).split()) == words and key(f) != k),
         ("typo", lambda f: one_letter_apart(key(f), k)),
     ):
         hits = [f for f in field if test(f)]
@@ -91,6 +99,10 @@ def match_roster(roster: list[str], field: list[str], overrides: dict | None = N
             continue
         if name in field_set:
             results.append(Match(name, name, "exact"))
+            continue
+        same_case = [f for f in field if f.casefold() == name.casefold()]
+        if len(same_case) == 1:  # only capitalization differs (e.g. Mcilroy / McIlroy)
+            results.append(Match(name, same_case[0], "exact"))
             continue
         kind, hits = find_close(name, field)
         if len(hits) == 1:

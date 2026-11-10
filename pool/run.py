@@ -210,6 +210,39 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
 
     fields = []  # every field read this run, for the roster name check
     for entry in ordered:
+        if backfill and not entry.get("event_id"):
+            # ESPN has no record of this major (1999-2000): use a leaderboard
+            # saved in history/ if there is one, otherwise try Wikipedia
+            from . import history, wikipedia
+            wikipedia.DEBUG_DIR = DOCS / "debug" / "wikipedia"
+            try:
+                saved = history.load(ROOT, year, entry["key"], entry["name"])
+                if saved:
+                    rows, venue_info, start, end = saved
+                    title, src = f"{year} {entry['name']} (saved leaderboard)", "saved European Tour leaderboard"
+                    try:  # the saved list can be short of missed-cut golfers; fill from Wikipedia
+                        extra = wikipedia.fetch_major(year, entry["key"])[0]
+                        added = history.add_missing(rows, extra)
+                        if added:
+                            print(f"[{entry['name']}] added {added} missed-cut or withdrawn golfers from Wikipedia")
+                    except Exception as exc:
+                        print(f"[{entry['name']}] couldn't check Wikipedia for missing golfers: {exc}")
+                else:
+                    rows, venue_info, start, end, title = wikipedia.fetch_major(year, entry["key"])
+                    src = "Wikipedia"
+                ok, why = espn.looks_valid(rows)
+                if not ok:
+                    raise espn.FetchError(why)
+                entry.update({"event_id": f"wiki:{title}", "venue": venue_info or None,
+                              "start": start.isoformat() if start else f"{year}-01-01",
+                              "end": end.isoformat() if end else None})
+                process_major(entry, rows, src, teams, config, now, DOCS / "snapshots" / str(year))
+                print(f"[{entry['name']}] read from {src}: {len(rows)} golfers, par {venue_info.get('par')}")
+            except Exception as exc:
+                print(f"[{entry['name']}] couldn't fill this major: {exc}")
+            continue
+        if str(entry.get("event_id", "")).startswith("wiki:"):
+            continue  # filled from Wikipedia by a backfill; nothing live to read
         if entry.get("event_id") and not entry.get("venue"):
             try:  # course, location and par, once per major
                 entry["venue"] = venue(entry["event_id"]) or None
@@ -238,6 +271,7 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
         if entry.get("state") in ("live", "final") and entry.get("standings"):
             ranks[entry["key"]] = {s["person"]: s["rank"] for s in entry["standings"]}
     data["overall"] = overall(list(teams), ranks)
+    ordered = sorted(ordered, key=lambda m: (m.get("start") or "9999", ORDER.index(m["key"])))
     data["majors"] = ordered
 
     changed = json.dumps(data, sort_keys=True) != before
@@ -317,16 +351,18 @@ def name_report(year: int) -> None:
     if not played:
         print(f"[{year}] names: no majors could be read, so no name check.")
         return
-    exact = {g["name"] for m in played for s in m["standings"] for g in s["golfers"] if g["espn"] == g["name"]}
+    exact = {g["name"] for m in played for s in m["standings"] for g in s["golfers"]
+             if g["espn"] and g["espn"].casefold() == g["name"].casefold()}
     notes = {}
     for m in played:
         for c in m.get("name_check", []):
             if c["roster"] in exact:
                 continue
             if c["espn"]:
-                notes.setdefault(c["roster"], f"matched to ESPN's {c['espn']} ({c['kind']}) in {m['name']}")
+                if "matched" not in notes.get(c["roster"], ""):
+                    notes[c["roster"]] = f"matched to {c['espn']} ({c['kind']}) in {m['name']}"
             else:
-                notes.setdefault(c["roster"], "not in any major field" + (f"; ESPN has {c['suggestion']}" if c["suggestion"] else ""))
+                notes.setdefault(c["roster"], "not in any major field" + (f"; closest: {c['suggestion']}" if c["suggestion"] else ""))
     if not notes:
         print(f"[{year}] names: all matched ESPN exactly.")
         return

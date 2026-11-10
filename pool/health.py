@@ -54,7 +54,7 @@ def roster_status(prev: dict, year: int, teams: dict, fields: list) -> tuple[dic
                 rec = state.setdefault(name, {})
                 if rec.get("found"):
                     continue
-                if name in names:
+                if name in names or name.casefold() in {n.casefold() for n in names}:
                     state[name] = {"found": tournament, "date": when}
                     continue
                 m = match_roster([name], field)[0]
