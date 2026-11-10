@@ -1,0 +1,14 @@
+{
+  "test_tournaments": {
+    "every_year": [
+      "THE PLAYERS Championship"
+    ],
+    "2026": [
+      "Good Good Championship"
+    ]
+  },
+  "event_ids": {
+    "2026": {}
+  },
+  "name_overrides": {}
+}
