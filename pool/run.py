@@ -252,8 +252,15 @@ def main(argv=None):
         probe(args.probe)
         return
     if args.schedule:
-        for k, ev in espn.find_majors(args.schedule).items():
+        tc = load_config().get("test_tournaments", {})
+        names = list(tc.get("every_year", [])) + list(tc.get(str(args.schedule), []))
+        for k, ev in espn.find_majors(args.schedule, tests=names).items():
             print(f"{k:8} {ev.name:18} id={ev.event_id} {ev.start} to {ev.end}")
+        today = datetime.now(TZ).date()
+        print("\nEverything ESPN lists from last week through the next two months:")
+        for label, eid, start, end in sorted(espn.calendar(args.schedule), key=lambda e: e[2] or today):
+            if start and today - timedelta(days=7) <= start <= today + timedelta(days=60):
+                print(f"  {start}  id={eid}  {label}")
         return
     update(backfill=args.backfill)
 

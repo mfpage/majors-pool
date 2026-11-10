@@ -79,6 +79,32 @@ def _get(url, params=None):
 # --------------------------------------------------------------------------
 # Schedule
 # --------------------------------------------------------------------------
+def calendar(year: int) -> list[tuple[str, str, date | None, date | None]]:
+    """Every tournament ESPN lists for `year`, the next season, and this week,
+    as (name, event id, start, end). Duplicates removed."""
+    seen, out = set(), []
+
+    def add(label, eid, start, end):
+        if eid and eid not in seen:
+            seen.add(eid)
+            out.append(((label or "").strip(), str(eid), _parse_date(start), _parse_date(end)))
+
+    for y in (year, year + 1):
+        try:
+            data = _get(SCHEDULE_URL, params={"dates": y}).json()
+            for item in (data.get("leagues") or [{}])[0].get("calendar") or []:
+                add(item.get("label"), item.get("id"), item.get("startDate"), item.get("endDate"))
+        except Exception as exc:
+            print(f"[schedule] could not read ESPN's {y} schedule: {exc}")
+    try:  # this week's tournament, straight from the live scoreboard
+        data = _get(SCHEDULE_URL).json()
+        for ev in data.get("events") or []:
+            add(ev.get("name") or ev.get("shortName"), ev.get("id"), ev.get("date"), ev.get("endDate"))
+    except Exception as exc:
+        print(f"[schedule] could not read this week's scoreboard: {exc}")
+    return out
+
+
 def find_majors(year: int, overrides: dict | None = None, tests: list | None = None) -> dict[str, Event]:
     """Return the four majors for `year`, keyed by major key, plus any test
     tournaments (keyed "test-...") whose ESPN name contains one of `tests`.
@@ -89,26 +115,16 @@ def find_majors(year: int, overrides: dict | None = None, tests: list | None = N
     overrides = overrides or {}
     tests = [t.lower() for t in (tests or []) if t]
     events: dict[str, Event] = {}
-    try:
-        data = _get(SCHEDULE_URL, params={"dates": year}).json()
-        calendar = (data.get("leagues") or [{}])[0].get("calendar") or []
-        for item in calendar:
-            label = (item.get("label") or "").strip()
-            for t in tests:
-                if t in label.lower():
-                    key = "test-" + re.sub(r"[^a-z0-9]+", "-", t).strip("-")
-                    events.setdefault(key, Event(key, label, str(item.get("id")),
-                                                 _parse_date(item.get("startDate")),
-                                                 _parse_date(item.get("endDate"))))
-            for key, (name, pattern) in MAJORS.items():
-                if key not in events and pattern.match(label):
-                    events[key] = Event(
-                        key, name, str(item.get("id")),
-                        _parse_date(item.get("startDate")),
-                        _parse_date(item.get("endDate")),
-                    )
-    except Exception as exc:  # schedule is best effort; overrides cover it
-        print(f"[schedule] could not read ESPN schedule: {exc}")
+    for label, eid, start, end in calendar(year):
+        if start and start.year != year:
+            continue  # next season's calendar is only searched for this year's dates
+        for t in tests:
+            if t in label.lower():
+                key = "test-" + re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+                events.setdefault(key, Event(key, label, eid, start, end))
+        for key, (name, pattern) in MAJORS.items():
+            if key not in events and pattern.match(label):
+                events[key] = Event(key, name, eid, start, end)
 
     for key, event_id in overrides.items():
         if key in MAJORS and event_id:
