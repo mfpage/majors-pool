@@ -36,13 +36,34 @@ HTML_URL = "https://www.espn.com/golf/leaderboard/_/tournamentId/{event_id}"
 
 OUT_STATUSES = ("CUT", "WD", "DQ", "DNS", "DNP")
 
-# Major key -> (display name used in file names, pattern for ESPN's label)
+# Major key -> display name used on the page and in file names
 MAJORS = {
-    "masters": ("Masters", re.compile(r"^(the )?masters( tournament)?$", re.I)),
-    "pga": ("PGA Championship", re.compile(r"^pga championship$", re.I)),
-    "usopen": ("US Open", re.compile(r"^u\.?\s?s\.? open( championship)?$", re.I)),
-    "open": ("British Open", re.compile(r"^(the open( championship)?|british open)$", re.I)),
+    "masters": ("Masters", None),
+    "pga": ("PGA Championship", None),
+    "usopen": ("US Open", None),
+    "open": ("British Open", None),
 }
+NOT_A_MAJOR = re.compile(r"senior|women|ladies|lpga|amateur|junior|champions tour|"
+                         r"scottish|irish|australian|canadian|japan|korea|mexico|kpmg|q-?school|"
+                         r"web\.?com|korn ferry|qualif|par 3|seniors", re.I)
+
+
+def major_key(label: str) -> str | None:
+    """Which major an ESPN tournament name refers to, if any. ESPN has named
+    them differently over the years, so this goes by key words."""
+    if not label or NOT_A_MAJOR.search(label):
+        return None
+    t = re.sub(r"[^a-z0-9 ]", "", label.lower().replace(".", ""))
+    t = re.sub(r"\s+", " ", t).strip()
+    if "masters" in t:
+        return "masters"
+    if "pga championship" in t:
+        return "pga"
+    if re.search(r"\bus open\b", t):
+        return "usopen"
+    if "british open" in t or "open championship" in t or re.fullmatch(r"(the )?(\d+(st|nd|rd|th) )?open", t):
+        return "open"
+    return None
 
 
 @dataclass
@@ -123,9 +144,9 @@ def find_majors(year: int, overrides: dict | None = None, tests: list | None = N
             if t in label.lower():
                 key = "test-" + re.sub(r"[^a-z0-9]+", "-", t).strip("-")
                 events.setdefault(key, Event(key, label, eid, start, end))
-        for key, (name, pattern) in MAJORS.items():
-            if key not in events and pattern.match(label):
-                events[key] = Event(key, name, eid, start, end)
+        key = major_key(label)
+        if key and key not in events:
+            events[key] = Event(key, MAJORS[key][0], eid, start, end)
 
     for key, event_id in overrides.items():
         if key in MAJORS and event_id:

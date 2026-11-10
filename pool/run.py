@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -43,15 +44,23 @@ def load_teams(year: int) -> dict[str, list[str]] | None:
     p = ROOT / "teams" / f"{year} Teams.csv"
     if not p.exists():
         return None
-    with p.open(encoding="utf-8-sig", newline="") as f:
-        rows = [r for r in csv.reader(f) if any(c.strip() for c in r)]
+    raw = p.read_bytes()
+    try:
+        text = raw.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        text = raw.decode("cp1252")  # saved from Excel as plain "CSV" rather than "CSV UTF-8"
+    rows = [r for r in csv.reader(text.splitlines()) if any(c.strip() for c in r)]
+    if len(rows) < 2:
+        print(f"{p.name} is empty, so {year} is skipped. Re-upload it with the golfers in it.")
+        return None
     people = [h.strip() for h in rows[0]]
     return {p: [r[i].strip() for r in rows[1:] if i < len(r) and r[i].strip()]
             for i, p in enumerate(people)}
 
 
 def pick_year(now: datetime) -> int | None:
-    years = sorted(int(p.name[:4]) for p in (ROOT / "teams").glob("* Teams.csv") if p.name[:4].isdigit())
+    years = sorted(int(p.name[:4]) for p in (ROOT / "teams").glob("* Teams.csv")
+                   if p.name[:4].isdigit() and p.stat().st_size > 0)
     usable = [y for y in years if y <= now.year]
     return usable[-1] if usable else None
 
@@ -130,7 +139,7 @@ def process_major(entry: dict, rows: list, source: str, teams: dict, config: dic
 
 
 def in_window(entry: dict, today, force: bool = False) -> bool:
-    if entry.get("state") == "final":
+    if entry.get("state") in ("final", "notplayed"):
         return False
     if force:
         return True
@@ -156,6 +165,8 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
         print("No teams file found in teams/. Nothing to do.")
         return False
     teams = load_teams(year)
+    if not teams:
+        return False
 
     data_path = DOCS / "data" / f"{year}.json"
     data = json.loads(data_path.read_text(encoding="utf-8")) if data_path.exists() else {}
@@ -172,6 +183,17 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
     majors = {m["key"]: m for m in data.get("majors", [])}
 
     events = find(year, config.get("event_ids", {}).get(str(year), {}))
+    missing = [k for k in ORDER if k not in events]
+    if missing and backfill:
+        print(f"[{year}] not found on ESPN's schedule: {', '.join(espn.MAJORS[k][0] for k in missing)}")
+        try:
+            names = [e[0] for e in espn.calendar(year) if e[2] and e[2].year == year]
+            hints = [n for n in names if re.search(r"open|masters|pga|championship", n, re.I)]
+            print(f"[{year}] ESPN's tournaments with similar names: " + ("; ".join(hints) or "none"))
+            if not names:
+                print(f"[{year}] ESPN's schedule for this year is empty.")
+        except Exception as exc:
+            print(f"[{year}] couldn't list ESPN's schedule: {exc}")
     for key in list(majors):
         if key not in ORDER:
             del majors[key]  # leftovers from the old test-tournament setup
@@ -199,6 +221,10 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
             rows, source = fetch(entry["event_id"])
         except Exception as exc:
             print(f"[{entry['name']}] fetch failed: {exc}")
+            if backfill:
+                entry["state"] = "notplayed"  # e.g. the 2020 Open, cancelled
+                entry.pop("error", None)
+                continue
             entry["error"] = f"Couldn't read ESPN at {now:%-I:%M %p} ET. Showing the last good update."
             entry["error_detail"] = str(exc)[:500]
             continue

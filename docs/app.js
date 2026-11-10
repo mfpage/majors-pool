@@ -131,7 +131,7 @@ function majorView(m, data) {
   else if (m.state === "pre") { pill = `<span class="pill">Field set · starts ${day(m.start)}</span>`; }
   else {
     const past = Number(state.year) < new Date().getFullYear();
-    pill = `<span class="pill">${!m.event_id && past ? "Not played" : "Upcoming"}</span>`;
+    pill = `<span class="pill">${(!m.event_id && past) || m.state === "notplayed" ? "Not played" : "Upcoming"}</span>`;
   }
   if (m.updated && m.state !== "final") meta = `Updated ${when(m.updated)}${m.state === "live" ? " · checks every 15 minutes" : ""}`;
 
