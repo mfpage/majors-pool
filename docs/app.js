@@ -84,12 +84,18 @@ function render() {
   const keys = majors.map((m) => m.key).concat("overall");
   let tab = location.hash.slice(1);
   if (!keys.includes(tab)) tab = defaultTab();
+  state.tab = tab;
 
   $("#year").innerHTML = state.years.length >= 1
     ? `<label>Season <select id="yearSel">${state.years.map((y) => `<option ${y === state.year ? "selected" : ""}>${y}</option>`).join("")}</select></label>`
     : `${data.year} season`;
   const sel = $("#yearSel");
-  if (sel) sel.onchange = () => { state.year = Number(sel.value); location.hash = ""; load(); };
+  if (sel) sel.onchange = () => {
+    // stay on the same tab (Masters stays Masters) in the other season
+    if (!location.hash) history.replaceState(null, "", "#" + state.tab);
+    state.year = Number(sel.value);
+    load();
+  };
 
   $("#tabs").innerHTML = majors.map((m) =>
     `<a href="#${m.key}" ${tab === m.key ? 'aria-current="page"' : ""}>${m.state === "live" ? '<span class="dot" aria-label="Live"></span>' : ""}${esc(tabLabel(m))}</a>`
