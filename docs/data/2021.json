@@ -8,47 +8,606 @@
  ],
  "overall": [
   {
-   "person": "David",
-   "ranks": {
-    "pga": 1,
-    "usopen": 1,
-    "open": 4
-   },
-   "total": 6,
-   "place": 1
-  },
-  {
    "person": "Alan",
    "ranks": {
+    "masters": 1,
     "pga": 3,
     "usopen": 3,
     "open": 1
    },
-   "total": 7,
-   "place": 2
+   "total": 8,
+   "place": 1
   },
   {
-   "person": "Michael",
+   "person": "David",
    "ranks": {
-    "pga": 4,
-    "usopen": 2,
-    "open": 2
+    "masters": 4,
+    "pga": 1,
+    "usopen": 1,
+    "open": 4
    },
-   "total": 8,
-   "place": 3
+   "total": 10,
+   "place": 2
   },
   {
    "person": "Judy",
    "ranks": {
+    "masters": 2,
     "pga": 2,
     "usopen": 4,
     "open": 3
    },
-   "total": 9,
-   "place": 4
+   "total": 11,
+   "place": 3
+  },
+  {
+   "person": "Michael",
+   "ranks": {
+    "masters": 3,
+    "pga": 4,
+    "usopen": 2,
+    "open": 2
+   },
+   "total": 11,
+   "place": 3
   }
  ],
  "majors": [
+  {
+   "key": "masters",
+   "name": "Masters",
+   "state": "final",
+   "event_id": "401243010",
+   "start": "2021-04-08",
+   "end": "2021-04-11",
+   "venue": {
+    "course": "Augusta National Golf Club",
+    "place": "Augusta, GA",
+    "par": 72,
+    "yards": 7475
+   },
+   "snapshots": [
+    {
+     "day": 1,
+     "file": "snapshots/2021/2021 Masters - Day 1.csv",
+     "saved": "2026-11-10T16:53-05:00",
+     "ranks": {
+      "Judy": 1,
+      "David": 4,
+      "Michael": 3,
+      "Alan": 2
+     },
+     "totals": {
+      "Judy": "-11",
+      "David": "+6",
+      "Michael": "+5",
+      "Alan": "-8"
+     }
+    },
+    {
+     "day": 2,
+     "file": "snapshots/2021/2021 Masters - Day 2.csv",
+     "saved": "2026-11-10T16:53-05:00",
+     "ranks": {
+      "Judy": 2,
+      "David": 4,
+      "Michael": 3,
+      "Alan": 1
+     },
+     "totals": {
+      "Judy": "-13",
+      "David": "E",
+      "Michael": "-7",
+      "Alan": "-18"
+     }
+    },
+    {
+     "day": 3,
+     "file": "snapshots/2021/2021 Masters - Day 3.csv",
+     "saved": "2026-11-10T16:53-05:00",
+     "ranks": {
+      "Judy": 2,
+      "David": 4,
+      "Michael": 3,
+      "Alan": 1
+     },
+     "totals": {
+      "Judy": "-15",
+      "David": "+5",
+      "Michael": "-10",
+      "Alan": "-25"
+     }
+    },
+    {
+     "day": 4,
+     "file": "snapshots/2021/2021 Masters - Day 4.csv",
+     "saved": "2026-11-10T16:53-05:00",
+     "ranks": {
+      "Judy": 2,
+      "David": 4,
+      "Michael": 3,
+      "Alan": 1
+     },
+     "totals": {
+      "Judy": "-17",
+      "David": "-2",
+      "Michael": "-13",
+      "Alan": "-25"
+     }
+    }
+   ],
+   "round": 4,
+   "source": "leaderboard feed",
+   "standings": [
+    {
+     "person": "Judy",
+     "rank": 2,
+     "total": "-17",
+     "usable": 10,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Dustin Johnson",
+       "espn": "Dustin Johnson",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Webb Simpson",
+       "espn": "Webb Simpson",
+       "score": "-2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Patrick Cantlay",
+       "espn": "Patrick Cantlay",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Tyrrell Hatton",
+       "espn": "Tyrrell Hatton",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Justin Rose",
+       "espn": "Justin Rose",
+       "score": "-5",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Paul Casey",
+       "espn": "Paul Casey",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Shane Lowry",
+       "espn": "Shane Lowry",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Adam Scott",
+       "espn": "Adam Scott",
+       "score": "+11",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Cameron Smith",
+       "espn": "Cameron Smith",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Gary Woodland",
+       "espn": "Gary Woodland",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Joaquin Niemann",
+       "espn": "Joaquín Niemann",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Marc Leishman",
+       "espn": "Marc Leishman",
+       "score": "-6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "David",
+     "rank": 4,
+     "total": "-2",
+     "usable": 5,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Justin Thomas",
+       "espn": "Justin Thomas",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Brooks Koepka",
+       "espn": "Brooks Koepka",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Patrick Reed",
+       "espn": "Patrick Reed",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Sungjae Im",
+       "espn": "Sungjae Im",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Matthew Wolff",
+       "espn": "Matthew Wolff",
+       "score": null,
+       "status": "DQ",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Louis Oosthuizen",
+       "espn": "Louis Oosthuizen",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Lee Westwood",
+       "espn": "Lee Westwood",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Abraham Ancer",
+       "espn": "Abraham Ancer",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Tiger Woods",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Jason Day",
+       "espn": "Jason Day",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Haotong Li",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Harris English",
+       "espn": "Harris English",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": true
+      }
+     ]
+    },
+    {
+     "person": "Michael",
+     "rank": 3,
+     "total": "-13",
+     "usable": 7,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Jon Rahm",
+       "espn": "Jon Rahm",
+       "score": "-6",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Xander Schauffele",
+       "espn": "Xander Schauffele",
+       "score": "-7",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Tony Finau",
+       "espn": "Tony Finau",
+       "score": "-3",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Tommy Fleetwood",
+       "espn": "Tommy Fleetwood",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Matt Fitzpatrick",
+       "espn": "Matt Fitzpatrick",
+       "score": "+2",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Daniel Berger",
+       "espn": "Daniel Berger",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Matt Kuchar",
+       "espn": "Matt Kuchar",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Sergio Garcia",
+       "espn": "Sergio Garcia",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Ian Poulter",
+       "espn": "Ian Poulter",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Rickie Fowler",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Henrik Stenson",
+       "espn": "Henrik Stenson",
+       "score": "+3",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Thomas Pieters",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      }
+     ]
+    },
+    {
+     "person": "Alan",
+     "rank": 1,
+     "total": "-25",
+     "usable": 10,
+     "counting": 5,
+     "golfers": [
+      {
+       "name": "Bryson DeChambeau",
+       "espn": "Bryson DeChambeau",
+       "score": "+5",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Rory McIlroy",
+       "espn": "Rory McIlroy",
+       "score": null,
+       "status": "CUT",
+       "out": true,
+       "counts": false
+      },
+      {
+       "name": "Collin Morikawa",
+       "espn": "Collin Morikawa",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Viktor Hovland",
+       "espn": "Viktor Hovland",
+       "score": "E",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Hideki Matsuyama",
+       "espn": "Hideki Matsuyama",
+       "score": "-10",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Jason Kokrak",
+       "espn": "Jason Kokrak",
+       "score": "+7",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Scottie Scheffler",
+       "espn": "Scottie Scheffler",
+       "score": "-1",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Christiaan Bezuidenhout",
+       "espn": "Christiaan Bezuidenhout",
+       "score": "+4",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Corey Conners",
+       "espn": "Corey Conners",
+       "score": "-4",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Cameron Champ",
+       "espn": "Cameron Champ",
+       "score": "+1",
+       "status": "F",
+       "out": false,
+       "counts": false
+      },
+      {
+       "name": "Will Zalatoris",
+       "espn": "Will Zalatoris",
+       "score": "-9",
+       "status": "F",
+       "out": false,
+       "counts": true
+      },
+      {
+       "name": "Erik van Rooyen",
+       "espn": null,
+       "score": null,
+       "status": "DNP",
+       "out": true,
+       "counts": false
+      }
+     ]
+    }
+   ],
+   "name_check": [
+    {
+     "person": "Judy",
+     "roster": "Joaquin Niemann",
+     "espn": "Joaquín Niemann",
+     "kind": "spelling",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Tiger Woods",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "David",
+     "roster": "Haotong Li",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "Rickie Fowler",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Michael",
+     "roster": "Thomas Pieters",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    },
+    {
+     "person": "Alan",
+     "roster": "Erik van Rooyen",
+     "espn": null,
+     "kind": "dnp",
+     "suggestion": null
+    }
+   ],
+   "field_size": 88,
+   "error": null,
+   "updated": "2026-11-10T16:53-05:00"
+  },
   {
    "key": "pga",
    "name": "PGA Championship",
@@ -66,7 +625,7 @@
     {
      "day": 1,
      "file": "snapshots/2021/2021 PGA Championship - Day 1.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 2,
       "David": 3,
@@ -83,7 +642,7 @@
     {
      "day": 2,
      "file": "snapshots/2021/2021 PGA Championship - Day 2.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 3,
       "David": 2,
@@ -100,7 +659,7 @@
     {
      "day": 3,
      "file": "snapshots/2021/2021 PGA Championship - Day 3.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 3,
       "David": 1,
@@ -117,7 +676,7 @@
     {
      "day": 4,
      "file": "snapshots/2021/2021 PGA Championship - Day 4.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 2,
       "David": 1,
@@ -588,7 +1147,7 @@
    ],
    "field_size": 157,
    "error": null,
-   "updated": "2026-11-10T16:31-05:00"
+   "updated": "2026-11-10T16:53-05:00"
   },
   {
    "key": "usopen",
@@ -607,7 +1166,7 @@
     {
      "day": 1,
      "file": "snapshots/2021/2021 US Open - Day 1.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 3,
       "David": 1,
@@ -624,7 +1183,7 @@
     {
      "day": 2,
      "file": "snapshots/2021/2021 US Open - Day 2.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -641,7 +1200,7 @@
     {
      "day": 3,
      "file": "snapshots/2021/2021 US Open - Day 3.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 4,
       "David": 2,
@@ -658,7 +1217,7 @@
     {
      "day": 4,
      "file": "snapshots/2021/2021 US Open - Day 4.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 4,
       "David": 1,
@@ -1143,7 +1702,7 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:31-05:00"
+   "updated": "2026-11-10T16:53-05:00"
   },
   {
    "key": "open",
@@ -1162,7 +1721,7 @@
     {
      "day": 1,
      "file": "snapshots/2021/2021 British Open - Day 1.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 1,
       "David": 4,
@@ -1179,7 +1738,7 @@
     {
      "day": 2,
      "file": "snapshots/2021/2021 British Open - Day 2.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 1,
       "David": 3,
@@ -1196,7 +1755,7 @@
     {
      "day": 3,
      "file": "snapshots/2021/2021 British Open - Day 3.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 2,
       "David": 4,
@@ -1213,7 +1772,7 @@
     {
      "day": 4,
      "file": "snapshots/2021/2021 British Open - Day 4.csv",
-     "saved": "2026-11-10T16:31-05:00",
+     "saved": "2026-11-10T16:53-05:00",
      "ranks": {
       "Judy": 3,
       "David": 4,
@@ -1705,13 +2264,8 @@
    ],
    "field_size": 156,
    "error": null,
-   "updated": "2026-11-10T16:31-05:00"
-  },
-  {
-   "key": "masters",
-   "name": "Masters",
-   "state": "upcoming"
+   "updated": "2026-11-10T16:53-05:00"
   }
  ],
- "updated": "2026-11-10T16:31-05:00"
+ "updated": "2026-11-10T16:53-05:00"
 }
