@@ -42,7 +42,7 @@ h1 { font: 700 30px/1 var(--display); letter-spacing: .04em; text-transform: upp
 .year { font: 600 15px var(--display); letter-spacing: .08em; opacity: .85; }
 .year select { font: inherit; color: inherit; background: transparent; border: 1px solid rgba(255,255,255,.35); border-radius: 4px; padding: 1px 4px; }
 .year select option { color: #1d231f; }
-nav.tabs { display: flex; gap: 2px; overflow-x: auto; margin-top: 14px; scrollbar-width: none; }
+nav.tabs { display: flex; gap: 2px; overflow-x: auto; margin-top: 14px; scrollbar-width: none; flex-basis: 100%; }
 nav.tabs a { font: 600 17px/1 var(--display); letter-spacing: .06em; text-transform: uppercase; text-decoration: none; padding: 11px 14px 12px; border-radius: 6px 6px 0 0; color: var(--green-ink); opacity: .78; white-space: nowrap; display: flex; align-items: center; gap: 7px; }
 nav.tabs a:hover { opacity: 1; }
 nav.tabs a[aria-current="page"] { background: var(--bg); color: var(--ink); opacity: 1; }

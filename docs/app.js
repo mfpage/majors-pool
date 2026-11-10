@@ -212,14 +212,14 @@ async function loadHealth() {
 function renderHealth() {
   const h = health;
   if (!h) return;
-  const tabs = [["tournament", "This week"], ["roster", "Roster names"], ["checks", "Checks"]];
+  const tabs = [["tournament", "Test Tournament Status"], ["roster", "Roster Status"], ["checks", "Run Status"]];
   let tab = location.hash.slice(1);
   if (!tabs.some(([k]) => k === tab)) tab = "tournament";
   const overall = h.checks.some((c) => c.status === "fail") ? "fail" : h.checks.some((c) => c.status === "warn") ? "warn" : "pass";
   const roster = h.roster_rows || [];
   const found = roster.filter((r) => r.found).length;
 
-  $("#year").textContent = "Health check";
+  $("#year").textContent = "";
   $("#tabs").innerHTML = tabs.map(([k, label]) => {
     let flag = "";
     if (k === "checks" && overall !== "pass") flag = `<span class="flag ${overall}">${overall === "fail" ? "Failed" : "Warning"}</span>`;
