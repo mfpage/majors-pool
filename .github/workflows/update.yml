@@ -17,6 +17,9 @@ on:
       event_id:
         description: "ESPN tournament id (for probe-event)"
         required: false
+      year:
+        description: "Season for backfill: a year, all, or blank for the current one"
+        required: false
 
 permissions:
   contents: write
@@ -43,10 +46,11 @@ jobs:
         env:
           TASK: ${{ inputs.task || 'update' }}
           EVENT_ID: ${{ inputs.event_id }}
+          YEAR: ${{ inputs.year }}
         run: |
           case "$TASK" in
             update)         python -m pool.run ;;
-            backfill)       python -m pool.run --backfill ;;
+            backfill)       if [ -n "$YEAR" ]; then python -m pool.run --backfill "$YEAR"; else python -m pool.run --backfill; fi ;;
             check-schedule) python -m pool.run --schedule "$(TZ=America/New_York date +%Y)" ;;
             probe-event)    python -m pool.run --probe "$EVENT_ID" ;;
           esac
@@ -66,3 +70,11 @@ jobs:
             sleep 5
           done
           exit 1
+
+      - name: Alert if a health check newly failed
+        run: |
+          if [ -f .alert ]; then
+            cat .alert
+            echo "Open the health page (see health_page in config.json) for details."
+            exit 1
+          fi
