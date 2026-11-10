@@ -52,8 +52,8 @@
   },
   {
    "name": "Roster names",
-   "status": "warn",
-   "detail": "42 of 48 found on ESPN this year. Not yet: Jon Rahm, Bryson DeChambeau, Tyrrell Hatton, Sungjae Im, Cameron Smith, Justin Thomas."
+   "status": "pass",
+   "detail": "All 48 found on ESPN this year, spelled as in the teams file."
   }
  ],
  "failing": [],
@@ -812,16 +812,17 @@
    "date": "2026-01-22"
   },
   "Jon Rahm": {
-   "hint": "Joel Dahmen",
-   "rank": 1,
-   "kind": "dnp",
-   "where": "Austin Championship pres. by Compliance Solutions"
+   "found": "Masters Tournament",
+   "date": "2026-04-09"
   },
   "Matt Fitzpatrick": {
    "found": "The American Express",
    "date": "2026-01-22"
   },
-  "Bryson DeChambeau": {},
+  "Bryson DeChambeau": {
+   "found": "Masters Tournament",
+   "date": "2026-04-09"
+  },
   "Patrick Cantlay": {
    "found": "The American Express",
    "date": "2026-01-22"
@@ -870,7 +871,10 @@
    "found": "Sony Open in Hawaii",
    "date": "2026-01-15"
   },
-  "Tyrrell Hatton": {},
+  "Tyrrell Hatton": {
+   "found": "Masters Tournament",
+   "date": "2026-04-09"
+  },
   "Corey Conners": {
    "found": "Sony Open in Hawaii",
    "date": "2026-01-15"
@@ -879,16 +883,17 @@
    "found": "The American Express",
    "date": "2026-01-22"
   },
-  "Sungjae Im": {},
+  "Sungjae Im": {
+   "found": "Arnold Palmer Invitational pres. by Mastercard",
+   "date": "2026-03-05"
+  },
   "Ryan Fox": {
    "found": "WM Phoenix Open",
    "date": "2026-02-05"
   },
   "Cameron Smith": {
-   "hint": "Jordan Smith",
-   "rank": 1,
-   "kind": "dnp",
-   "where": "Austin Championship pres. by Compliance Solutions"
+   "found": "Masters Tournament",
+   "date": "2026-04-09"
   },
   "Harry Hall": {
    "found": "Sony Open in Hawaii",
@@ -903,10 +908,8 @@
    "date": "2026-01-15"
   },
   "Justin Thomas": {
-   "hint": "Austin Smotherman",
-   "rank": 1,
-   "kind": "dnp",
-   "where": "Austin Championship pres. by Compliance Solutions"
+   "found": "Arnold Palmer Invitational pres. by Mastercard",
+   "date": "2026-03-05"
   },
   "Cameron Young": {
    "found": "Farmers Insurance Open",
@@ -1015,11 +1018,11 @@
   {
    "person": "David",
    "name": "Jon Rahm",
-   "found": null,
-   "date": null,
-   "hint": "Joel Dahmen",
-   "kind": "dnp",
-   "where": "Austin Championship pres. by Compliance Solutions"
+   "found": "Masters Tournament",
+   "date": "2026-04-09",
+   "hint": null,
+   "kind": null,
+   "where": null
   },
   {
    "person": "David",
@@ -1033,8 +1036,8 @@
   {
    "person": "David",
    "name": "Bryson DeChambeau",
-   "found": null,
-   "date": null,
+   "found": "Masters Tournament",
+   "date": "2026-04-09",
    "hint": null,
    "kind": null,
    "where": null
@@ -1150,8 +1153,8 @@
   {
    "person": "Michael",
    "name": "Tyrrell Hatton",
-   "found": null,
-   "date": null,
+   "found": "Masters Tournament",
+   "date": "2026-04-09",
    "hint": null,
    "kind": null,
    "where": null
@@ -1177,8 +1180,8 @@
   {
    "person": "Michael",
    "name": "Sungjae Im",
-   "found": null,
-   "date": null,
+   "found": "Arnold Palmer Invitational pres. by Mastercard",
+   "date": "2026-03-05",
    "hint": null,
    "kind": null,
    "where": null
@@ -1195,11 +1198,11 @@
   {
    "person": "Michael",
    "name": "Cameron Smith",
-   "found": null,
-   "date": null,
-   "hint": "Jordan Smith",
-   "kind": "dnp",
-   "where": "Austin Championship pres. by Compliance Solutions"
+   "found": "Masters Tournament",
+   "date": "2026-04-09",
+   "hint": null,
+   "kind": null,
+   "where": null
   },
   {
    "person": "Michael",
@@ -1231,11 +1234,11 @@
   {
    "person": "Alan",
    "name": "Justin Thomas",
-   "found": null,
-   "date": null,
-   "hint": "Austin Smotherman",
-   "kind": "dnp",
-   "where": "Austin Championship pres. by Compliance Solutions"
+   "found": "Arnold Palmer Invitational pres. by Mastercard",
+   "date": "2026-03-05",
+   "hint": null,
+   "kind": null,
+   "where": null
   },
   {
    "person": "Alan",
@@ -1435,7 +1438,15 @@
   "401811931",
   "401811932",
   "401811933",
-  "401811934"
+  "401811934",
+  "401811935",
+  "401811936",
+  "401811937",
+  "401811938",
+  "401811939",
+  "401811940",
+  "401811941",
+  "401811942"
  ],
  "event_name": "Austin Championship pres. by Compliance Solutions",
  "people": [
@@ -1446,5 +1457,5 @@
  ],
  "year": 2026,
  "updated": "2026-11-10T16:06-05:00",
- "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"warn\", \"42 of 48 found on ESPN this year. Not yet: Jon Rahm, Bryson DeChambeau, Tyrrell Hatton, Sungjae Im, Cameron Smith, Justin Thomas.\"]]"
+ "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
