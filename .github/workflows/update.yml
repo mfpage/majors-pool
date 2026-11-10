@@ -1,0 +1,68 @@
+name: Update pool
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 minutes; does nothing outside major weeks
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "What to run"
+        type: choice
+        default: update
+        options:
+          - update
+          - backfill
+          - check-schedule
+          - probe-event
+      event_id:
+        description: "ESPN tournament id (for probe-event)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pool-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run
+        env:
+          TASK: ${{ inputs.task || 'update' }}
+          EVENT_ID: ${{ inputs.event_id }}
+        run: |
+          case "$TASK" in
+            update)         python -m pool.run ;;
+            backfill)       python -m pool.run --backfill ;;
+            check-schedule) python -m pool.run --schedule "$(TZ=America/New_York date +%Y)" ;;
+            probe-event)    python -m pool.run --probe "$EVENT_ID" ;;
+          esac
+
+      - name: Save changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -m "Update standings"
+          for attempt in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          exit 1
