@@ -22,8 +22,8 @@
   },
   {
    "name": "Backup sources",
-   "status": "warn",
-   "detail": "Neither backup reads, so the pool depends on the main source alone. leaderboard page: FetchError; scoreboard feed: only 0 golfers found"
+   "status": "pass",
+   "detail": "Working: scoreboard feed."
   },
   {
    "name": "Golfer statuses",
@@ -799,7 +799,7 @@
   ],
   "field_size": 120,
   "error": null,
-  "updated": "2026-11-10T15:22-05:00"
+  "updated": "2026-11-10T15:34-05:00"
  },
  "roster_year": 2026,
  "roster": {
@@ -1354,6 +1354,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-10T15:22-05:00",
- "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"warn\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"warn\", \"5 of 48 found on ESPN this year. Not yet: Scottie Scheffler, Ludvig \\u00c5berg, Jon Rahm, Matt Fitzpatrick, Bryson DeChambeau, Patrick Cantlay, Ben Griffin, Akshay Bhatia, Sam Burns, Jacob Bridgeman, Brooks Koepka, Rory McIlroy, Collin Morikawa, Viktor Hovland, Shane Lowry, Hideki Matsuyama, Tyrrell Hatton, Corey Conners, Wyndham Clark, Sungjae Im, Ryan Fox, Cameron Smith, Harry Hall, Tommy Fleetwood, J.J. Spaun, Justin Thomas, Cameron Young, Harris English, Alex Noren, Keegan Bradley, Si Woo Kim, Kurt Kitayama, Ryan Gerard, Min Woo Lee, Xander Schauffele, Russell Henley, Justin Rose, Robert MacIntyre, Maverick McNealy, Chris Gotterup, Sepp Straka, Michael Brennan, Michael Kim.\"]]"
+ "updated": "2026-11-10T15:34-05:00",
+ "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"warn\", \"5 of 48 found on ESPN this year. Not yet: Scottie Scheffler, Ludvig \\u00c5berg, Jon Rahm, Matt Fitzpatrick, Bryson DeChambeau, Patrick Cantlay, Ben Griffin, Akshay Bhatia, Sam Burns, Jacob Bridgeman, Brooks Koepka, Rory McIlroy, Collin Morikawa, Viktor Hovland, Shane Lowry, Hideki Matsuyama, Tyrrell Hatton, Corey Conners, Wyndham Clark, Sungjae Im, Ryan Fox, Cameron Smith, Harry Hall, Tommy Fleetwood, J.J. Spaun, Justin Thomas, Cameron Young, Harris English, Alex Noren, Keegan Bradley, Si Woo Kim, Kurt Kitayama, Ryan Gerard, Min Woo Lee, Xander Schauffele, Russell Henley, Justin Rose, Robert MacIntyre, Maverick McNealy, Chris Gotterup, Sepp Straka, Michael Brennan, Michael Kim.\"]]"
 }
