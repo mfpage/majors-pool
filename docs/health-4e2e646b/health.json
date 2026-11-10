@@ -1,0 +1,1359 @@
+{
+ "checks": [
+  {
+   "name": "Majors on ESPN's schedule",
+   "status": "pass",
+   "detail": "All four found with dates."
+  },
+  {
+   "name": "Pool page updates",
+   "status": "pass",
+   "detail": "No errors on the pool page."
+  },
+  {
+   "name": "This week's tournament",
+   "status": "pass",
+   "detail": "Austin Championship pres. by Compliance Solutions (ESPN id 401850980)."
+  },
+  {
+   "name": "Leaderboard feed (main source)",
+   "status": "pass",
+   "detail": "120 golfers read."
+  },
+  {
+   "name": "Backup sources",
+   "status": "warn",
+   "detail": "Neither backup reads, so the pool depends on the main source alone. leaderboard page: FetchError; scoreboard feed: only 0 golfers found"
+  },
+  {
+   "name": "Golfer statuses",
+   "status": "pass",
+   "detail": "All recognized: Scheduled 120."
+  },
+  {
+   "name": "Scores add up",
+   "status": "pass",
+   "detail": "No finished rounds to check yet."
+  },
+  {
+   "name": "Cut",
+   "status": "pass",
+   "detail": "Not made yet."
+  },
+  {
+   "name": "Pool scoring",
+   "status": "pass",
+   "detail": "Judy would lead at E. 5 of 48 pool golfers are in this field."
+  },
+  {
+   "name": "Day files",
+   "status": "pass",
+   "detail": "None due yet."
+  },
+  {
+   "name": "Roster names",
+   "status": "warn",
+   "detail": "5 of 48 found on ESPN this year. Not yet: Scottie Scheffler, Ludvig Åberg, Jon Rahm, Matt Fitzpatrick, Bryson DeChambeau, Patrick Cantlay, Ben Griffin, Akshay Bhatia, Sam Burns, Jacob Bridgeman, Brooks Koepka, Rory McIlroy, Collin Morikawa, Viktor Hovland, Shane Lowry, Hideki Matsuyama, Tyrrell Hatton, Corey Conners, Wyndham Clark, Sungjae Im, Ryan Fox, Cameron Smith, Harry Hall, Tommy Fleetwood, J.J. Spaun, Justin Thomas, Cameron Young, Harris English, Alex Noren, Keegan Bradley, Si Woo Kim, Kurt Kitayama, Ryan Gerard, Min Woo Lee, Xander Schauffele, Russell Henley, Justin Rose, Robert MacIntyre, Maverick McNealy, Chris Gotterup, Sepp Straka, Michael Brennan, Michael Kim."
+  }
+ ],
+ "failing": [],
+ "event": {
+  "key": "health",
+  "name": "Austin Championship pres. by Compliance Solutions",
+  "event_id": "401850980",
+  "state": "pre",
+  "start": "2026-11-12",
+  "end": "2026-11-15",
+  "venue": {
+   "course": "Omni Barton Creek Resort & Spa (Fazio Canyons Course)",
+   "place": "Austin, TX",
+   "par": 72,
+   "yards": 7451
+  },
+  "round": 1,
+  "source": "leaderboard feed",
+  "standings": [
+   {
+    "person": "David",
+    "rank": 2,
+    "total": "E",
+    "usable": 1,
+    "counting": 1,
+    "golfers": [
+     {
+      "name": "Scottie Scheffler",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Ludvig Åberg",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Jon Rahm",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Matt Fitzpatrick",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Bryson DeChambeau",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Patrick Cantlay",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Ben Griffin",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Akshay Bhatia",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Sam Burns",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Jacob Bridgeman",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Brooks Koepka",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Brian Harman",
+      "espn": "Brian Harman",
+      "score": "E",
+      "status": "1:24 PM",
+      "out": false,
+      "counts": true
+     }
+    ]
+   },
+   {
+    "person": "Michael",
+    "rank": 4,
+    "total": "E",
+    "usable": 0,
+    "counting": 0,
+    "golfers": [
+     {
+      "name": "Rory McIlroy",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Collin Morikawa",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Viktor Hovland",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Shane Lowry",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Hideki Matsuyama",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Tyrrell Hatton",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Corey Conners",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Wyndham Clark",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Sungjae Im",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Ryan Fox",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Cameron Smith",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Harry Hall",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     }
+    ]
+   },
+   {
+    "person": "Alan",
+    "rank": 3,
+    "total": "E",
+    "usable": 1,
+    "counting": 1,
+    "golfers": [
+     {
+      "name": "Tommy Fleetwood",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "J.J. Spaun",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Justin Thomas",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Cameron Young",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Harris English",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Alex Noren",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Keegan Bradley",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Si Woo Kim",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Kurt Kitayama",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Ryan Gerard",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Min Woo Lee",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Rasmus Højgaard",
+      "espn": "Rasmus Højgaard",
+      "score": "E",
+      "status": "8:22 AM",
+      "out": false,
+      "counts": true
+     }
+    ]
+   },
+   {
+    "person": "Judy",
+    "rank": 1,
+    "total": "E",
+    "usable": 3,
+    "counting": 3,
+    "golfers": [
+     {
+      "name": "Xander Schauffele",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Russell Henley",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Justin Rose",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Robert MacIntyre",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Maverick McNealy",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Chris Gotterup",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Sepp Straka",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Michael Brennan",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Michael Kim",
+      "espn": null,
+      "score": null,
+      "status": "DNP",
+      "out": true,
+      "counts": false
+     },
+     {
+      "name": "Andrew Novak",
+      "espn": "Andrew Novak",
+      "score": "E",
+      "status": "8:33 AM",
+      "out": false,
+      "counts": true
+     },
+     {
+      "name": "Sami Välimäki",
+      "espn": "Sami Välimäki",
+      "score": "E",
+      "status": "8:44 AM",
+      "out": false,
+      "counts": true
+     },
+     {
+      "name": "Nick Taylor",
+      "espn": "Nick Taylor",
+      "score": "E",
+      "status": "1:13 PM",
+      "out": false,
+      "counts": true
+     }
+    ]
+   }
+  ],
+  "name_check": [
+   {
+    "person": "David",
+    "roster": "Scottie Scheffler",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "David",
+    "roster": "Ludvig Åberg",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "David",
+    "roster": "Jon Rahm",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Joel Dahmen"
+   },
+   {
+    "person": "David",
+    "roster": "Matt Fitzpatrick",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "David",
+    "roster": "Bryson DeChambeau",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "David",
+    "roster": "Patrick Cantlay",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Ricky Castillo"
+   },
+   {
+    "person": "David",
+    "roster": "Ben Griffin",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Ben Martin"
+   },
+   {
+    "person": "David",
+    "roster": "Akshay Bhatia",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "David",
+    "roster": "Sam Burns",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Sam Stevens"
+   },
+   {
+    "person": "David",
+    "roster": "Jacob Bridgeman",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "David",
+    "roster": "Brooks Koepka",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Rory McIlroy",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Collin Morikawa",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Viktor Hovland",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Shane Lowry",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Justin Lower"
+   },
+   {
+    "person": "Michael",
+    "roster": "Hideki Matsuyama",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Tyrrell Hatton",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Corey Conners",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Wyndham Clark",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Sungjae Im",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Ryan Fox",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Michael",
+    "roster": "Cameron Smith",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Jordan Smith"
+   },
+   {
+    "person": "Michael",
+    "roster": "Harry Hall",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Tommy Fleetwood",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "J.J. Spaun",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Justin Thomas",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Austin Smotherman"
+   },
+   {
+    "person": "Alan",
+    "roster": "Cameron Young",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Harris English",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Alex Noren",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Keegan Bradley",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Si Woo Kim",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Kurt Kitayama",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Ryan Gerard",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Alan",
+    "roster": "Min Woo Lee",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Xander Schauffele",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Russell Henley",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Justin Rose",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Justin Lower"
+   },
+   {
+    "person": "Judy",
+    "roster": "Robert MacIntyre",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Maverick McNealy",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Chris Gotterup",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Sepp Straka",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Michael Brennan",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Michael Kim",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": "Michael Thompson"
+   }
+  ],
+  "field_size": 120,
+  "error": null,
+  "updated": "2026-11-10T15:22-05:00"
+ },
+ "roster_year": 2026,
+ "roster": {
+  "Scottie Scheffler": {},
+  "Ludvig Åberg": {},
+  "Jon Rahm": {
+   "hint": "Joel Dahmen",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Matt Fitzpatrick": {},
+  "Bryson DeChambeau": {},
+  "Patrick Cantlay": {
+   "hint": "Ricky Castillo",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Ben Griffin": {
+   "hint": "Ben Martin",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Akshay Bhatia": {},
+  "Sam Burns": {
+   "hint": "Sam Stevens",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Jacob Bridgeman": {},
+  "Brooks Koepka": {},
+  "Brian Harman": {
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10"
+  },
+  "Rory McIlroy": {},
+  "Collin Morikawa": {},
+  "Viktor Hovland": {},
+  "Shane Lowry": {
+   "hint": "Justin Lower",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Hideki Matsuyama": {},
+  "Tyrrell Hatton": {},
+  "Corey Conners": {},
+  "Wyndham Clark": {},
+  "Sungjae Im": {},
+  "Ryan Fox": {},
+  "Cameron Smith": {
+   "hint": "Jordan Smith",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Harry Hall": {},
+  "Tommy Fleetwood": {},
+  "J.J. Spaun": {},
+  "Justin Thomas": {
+   "hint": "Austin Smotherman",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Cameron Young": {},
+  "Harris English": {},
+  "Alex Noren": {},
+  "Keegan Bradley": {},
+  "Si Woo Kim": {},
+  "Kurt Kitayama": {},
+  "Ryan Gerard": {},
+  "Min Woo Lee": {},
+  "Rasmus Højgaard": {
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10"
+  },
+  "Xander Schauffele": {},
+  "Russell Henley": {},
+  "Justin Rose": {
+   "hint": "Justin Lower",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Robert MacIntyre": {},
+  "Maverick McNealy": {},
+  "Chris Gotterup": {},
+  "Sepp Straka": {},
+  "Michael Brennan": {},
+  "Michael Kim": {
+   "hint": "Michael Thompson",
+   "rank": 1,
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  "Andrew Novak": {
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10"
+  },
+  "Sami Välimäki": {
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10"
+  },
+  "Nick Taylor": {
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10"
+  }
+ },
+ "roster_rows": [
+  {
+   "person": "David",
+   "name": "Scottie Scheffler",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "David",
+   "name": "Ludvig Åberg",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "David",
+   "name": "Jon Rahm",
+   "found": null,
+   "date": null,
+   "hint": "Joel Dahmen",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "David",
+   "name": "Matt Fitzpatrick",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "David",
+   "name": "Bryson DeChambeau",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "David",
+   "name": "Patrick Cantlay",
+   "found": null,
+   "date": null,
+   "hint": "Ricky Castillo",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "David",
+   "name": "Ben Griffin",
+   "found": null,
+   "date": null,
+   "hint": "Ben Martin",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "David",
+   "name": "Akshay Bhatia",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "David",
+   "name": "Sam Burns",
+   "found": null,
+   "date": null,
+   "hint": "Sam Stevens",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "David",
+   "name": "Jacob Bridgeman",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "David",
+   "name": "Brooks Koepka",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "David",
+   "name": "Brian Harman",
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10",
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Rory McIlroy",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Collin Morikawa",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Viktor Hovland",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Shane Lowry",
+   "found": null,
+   "date": null,
+   "hint": "Justin Lower",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "Michael",
+   "name": "Hideki Matsuyama",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Tyrrell Hatton",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Corey Conners",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Wyndham Clark",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Sungjae Im",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Ryan Fox",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Michael",
+   "name": "Cameron Smith",
+   "found": null,
+   "date": null,
+   "hint": "Jordan Smith",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "Michael",
+   "name": "Harry Hall",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Tommy Fleetwood",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "J.J. Spaun",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Justin Thomas",
+   "found": null,
+   "date": null,
+   "hint": "Austin Smotherman",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "Alan",
+   "name": "Cameron Young",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Harris English",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Alex Noren",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Keegan Bradley",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Si Woo Kim",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Kurt Kitayama",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Ryan Gerard",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Min Woo Lee",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Alan",
+   "name": "Rasmus Højgaard",
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10",
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Xander Schauffele",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Russell Henley",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Justin Rose",
+   "found": null,
+   "date": null,
+   "hint": "Justin Lower",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "Judy",
+   "name": "Robert MacIntyre",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Maverick McNealy",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Chris Gotterup",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Sepp Straka",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Michael Brennan",
+   "found": null,
+   "date": null,
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Michael Kim",
+   "found": null,
+   "date": null,
+   "hint": "Michael Thompson",
+   "kind": "dnp",
+   "where": "Austin Championship pres. by Compliance Solutions"
+  },
+  {
+   "person": "Judy",
+   "name": "Andrew Novak",
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10",
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Sami Välimäki",
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10",
+   "hint": null,
+   "kind": null,
+   "where": null
+  },
+  {
+   "person": "Judy",
+   "name": "Nick Taylor",
+   "found": "Austin Championship pres. by Compliance Solutions",
+   "date": "2026-11-10",
+   "hint": null,
+   "kind": null,
+   "where": null
+  }
+ ],
+ "event_name": "Austin Championship pres. by Compliance Solutions",
+ "people": [
+  "David",
+  "Michael",
+  "Alan",
+  "Judy"
+ ],
+ "year": 2026,
+ "updated": "2026-11-10T15:22-05:00",
+ "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"warn\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"warn\", \"5 of 48 found on ESPN this year. Not yet: Scottie Scheffler, Ludvig \\u00c5berg, Jon Rahm, Matt Fitzpatrick, Bryson DeChambeau, Patrick Cantlay, Ben Griffin, Akshay Bhatia, Sam Burns, Jacob Bridgeman, Brooks Koepka, Rory McIlroy, Collin Morikawa, Viktor Hovland, Shane Lowry, Hideki Matsuyama, Tyrrell Hatton, Corey Conners, Wyndham Clark, Sungjae Im, Ryan Fox, Cameron Smith, Harry Hall, Tommy Fleetwood, J.J. Spaun, Justin Thomas, Cameron Young, Harris English, Alex Noren, Keegan Bradley, Si Woo Kim, Kurt Kitayama, Ryan Gerard, Min Woo Lee, Xander Schauffele, Russell Henley, Justin Rose, Robert MacIntyre, Maverick McNealy, Chris Gotterup, Sepp Straka, Michael Brennan, Michael Kim.\"]]"
+}
