@@ -799,7 +799,7 @@
   ],
   "field_size": 120,
   "error": null,
-  "updated": "2026-11-10T22:32-05:00"
+  "updated": "2026-11-11T06:26-05:00"
  },
  "roster_year": 2026,
  "roster": {
@@ -1456,6 +1456,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-10T22:32-05:00",
+ "updated": "2026-11-11T06:26-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
