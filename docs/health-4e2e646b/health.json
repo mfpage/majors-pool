@@ -28,7 +28,7 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Scheduled 120."
+   "detail": "All recognized: In_Progress 60, Scheduled 60."
   },
   {
    "name": "Scores add up",
@@ -61,7 +61,7 @@
   "key": "health",
   "name": "Austin Championship pres. by Compliance Solutions",
   "event_id": "401850980",
-  "state": "pre",
+  "state": "live",
   "start": "2026-11-12",
   "end": "2026-11-15",
   "venue": {
@@ -382,7 +382,7 @@
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
       "score": "E",
-      "status": "8:22 AM",
+      "status": "13",
       "out": false,
       "counts": true
      }
@@ -471,7 +471,7 @@
       "name": "Andrew Novak",
       "espn": "Andrew Novak",
       "score": "E",
-      "status": "8:33 AM",
+      "status": "12",
       "out": false,
       "counts": true
      },
@@ -479,7 +479,7 @@
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
       "score": "E",
-      "status": "8:44 AM",
+      "status": "11",
       "out": false,
       "counts": true
      },
@@ -799,7 +799,7 @@
   ],
   "field_size": 120,
   "error": null,
-  "updated": "2026-11-12T03:15-05:00"
+  "updated": "2026-11-12T11:55-05:00"
  },
  "roster_year": 2026,
  "roster": {
@@ -1456,6 +1456,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-12T03:15-05:00",
+ "updated": "2026-11-12T11:55-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
