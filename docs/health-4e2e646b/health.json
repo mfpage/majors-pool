@@ -28,12 +28,12 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Cut 1, In_Progress 60, Scheduled 59."
+   "detail": "All recognized: Cut 3, Finish 73, In_Progress 44."
   },
   {
    "name": "Scores add up",
    "status": "pass",
-   "detail": "59 of 59 golfers' round scores match their total."
+   "detail": "73 of 73 golfers' round scores match their total."
   },
   {
    "name": "Cut",
@@ -43,7 +43,7 @@
   {
    "name": "Pool scoring",
    "status": "pass",
-   "detail": "Judy would lead at +1. 5 of 48 pool golfers are in this field."
+   "detail": "Judy would lead at -4. 5 of 48 pool golfers are in this field."
   },
   {
    "name": "Day files",
@@ -76,7 +76,7 @@
    {
     "person": "David",
     "rank": 2,
-    "total": "-5",
+    "total": "-11",
     "usable": 1,
     "counting": 1,
     "golfers": [
@@ -171,8 +171,8 @@
      {
       "name": "Brian Harman",
       "espn": "Brian Harman",
-      "score": "-5",
-      "status": "14",
+      "score": "-11",
+      "status": "F",
       "out": false,
       "counts": true
      }
@@ -382,7 +382,7 @@
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
       "score": "-3",
-      "status": "1:02 PM",
+      "status": "17",
       "out": false,
       "counts": true
      }
@@ -391,7 +391,7 @@
    {
     "person": "Judy",
     "rank": 1,
-    "total": "+1",
+    "total": "-4",
     "usable": 3,
     "counting": 3,
     "golfers": [
@@ -471,7 +471,7 @@
       "name": "Andrew Novak",
       "espn": "Andrew Novak",
       "score": "E",
-      "status": "1:13 PM",
+      "status": "17",
       "out": false,
       "counts": true
      },
@@ -479,15 +479,15 @@
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
       "score": "-4",
-      "status": "1:24 PM",
+      "status": "15",
       "out": false,
       "counts": true
      },
      {
       "name": "Nick Taylor",
       "espn": "Nick Taylor",
-      "score": "+5",
-      "status": "15",
+      "score": "E",
+      "status": "F",
       "out": false,
       "counts": true
      }
@@ -799,7 +799,7 @@
   ],
   "field_size": 120,
   "error": null,
-  "updated": "2026-11-13T12:44-05:00",
+  "updated": "2026-11-13T17:54-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -1475,6 +1475,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-13T12:44-05:00",
+ "updated": "2026-11-13T17:54-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
