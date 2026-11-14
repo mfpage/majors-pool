@@ -28,12 +28,12 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Cut 53, In_Progress 39, Scheduled 28."
+   "detail": "All recognized: Cut 53, Finish 30, In_Progress 37."
   },
   {
    "name": "Scores add up",
    "status": "pass",
-   "detail": "28 of 28 golfers' round scores match their total."
+   "detail": "30 of 30 golfers' round scores match their total."
   },
   {
    "name": "Cut",
@@ -172,7 +172,7 @@
       "name": "Brian Harman",
       "espn": "Brian Harman",
       "score": "-11",
-      "status": "11:41 AM",
+      "status": "12",
       "out": false,
       "counts": true
      }
@@ -286,7 +286,7 @@
    {
     "person": "Alan",
     "rank": 3,
-    "total": "-7",
+    "total": "-9",
     "usable": 1,
     "counting": 1,
     "golfers": [
@@ -381,8 +381,8 @@
      {
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
-      "score": "-7",
-      "status": "2",
+      "score": "-9",
+      "status": "F",
       "out": false,
       "counts": true
      }
@@ -479,7 +479,7 @@
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
       "score": "-10",
-      "status": "11:19 AM",
+      "status": "14",
       "out": false,
       "counts": true
      },
@@ -799,7 +799,7 @@
   ],
   "field_size": 120,
   "error": null,
-  "updated": "2026-11-14T11:05-05:00",
+  "updated": "2026-11-14T15:40-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -1475,6 +1475,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-14T11:05-05:00",
+ "updated": "2026-11-14T15:40-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
