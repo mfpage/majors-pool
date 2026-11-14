@@ -28,12 +28,12 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Cut 3, Finish 73, In_Progress 44."
+   "detail": "All recognized: Cut 3, Finish 101, In_Progress 16."
   },
   {
    "name": "Scores add up",
    "status": "pass",
-   "detail": "73 of 73 golfers' round scores match their total."
+   "detail": "101 of 101 golfers' round scores match their total."
   },
   {
    "name": "Cut",
@@ -43,7 +43,7 @@
   {
    "name": "Pool scoring",
    "status": "pass",
-   "detail": "Judy would lead at -4. 5 of 48 pool golfers are in this field."
+   "detail": "Judy would lead at -9. 5 of 48 pool golfers are in this field."
   },
   {
    "name": "Day files",
@@ -286,7 +286,7 @@
    {
     "person": "Alan",
     "rank": 3,
-    "total": "-3",
+    "total": "-7",
     "usable": 1,
     "counting": 1,
     "golfers": [
@@ -381,8 +381,8 @@
      {
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
-      "score": "-3",
-      "status": "17",
+      "score": "-7",
+      "status": "F",
       "out": false,
       "counts": true
      }
@@ -391,7 +391,7 @@
    {
     "person": "Judy",
     "rank": 1,
-    "total": "-4",
+    "total": "-9",
     "usable": 3,
     "counting": 3,
     "golfers": [
@@ -470,16 +470,16 @@
      {
       "name": "Andrew Novak",
       "espn": "Andrew Novak",
-      "score": "E",
-      "status": "17",
+      "score": "+1",
+      "status": "F",
       "out": false,
       "counts": true
      },
      {
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
-      "score": "-4",
-      "status": "15",
+      "score": "-10",
+      "status": "F",
       "out": false,
       "counts": true
      },
@@ -799,7 +799,7 @@
   ],
   "field_size": 120,
   "error": null,
-  "updated": "2026-11-13T17:54-05:00",
+  "updated": "2026-11-13T21:47-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -1475,6 +1475,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-13T17:54-05:00",
+ "updated": "2026-11-13T21:47-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
