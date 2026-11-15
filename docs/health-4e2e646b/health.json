@@ -28,12 +28,12 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Cut 53, Finish 30, In_Progress 37."
+   "detail": "All recognized: Cut 53, Scheduled 67."
   },
   {
    "name": "Scores add up",
    "status": "pass",
-   "detail": "30 of 30 golfers' round scores match their total."
+   "detail": "67 of 67 golfers' round scores match their total."
   },
   {
    "name": "Cut",
@@ -43,12 +43,12 @@
   {
    "name": "Pool scoring",
    "status": "pass",
-   "detail": "David would lead at -11. 5 of 48 pool golfers are in this field."
+   "detail": "Judy would lead at -13. 5 of 48 pool golfers are in this field."
   },
   {
    "name": "Day files",
    "status": "pass",
-   "detail": "Saved: Day 1."
+   "detail": "Saved: Day 1, Day 2, Day 3."
   },
   {
    "name": "Roster names",
@@ -70,13 +70,13 @@
    "par": 72,
    "yards": 7451
   },
-  "round": 2,
+  "round": 4,
   "source": "leaderboard feed",
   "standings": [
    {
     "person": "David",
-    "rank": 1,
-    "total": "-11",
+    "rank": 3,
+    "total": "-7",
     "usable": 1,
     "counting": 1,
     "golfers": [
@@ -171,8 +171,8 @@
      {
       "name": "Brian Harman",
       "espn": "Brian Harman",
-      "score": "-11",
-      "status": "12",
+      "score": "-7",
+      "status": "8:11 AM",
       "out": false,
       "counts": true
      }
@@ -285,7 +285,7 @@
    },
    {
     "person": "Alan",
-    "rank": 3,
+    "rank": 2,
     "total": "-9",
     "usable": 1,
     "counting": 1,
@@ -382,7 +382,7 @@
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
       "score": "-9",
-      "status": "F",
+      "status": "8:55 AM",
       "out": false,
       "counts": true
      }
@@ -390,8 +390,8 @@
    },
    {
     "person": "Judy",
-    "rank": 2,
-    "total": "-10",
+    "rank": 1,
+    "total": "-13",
     "usable": 1,
     "counting": 1,
     "golfers": [
@@ -478,8 +478,8 @@
      {
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
-      "score": "-10",
-      "status": "14",
+      "score": "-13",
+      "status": "10:01 AM",
       "out": false,
       "counts": true
      },
@@ -799,7 +799,7 @@
   ],
   "field_size": 120,
   "error": null,
-  "updated": "2026-11-14T15:40-05:00",
+  "updated": "2026-11-14T19:15-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -816,6 +816,40 @@
      "Michael": "E",
      "Alan": "-3",
      "Judy": "+1"
+    }
+   },
+   {
+    "day": 2,
+    "file": "snapshots/2026 Austin Championship pres. by Compliance Solutions - Day 2.csv",
+    "saved": "2026-11-14T19:15-05:00",
+    "ranks": {
+     "David": 1,
+     "Michael": 4,
+     "Alan": 3,
+     "Judy": 2
+    },
+    "totals": {
+     "David": "-11",
+     "Michael": "E",
+     "Alan": "-7",
+     "Judy": "-10"
+    }
+   },
+   {
+    "day": 3,
+    "file": "snapshots/2026 Austin Championship pres. by Compliance Solutions - Day 3.csv",
+    "saved": "2026-11-14T19:15-05:00",
+    "ranks": {
+     "David": 3,
+     "Michael": 4,
+     "Alan": 2,
+     "Judy": 1
+    },
+    "totals": {
+     "David": "-7",
+     "Michael": "E",
+     "Alan": "-9",
+     "Judy": "-13"
     }
    }
   ]
@@ -1475,6 +1509,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-14T15:40-05:00",
+ "updated": "2026-11-14T19:15-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
