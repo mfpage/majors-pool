@@ -28,7 +28,7 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Cut 54, Finish 66."
+   "detail": "All recognized: Cut 54, Scheduled 66."
   },
   {
    "name": "Scores add up",
@@ -172,7 +172,7 @@
       "name": "Brian Harman",
       "espn": "Brian Harman",
       "score": "-7",
-      "status": "F",
+      "status": "8:41 AM",
       "out": false,
       "counts": true
      }
@@ -382,7 +382,7 @@
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
       "score": "-9",
-      "status": "F",
+      "status": "9:25 AM",
       "out": false,
       "counts": true
      }
@@ -479,7 +479,7 @@
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
       "score": "-13",
-      "status": "F",
+      "status": "10:31 AM",
       "out": false,
       "counts": true
      },
@@ -799,7 +799,7 @@
   ],
   "field_size": 120,
   "error": null,
-  "updated": "2026-11-15T18:37-05:00",
+  "updated": "2026-11-15T22:05-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -1509,6 +1509,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-15T18:37-05:00",
+ "updated": "2026-11-15T22:05-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
