@@ -13,12 +13,12 @@
   {
    "name": "This week's tournament",
    "status": "pass",
-   "detail": "Austin Championship pres. by Compliance Solutions (ESPN id 401850980)."
+   "detail": "The RSM Classic (ESPN id 401850981)."
   },
   {
    "name": "Leaderboard feed (main source)",
    "status": "pass",
-   "detail": "120 golfers read."
+   "detail": "147 golfers read."
   },
   {
    "name": "Backup sources",
@@ -28,27 +28,27 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Cut 55, Finish 65."
+   "detail": "All recognized: Scheduled 147."
   },
   {
    "name": "Scores add up",
    "status": "pass",
-   "detail": "65 of 65 golfers' round scores match their total."
+   "detail": "No finished rounds to check yet."
   },
   {
    "name": "Cut",
    "status": "pass",
-   "detail": "50 golfers marked cut."
+   "detail": "Not made yet."
   },
   {
    "name": "Pool scoring",
    "status": "pass",
-   "detail": "Judy would lead at -15. 5 of 48 pool golfers are in this field."
+   "detail": "Judy would lead at E. 11 of 48 pool golfers are in this field."
   },
   {
    "name": "Day files",
    "status": "pass",
-   "detail": "Saved: Day 1, Day 2, Day 3, Day 4."
+   "detail": "None due yet."
   },
   {
    "name": "Roster names",
@@ -59,26 +59,26 @@
  "failing": [],
  "event": {
   "key": "health",
-  "name": "Austin Championship pres. by Compliance Solutions",
-  "event_id": "401850980",
-  "state": "final",
-  "start": "2026-11-12",
-  "end": "2026-11-16",
+  "name": "The RSM Classic",
+  "event_id": "401850981",
+  "state": "pre",
+  "start": "2026-11-19",
+  "end": "2026-11-22",
   "venue": {
-   "course": "Omni Barton Creek Resort & Spa (Fazio Canyons Course)",
-   "place": "Austin, TX",
-   "par": 72,
-   "yards": 7451
+   "course": "Sea Island Golf Club (Seaside Course)",
+   "place": "Saint Simons Island, GA",
+   "par": 70,
+   "yards": 7157
   },
-  "round": 4,
+  "round": 1,
   "source": "leaderboard feed",
   "standings": [
    {
     "person": "David",
-    "rank": 2,
-    "total": "-11",
-    "usable": 1,
-    "counting": 1,
+    "rank": 3,
+    "total": "E",
+    "usable": 2,
+    "counting": 2,
     "golfers": [
      {
       "name": "Scottie Scheffler",
@@ -162,17 +162,17 @@
      },
      {
       "name": "Brooks Koepka",
-      "espn": null,
-      "score": null,
-      "status": "DNP",
-      "out": true,
-      "counts": false
+      "espn": "Brooks Koepka",
+      "score": "E",
+      "status": "9:58 AM",
+      "out": false,
+      "counts": true
      },
      {
       "name": "Brian Harman",
       "espn": "Brian Harman",
-      "score": "-11",
-      "status": "F",
+      "score": "E",
+      "status": "9:03 AM",
       "out": false,
       "counts": true
      }
@@ -182,8 +182,8 @@
     "person": "Michael",
     "rank": 4,
     "total": "E",
-    "usable": 0,
-    "counting": 0,
+    "usable": 1,
+    "counting": 1,
     "golfers": [
      {
       "name": "Rory McIlroy",
@@ -275,20 +275,20 @@
      },
      {
       "name": "Harry Hall",
-      "espn": null,
-      "score": null,
-      "status": "DNP",
-      "out": true,
-      "counts": false
+      "espn": "Harry Hall",
+      "score": "E",
+      "status": "10:09 AM",
+      "out": false,
+      "counts": true
      }
     ]
    },
    {
     "person": "Alan",
-    "rank": 3,
-    "total": "-9",
-    "usable": 1,
-    "counting": 1,
+    "rank": 2,
+    "total": "E",
+    "usable": 3,
+    "counting": 3,
     "golfers": [
      {
       "name": "Tommy Fleetwood",
@@ -324,11 +324,11 @@
      },
      {
       "name": "Harris English",
-      "espn": null,
-      "score": null,
-      "status": "DNP",
-      "out": true,
-      "counts": false
+      "espn": "Harris English",
+      "score": "E",
+      "status": "8:52 AM",
+      "out": false,
+      "counts": true
      },
      {
       "name": "Alex Noren",
@@ -340,11 +340,11 @@
      },
      {
       "name": "Keegan Bradley",
-      "espn": null,
-      "score": null,
-      "status": "DNP",
-      "out": true,
-      "counts": false
+      "espn": "Keegan Bradley",
+      "score": "E",
+      "status": "9:03 AM",
+      "out": false,
+      "counts": true
      },
      {
       "name": "Si Woo Kim",
@@ -381,8 +381,8 @@
      {
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
-      "score": "-9",
-      "status": "F",
+      "score": "E",
+      "status": "8:30 AM",
       "out": false,
       "counts": true
      }
@@ -391,9 +391,9 @@
    {
     "person": "Judy",
     "rank": 1,
-    "total": "-15",
-    "usable": 1,
-    "counting": 1,
+    "total": "E",
+    "usable": 5,
+    "counting": 5,
     "golfers": [
      {
       "name": "Xander Schauffele",
@@ -429,11 +429,11 @@
      },
      {
       "name": "Maverick McNealy",
-      "espn": null,
-      "score": null,
-      "status": "DNP",
-      "out": true,
-      "counts": false
+      "espn": "Maverick McNealy",
+      "score": "E",
+      "status": "8:52 AM",
+      "out": false,
+      "counts": true
      },
      {
       "name": "Chris Gotterup",
@@ -445,19 +445,19 @@
      },
      {
       "name": "Sepp Straka",
-      "espn": null,
-      "score": null,
-      "status": "DNP",
-      "out": true,
-      "counts": false
+      "espn": "Sepp Straka",
+      "score": "E",
+      "status": "9:03 AM",
+      "out": false,
+      "counts": true
      },
      {
       "name": "Michael Brennan",
-      "espn": null,
-      "score": null,
-      "status": "DNP",
-      "out": true,
-      "counts": false
+      "espn": "Michael Brennan",
+      "score": "E",
+      "status": "10:09 AM",
+      "out": false,
+      "counts": true
      },
      {
       "name": "Michael Kim",
@@ -470,24 +470,24 @@
      {
       "name": "Andrew Novak",
       "espn": "Andrew Novak",
-      "score": null,
-      "status": "CUT",
-      "out": true,
-      "counts": false
+      "score": "E",
+      "status": "10:09 AM",
+      "out": false,
+      "counts": true
      },
      {
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
-      "score": "-15",
-      "status": "F",
+      "score": "E",
+      "status": "10:09 AM",
       "out": false,
       "counts": true
      },
      {
       "name": "Nick Taylor",
-      "espn": "Nick Taylor",
+      "espn": null,
       "score": null,
-      "status": "CUT",
+      "status": "DNP",
       "out": true,
       "counts": false
      }
@@ -561,13 +561,6 @@
    {
     "person": "David",
     "roster": "Jacob Bridgeman",
-    "espn": null,
-    "kind": "dnp",
-    "suggestion": null
-   },
-   {
-    "person": "David",
-    "roster": "Brooks Koepka",
     "espn": null,
     "kind": "dnp",
     "suggestion": null
@@ -650,13 +643,6 @@
     "suggestion": null
    },
    {
-    "person": "Michael",
-    "roster": "Harry Hall",
-    "espn": null,
-    "kind": "dnp",
-    "suggestion": null
-   },
-   {
     "person": "Alan",
     "roster": "Tommy Fleetwood",
     "espn": null,
@@ -686,21 +672,7 @@
    },
    {
     "person": "Alan",
-    "roster": "Harris English",
-    "espn": null,
-    "kind": "dnp",
-    "suggestion": null
-   },
-   {
-    "person": "Alan",
     "roster": "Alex Noren",
-    "espn": null,
-    "kind": "dnp",
-    "suggestion": null
-   },
-   {
-    "person": "Alan",
-    "roster": "Keegan Bradley",
     "espn": null,
     "kind": "dnp",
     "suggestion": null
@@ -763,28 +735,7 @@
    },
    {
     "person": "Judy",
-    "roster": "Maverick McNealy",
-    "espn": null,
-    "kind": "dnp",
-    "suggestion": null
-   },
-   {
-    "person": "Judy",
     "roster": "Chris Gotterup",
-    "espn": null,
-    "kind": "dnp",
-    "suggestion": null
-   },
-   {
-    "person": "Judy",
-    "roster": "Sepp Straka",
-    "espn": null,
-    "kind": "dnp",
-    "suggestion": null
-   },
-   {
-    "person": "Judy",
-    "roster": "Michael Brennan",
     "espn": null,
     "kind": "dnp",
     "suggestion": null
@@ -795,81 +746,18 @@
     "espn": null,
     "kind": "dnp",
     "suggestion": null
+   },
+   {
+    "person": "Judy",
+    "roster": "Nick Taylor",
+    "espn": null,
+    "kind": "dnp",
+    "suggestion": null
    }
   ],
-  "field_size": 120,
+  "field_size": 147,
   "error": null,
-  "updated": "2026-11-17T07:10-05:00",
-  "snapshots": [
-   {
-    "day": 1,
-    "file": "snapshots/2026 Austin Championship pres. by Compliance Solutions - Day 1.csv",
-    "saved": "2026-11-12T21:48-05:00",
-    "ranks": {
-     "David": 2,
-     "Michael": 4,
-     "Alan": 3,
-     "Judy": 1
-    },
-    "totals": {
-     "David": "-5",
-     "Michael": "E",
-     "Alan": "-3",
-     "Judy": "+1"
-    }
-   },
-   {
-    "day": 2,
-    "file": "snapshots/2026 Austin Championship pres. by Compliance Solutions - Day 2.csv",
-    "saved": "2026-11-14T19:15-05:00",
-    "ranks": {
-     "David": 1,
-     "Michael": 4,
-     "Alan": 3,
-     "Judy": 2
-    },
-    "totals": {
-     "David": "-11",
-     "Michael": "E",
-     "Alan": "-7",
-     "Judy": "-10"
-    }
-   },
-   {
-    "day": 3,
-    "file": "snapshots/2026 Austin Championship pres. by Compliance Solutions - Day 3.csv",
-    "saved": "2026-11-14T19:15-05:00",
-    "ranks": {
-     "David": 3,
-     "Michael": 4,
-     "Alan": 2,
-     "Judy": 1
-    },
-    "totals": {
-     "David": "-7",
-     "Michael": "E",
-     "Alan": "-9",
-     "Judy": "-13"
-    }
-   },
-   {
-    "day": 4,
-    "file": "snapshots/2026 Austin Championship pres. by Compliance Solutions - Day 4.csv",
-    "saved": "2026-11-16T15:58-05:00",
-    "ranks": {
-     "David": 2,
-     "Michael": 4,
-     "Alan": 3,
-     "Judy": 1
-    },
-    "totals": {
-     "David": "-11",
-     "Michael": "E",
-     "Alan": "-9",
-     "Judy": "-15"
-    }
-   }
-  ]
+  "updated": "2026-11-17T15:50-05:00"
  },
  "roster_year": 2026,
  "roster": {
@@ -1518,7 +1406,7 @@
   "401811941",
   "401811942"
  ],
- "event_name": "Austin Championship pres. by Compliance Solutions",
+ "event_name": "The RSM Classic",
  "people": [
   "David",
   "Michael",
@@ -1526,6 +1414,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-17T07:10-05:00",
+ "updated": "2026-11-17T15:50-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
