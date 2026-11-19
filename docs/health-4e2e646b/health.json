@@ -28,7 +28,7 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Scheduled 147."
+   "detail": "All recognized: In_Progress 147."
   },
   {
    "name": "Scores add up",
@@ -61,7 +61,7 @@
   "key": "health",
   "name": "The RSM Classic",
   "event_id": "401850981",
-  "state": "pre",
+  "state": "live",
   "start": "2026-11-19",
   "end": "2026-11-22",
   "venue": {
@@ -164,7 +164,7 @@
       "name": "Brooks Koepka",
       "espn": "Brooks Koepka",
       "score": "E",
-      "status": "9:58 AM",
+      "status": "10",
       "out": false,
       "counts": true
      },
@@ -172,7 +172,7 @@
       "name": "Brian Harman",
       "espn": "Brian Harman",
       "score": "E",
-      "status": "9:03 AM",
+      "status": "13",
       "out": false,
       "counts": true
      }
@@ -277,7 +277,7 @@
       "name": "Harry Hall",
       "espn": "Harry Hall",
       "score": "E",
-      "status": "10:09 AM",
+      "status": "8",
       "out": false,
       "counts": true
      }
@@ -326,7 +326,7 @@
       "name": "Harris English",
       "espn": "Harris English",
       "score": "E",
-      "status": "8:52 AM",
+      "status": "13",
       "out": false,
       "counts": true
      },
@@ -342,7 +342,7 @@
       "name": "Keegan Bradley",
       "espn": "Keegan Bradley",
       "score": "E",
-      "status": "9:03 AM",
+      "status": "13",
       "out": false,
       "counts": true
      },
@@ -382,7 +382,7 @@
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
       "score": "E",
-      "status": "8:30 AM",
+      "status": "14",
       "out": false,
       "counts": true
      }
@@ -431,7 +431,7 @@
       "name": "Maverick McNealy",
       "espn": "Maverick McNealy",
       "score": "E",
-      "status": "8:52 AM",
+      "status": "14",
       "out": false,
       "counts": true
      },
@@ -447,7 +447,7 @@
       "name": "Sepp Straka",
       "espn": "Sepp Straka",
       "score": "E",
-      "status": "9:03 AM",
+      "status": "13",
       "out": false,
       "counts": true
      },
@@ -455,7 +455,7 @@
       "name": "Michael Brennan",
       "espn": "Michael Brennan",
       "score": "E",
-      "status": "10:09 AM",
+      "status": "9",
       "out": false,
       "counts": true
      },
@@ -471,7 +471,7 @@
       "name": "Andrew Novak",
       "espn": "Andrew Novak",
       "score": "E",
-      "status": "10:09 AM",
+      "status": "9",
       "out": false,
       "counts": true
      },
@@ -479,7 +479,7 @@
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
       "score": "E",
-      "status": "10:09 AM",
+      "status": "9",
       "out": false,
       "counts": true
      },
@@ -757,7 +757,7 @@
   ],
   "field_size": 147,
   "error": null,
-  "updated": "2026-11-19T03:43-05:00"
+  "updated": "2026-11-19T12:39-05:00"
  },
  "roster_year": 2026,
  "roster": {
@@ -1414,6 +1414,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-19T03:43-05:00",
+ "updated": "2026-11-19T12:39-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
