@@ -28,12 +28,12 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: In_Progress 147."
+   "detail": "All recognized: Scheduled 147."
   },
   {
    "name": "Scores add up",
    "status": "pass",
-   "detail": "No finished rounds to check yet."
+   "detail": "146 of 146 golfers' round scores match their total."
   },
   {
    "name": "Cut",
@@ -43,12 +43,12 @@
   {
    "name": "Pool scoring",
    "status": "pass",
-   "detail": "Judy would lead at E. 11 of 48 pool golfers are in this field."
+   "detail": "Judy would lead at -16. 11 of 48 pool golfers are in this field."
   },
   {
    "name": "Day files",
    "status": "pass",
-   "detail": "None due yet."
+   "detail": "Saved: Day 1."
   },
   {
    "name": "Roster names",
@@ -70,13 +70,13 @@
    "par": 70,
    "yards": 7157
   },
-  "round": 1,
+  "round": 2,
   "source": "leaderboard feed",
   "standings": [
    {
     "person": "David",
     "rank": 3,
-    "total": "E",
+    "total": "-4",
     "usable": 2,
     "counting": 2,
     "golfers": [
@@ -163,16 +163,16 @@
      {
       "name": "Brooks Koepka",
       "espn": "Brooks Koepka",
-      "score": "E",
-      "status": "10",
+      "score": "-3",
+      "status": "8:52 AM",
       "out": false,
       "counts": true
      },
      {
       "name": "Brian Harman",
       "espn": "Brian Harman",
-      "score": "E",
-      "status": "13",
+      "score": "-1",
+      "status": "10:09 AM",
       "out": false,
       "counts": true
      }
@@ -181,7 +181,7 @@
    {
     "person": "Michael",
     "rank": 4,
-    "total": "E",
+    "total": "-3",
     "usable": 1,
     "counting": 1,
     "golfers": [
@@ -276,8 +276,8 @@
      {
       "name": "Harry Hall",
       "espn": "Harry Hall",
-      "score": "E",
-      "status": "8",
+      "score": "-3",
+      "status": "8:52 AM",
       "out": false,
       "counts": true
      }
@@ -286,7 +286,7 @@
    {
     "person": "Alan",
     "rank": 2,
-    "total": "E",
+    "total": "-10",
     "usable": 3,
     "counting": 3,
     "golfers": [
@@ -325,8 +325,8 @@
      {
       "name": "Harris English",
       "espn": "Harris English",
-      "score": "E",
-      "status": "13",
+      "score": "-3",
+      "status": "9:58 AM",
       "out": false,
       "counts": true
      },
@@ -341,8 +341,8 @@
      {
       "name": "Keegan Bradley",
       "espn": "Keegan Bradley",
-      "score": "E",
-      "status": "13",
+      "score": "-3",
+      "status": "10:09 AM",
       "out": false,
       "counts": true
      },
@@ -381,8 +381,8 @@
      {
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
-      "score": "E",
-      "status": "14",
+      "score": "-4",
+      "status": "9:36 AM",
       "out": false,
       "counts": true
      }
@@ -391,7 +391,7 @@
    {
     "person": "Judy",
     "rank": 1,
-    "total": "E",
+    "total": "-16",
     "usable": 5,
     "counting": 5,
     "golfers": [
@@ -430,8 +430,8 @@
      {
       "name": "Maverick McNealy",
       "espn": "Maverick McNealy",
-      "score": "E",
-      "status": "14",
+      "score": "-6",
+      "status": "9:58 AM",
       "out": false,
       "counts": true
      },
@@ -446,16 +446,16 @@
      {
       "name": "Sepp Straka",
       "espn": "Sepp Straka",
-      "score": "E",
-      "status": "13",
+      "score": "-4",
+      "status": "10:09 AM",
       "out": false,
       "counts": true
      },
      {
       "name": "Michael Brennan",
       "espn": "Michael Brennan",
-      "score": "E",
-      "status": "9",
+      "score": "-1",
+      "status": "9:03 AM",
       "out": false,
       "counts": true
      },
@@ -470,16 +470,16 @@
      {
       "name": "Andrew Novak",
       "espn": "Andrew Novak",
-      "score": "E",
-      "status": "9",
+      "score": "-1",
+      "status": "9:03 AM",
       "out": false,
       "counts": true
      },
      {
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
-      "score": "E",
-      "status": "9",
+      "score": "-4",
+      "status": "9:03 AM",
       "out": false,
       "counts": true
      },
@@ -757,7 +757,26 @@
   ],
   "field_size": 147,
   "error": null,
-  "updated": "2026-11-19T12:39-05:00"
+  "updated": "2026-11-19T18:47-05:00",
+  "snapshots": [
+   {
+    "day": 1,
+    "file": "snapshots/2026 The RSM Classic - Day 1.csv",
+    "saved": "2026-11-19T18:47-05:00",
+    "ranks": {
+     "David": 3,
+     "Michael": 4,
+     "Alan": 2,
+     "Judy": 1
+    },
+    "totals": {
+     "David": "-4",
+     "Michael": "-3",
+     "Alan": "-10",
+     "Judy": "-16"
+    }
+   }
+  ]
  },
  "roster_year": 2026,
  "roster": {
@@ -1414,6 +1433,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-19T12:39-05:00",
+ "updated": "2026-11-19T18:47-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
