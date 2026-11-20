@@ -28,7 +28,7 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Scheduled 147."
+   "detail": "All recognized: Cut 1, In_Progress 1, Scheduled 145."
   },
   {
    "name": "Scores add up",
@@ -757,7 +757,7 @@
   ],
   "field_size": 147,
   "error": null,
-  "updated": "2026-11-19T23:40-05:00",
+  "updated": "2026-11-20T08:36-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -1433,6 +1433,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-19T23:40-05:00",
+ "updated": "2026-11-20T08:36-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
