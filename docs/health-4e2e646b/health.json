@@ -63,7 +63,7 @@
   "event_id": "401850981",
   "state": "live",
   "start": "2026-11-19",
-  "end": "2026-11-22",
+  "end": "2026-11-23",
   "venue": {
    "course": "Sea Island Golf Club (Seaside Course)",
    "place": "Saint Simons Island, GA",
@@ -757,7 +757,7 @@
   ],
   "field_size": 147,
   "error": null,
-  "updated": "2026-11-21T12:41-05:00",
+  "updated": "2026-11-21T17:22-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -1450,6 +1450,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-21T12:41-05:00",
+ "updated": "2026-11-21T17:22-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
