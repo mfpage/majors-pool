@@ -28,12 +28,12 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Cut 81, Scheduled 66."
+   "detail": "All recognized: Cut 81, In_Progress 66."
   },
   {
    "name": "Scores add up",
    "status": "pass",
-   "detail": "66 of 66 golfers' round scores match their total."
+   "detail": "No finished rounds to check yet."
   },
   {
    "name": "Cut",
@@ -164,7 +164,7 @@
       "name": "Brooks Koepka",
       "espn": "Brooks Koepka",
       "score": "-5",
-      "status": "9:54 AM",
+      "status": "9",
       "out": false,
       "counts": true
      },
@@ -277,7 +277,7 @@
       "name": "Harry Hall",
       "espn": "Harry Hall",
       "score": "-7",
-      "status": "10:27 AM",
+      "status": "6",
       "out": false,
       "counts": true
      }
@@ -326,7 +326,7 @@
       "name": "Harris English",
       "espn": "Harris English",
       "score": "-7",
-      "status": "10:16 AM",
+      "status": "7",
       "out": false,
       "counts": true
      },
@@ -342,7 +342,7 @@
       "name": "Keegan Bradley",
       "espn": "Keegan Bradley",
       "score": "-5",
-      "status": "9:21 AM",
+      "status": "12",
       "out": false,
       "counts": true
      },
@@ -382,7 +382,7 @@
       "name": "Rasmus Højgaard",
       "espn": "Rasmus Højgaard",
       "score": "-8",
-      "status": "10:38 AM",
+      "status": "6",
       "out": false,
       "counts": true
      }
@@ -431,7 +431,7 @@
       "name": "Maverick McNealy",
       "espn": "Maverick McNealy",
       "score": "-5",
-      "status": "9:21 AM",
+      "status": "12",
       "out": false,
       "counts": true
      },
@@ -455,7 +455,7 @@
       "name": "Michael Brennan",
       "espn": "Michael Brennan",
       "score": "-2",
-      "status": "10:27 AM",
+      "status": "7",
       "out": false,
       "counts": true
      },
@@ -471,7 +471,7 @@
       "name": "Andrew Novak",
       "espn": "Andrew Novak",
       "score": "-4",
-      "status": "9:10 AM",
+      "status": "13",
       "out": false,
       "counts": true
      },
@@ -479,7 +479,7 @@
       "name": "Sami Välimäki",
       "espn": "Sami Välimäki",
       "score": "-5",
-      "status": "9:43 AM",
+      "status": "10",
       "out": false,
       "counts": true
      },
@@ -757,7 +757,7 @@
   ],
   "field_size": 147,
   "error": null,
-  "updated": "2026-11-22T04:58-05:00",
+  "updated": "2026-11-22T12:36-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -1450,6 +1450,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-22T04:58-05:00",
+ "updated": "2026-11-22T12:36-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
