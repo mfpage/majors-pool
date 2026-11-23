@@ -28,12 +28,12 @@
   {
    "name": "Golfer statuses",
    "status": "pass",
-   "detail": "All recognized: Cut 81, Scheduled 66."
+   "detail": "All recognized: Cut 81, In_Progress 30, Scheduled 36."
   },
   {
    "name": "Scores add up",
    "status": "pass",
-   "detail": "66 of 66 golfers' round scores match their total."
+   "detail": "36 of 36 golfers' round scores match their total."
   },
   {
    "name": "Cut",
@@ -277,7 +277,7 @@
       "name": "Harry Hall",
       "espn": "Harry Hall",
       "score": "-7",
-      "status": "8:04 AM",
+      "status": "1",
       "out": false,
       "counts": true
      }
@@ -431,7 +431,7 @@
       "name": "Maverick McNealy",
       "espn": "Maverick McNealy",
       "score": "-6",
-      "status": "7:53 AM",
+      "status": "1",
       "out": false,
       "counts": true
      },
@@ -455,7 +455,7 @@
       "name": "Michael Brennan",
       "espn": "Michael Brennan",
       "score": "-6",
-      "status": "7:20 AM",
+      "status": "3",
       "out": false,
       "counts": true
      },
@@ -757,7 +757,7 @@
   ],
   "field_size": 147,
   "error": null,
-  "updated": "2026-11-22T22:19-05:00",
+  "updated": "2026-11-23T08:20-05:00",
   "snapshots": [
    {
     "day": 1,
@@ -1467,6 +1467,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-22T22:19-05:00",
+ "updated": "2026-11-23T08:20-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"pass\", \"\"], [\"Backup sources\", \"pass\", \"\"], [\"Golfer statuses\", \"pass\", \"\"], [\"Scores add up\", \"pass\", \"\"], [\"Cut\", \"pass\", \"\"], [\"Pool scoring\", \"pass\", \"\"], [\"Day files\", \"pass\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
