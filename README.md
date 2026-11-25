@@ -8,10 +8,11 @@ finished the round. Nothing needs to run on your computer.
 ## Page addresses
 
 Each season and tab has its own address, like `/2026-masters`, `/2026-pga-championship`,
-`/2026-us-open`, `/2026-british-open` and `/2026-overall`. The home page opens on the
-latest tournament. The health page is `/health`, with `/health/roster` and `/health/run`.
-The update job creates a small page file for each season and tab (`docs/2026-masters.html`
-and so on), so these addresses work when typed in, bookmarked or refreshed.
+`/2026-us-open`, `/2026-british-open` and `/2026-overall`. The main address shows the
+current season at a glance (one card per major, plus Overall); past seasons' overviews
+are at `/2003` and so on. The health page is `/health`, with `/health/roster` and `/health/run`.
+The update job creates a small page file for each season and tab (`docs/2026-masters.html`,
+`docs/2026.html` and so on), so these addresses work when typed in, bookmarked or refreshed.
 
 ## What's in here
 

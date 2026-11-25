@@ -151,3 +151,32 @@ tr:last-child td { border-bottom: 0; }
 .flag { font: 600 11px/1 var(--display); letter-spacing: .06em; padding: 3px 6px; border-radius: 3px; background: var(--flag-bg); color: var(--flag); }
 .flag.fail { background: color-mix(in srgb, var(--live) 18%, transparent); color: var(--live); }
 nav.tabs a[aria-current="page"] .flag.warn { background: var(--flag-bg); }
+
+/* Season at a glance */
+.glance { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.g-card { display: flex; flex-direction: column; gap: 8px; min-width: 0; padding: 16px 18px 18px; background: var(--board); border: 1px solid var(--rule); border-radius: 8px; text-decoration: none; color: inherit; transition: border-color .15s; }
+.g-card:hover { border-color: var(--win); }
+.g-card:focus-visible { outline: 2px solid var(--flag); outline-offset: 2px; }
+.g-card.live { border-color: var(--live); }
+.g-top { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; }
+.g-name { font: 700 24px/1.05 var(--display); letter-spacing: .03em; text-transform: uppercase; margin: 0; color: var(--ink); }
+.g-where { margin: 0; color: var(--muted); font-size: 13px; }
+.g-places { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 4px; }
+.g-places li { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: baseline; gap: 6px; }
+.g-places li:first-child .g-who { font-weight: 600; }
+.g-places li:first-child .g-rk { color: var(--win); }
+.g-rk { font: 700 14px/1 var(--display); letter-spacing: .06em; color: var(--muted); text-transform: uppercase; }
+.g-who { font: 600 18px/1.2 var(--display); letter-spacing: .03em; text-transform: uppercase; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.g-tot { font: 600 18px/1 var(--display); text-align: right; }
+.g-count { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+.g-count b { font: 700 30px/1 var(--display); color: var(--ink); margin-right: 2px; }
+.g-note { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+.g-overall { margin-top: -14px; }
+.g-overall .g-places { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px 18px; }
+@media (max-width: 920px) {
+  .glance { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g-overall .g-places { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .glance, .g-overall .g-places { grid-template-columns: minmax(0, 1fr); }
+}

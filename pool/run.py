@@ -156,13 +156,13 @@ def write_pages(config: dict) -> None:
         return
     page = template.read_text(encoding="utf-8")
     years = sorted(int(p.stem) for p in (DOCS / "data").glob("[0-9][0-9][0-9][0-9].json"))
-    wanted = {f"{y}-{slug}.html" for y in years for slug in SLUGS.values()}
+    wanted = {f"{y}-{slug}.html" for y in years for slug in SLUGS.values()} | {f"{y}.html" for y in years}
     for name in wanted:
         _write_if_changed(DOCS / name, page)
-    for old in DOCS.glob("[0-9][0-9][0-9][0-9]-*.html"):
+    for old in list(DOCS.glob("[0-9][0-9][0-9][0-9]-*.html")) + list(DOCS.glob("[0-9][0-9][0-9][0-9].html")):
         if old.name not in wanted:
             old.unlink()
-    _write_if_changed(DOCS / "404.html", page)  # any other address opens the latest tournament
+    _write_if_changed(DOCS / "404.html", page)  # any other address shows the current season
     health = DOCS / config.get("health_page", "health")
     if (health / "index.html").exists():
         hp = (health / "index.html").read_text(encoding="utf-8")
