@@ -48,6 +48,26 @@ function statusText(g) {
   return s;
 }
 
+// ---- Page addresses ----------------------------------------------------------
+// The pool: <site>/2026-masters, <site>/2026-overall ...  The health page:
+// <site>/health, <site>/health/roster, <site>/health/run.
+const SITE_ROOT = new URL(".", document.currentScript.src).pathname;
+const HEALTH_DIR = new URL(".", location.href).pathname;
+const SLUG = { masters: "masters", pga: "pga-championship", usopen: "us-open", open: "british-open", overall: "overall" };
+const KEY_BY_SLUG = Object.fromEntries(Object.entries(SLUG).map(([k, v]) => [v, k]));
+function lastSegment() {
+  return (location.pathname.split("/").filter(Boolean).pop() || "").replace(/\.html$/, "");
+}
+function routeFromPath() {
+  const m = lastSegment().match(/^(\d{4})-([a-z-]+)$/);
+  if (m && KEY_BY_SLUG[m[2]]) return { year: Number(m[1]), tab: KEY_BY_SLUG[m[2]] };
+  const old = location.hash.slice(1);  // links from before, like #masters
+  if (SLUG[old]) return { year: null, tab: old };
+  return null;
+}
+function pageUrl(year, tab) { return SITE_ROOT + year + "-" + SLUG[tab]; }
+function fileUrl(file) { return (window.POOL_HEALTH ? HEALTH_DIR : SITE_ROOT) + encodeURI(file); }
+
 async function getJSON(path) {
   const r = await fetch(path + "?t=" + Date.now(), { cache: "no-store" });
   if (!r.ok) throw new Error(r.status);
@@ -56,10 +76,10 @@ async function getJSON(path) {
 
 async function load() {
   try {
-    const idx = await getJSON("data/index.json");
+    const idx = await getJSON(SITE_ROOT + "data/index.json");
     state.years = idx.years || [];
     if (!state.year || !state.years.includes(state.year)) state.year = state.years[0];
-    state.data = state.year ? await getJSON(`data/${state.year}.json`) : null;
+    state.data = state.year ? await getJSON(`${SITE_ROOT}data/${state.year}.json`) : null;
   } catch (e) {
     if (!state.data) {
       $("#main").innerHTML = `<div class="empty"><b>No standings yet.</b> The page fills in the first time the update job runs during a major week.</div>`;
@@ -82,9 +102,11 @@ function render() {
   if (!data) return;
   const majors = data.majors || [];
   const keys = majors.map((m) => m.key).concat("overall");
-  let tab = location.hash.slice(1);
-  if (!keys.includes(tab)) tab = defaultTab();
+  let tab = state.wantTab;
+  if (!keys.includes(tab)) tab = defaultTab();  // the home page opens on the latest tournament
   state.tab = tab;
+  const here = pageUrl(state.year, tab);
+  if (location.pathname !== here || location.hash) history.replaceState(null, "", here);
 
   $("#year").innerHTML = state.years.length >= 1
     ? `<label>Season <select id="yearSel">${state.years.map((y) => `<option ${y === state.year ? "selected" : ""}>${y}</option>`).join("")}</select></label>`
@@ -92,14 +114,15 @@ function render() {
   const sel = $("#yearSel");
   if (sel) sel.onchange = () => {
     // stay on the same tab (Masters stays Masters) in the other season
-    if (!location.hash) history.replaceState(null, "", "#" + state.tab);
     state.year = Number(sel.value);
+    state.wantTab = state.tab;
+    history.pushState(null, "", pageUrl(state.year, state.tab));
     load();
   };
 
   $("#tabs").innerHTML = majors.map((m) =>
-    `<a href="#${m.key}" ${tab === m.key ? 'aria-current="page"' : ""}>${m.state === "live" ? '<span class="dot" aria-label="Live"></span>' : ""}${esc(tabLabel(m))}</a>`
-  ).join("") + `<a href="#overall" ${tab === "overall" ? 'aria-current="page"' : ""}>Overall</a>`;
+    `<a href="${pageUrl(state.year, m.key)}" data-nav ${tab === m.key ? 'aria-current="page"' : ""}>${m.state === "live" ? '<span class="dot" aria-label="Live"></span>' : ""}${esc(tabLabel(m))}</a>`
+  ).join("") + `<a href="${pageUrl(state.year, "overall")}" data-nav ${tab === "overall" ? 'aria-current="page"' : ""}>Overall</a>`;
 
   $("#main").innerHTML = tab === "overall" ? overallView(data) : majorView(majors.find((m) => m.key === tab), data);
   document.title = `Page Family Golf Pool ${data.year}`;
@@ -176,7 +199,7 @@ function majorView(m, data) {
     const s = snaps[d];
     if (!s) return `<div class="chip pending"><b>Day ${d}</b><small>${d === 2 ? "Saved when round 2 is done and the cut is posted" : `Saved when round ${d} is done`}</small></div>`;
     const leader = Object.entries(s.ranks).find(([, r]) => r === 1)?.[0];
-    return `<a class="chip" href="${encodeURI(s.file)}" download><b>Day ${d}</b><small>${esc(leader)} leads at ${esc(s.totals[leader])}${m.state === "final" ? "" : " · " + when(s.saved)}</small></a>`;
+    return `<a class="chip" href="${fileUrl(s.file)}" download><b>Day ${d}</b><small>${esc(leader)} leads at ${esc(s.totals[leader])}${m.state === "final" ? "" : " · " + when(s.saved)}</small></a>`;
   }).join("") + `</div></section>`;
 
   return html;
@@ -201,8 +224,7 @@ function overallView(data) {
       }).join("") +
       `<td class="total">${r.total}</td><td class="place-col">${ordinal(r.place)}</td></tr>`).join("") +
     `</tbody></table></div>`;
-  html += `<p class="note">Each major's finishing position, added up. Lowest total wins.` +
-    (played.some((m) => m.state === "live") ? ` <span style="color:var(--live);font-style:italic">Red italic</span> is the current position in a major still being played.` : "") + `</p>`;
+
   return html;
 }
 
@@ -210,7 +232,7 @@ function overallView(data) {
 // ---- Health check page (unlisted) ------------------------------------------
 let health = null;
 async function loadHealth() {
-  try { health = await getJSON("health.json"); }
+  try { health = await getJSON(HEALTH_DIR + "health.json"); }
   catch (e) { $("#main").innerHTML = `<div class="empty"><b>No health check yet.</b> It appears after the next scheduled run.</div>`; return; }
   renderHealth();
 }
@@ -218,19 +240,21 @@ async function loadHealth() {
 function renderHealth() {
   const h = health;
   if (!h) return;
-  const tabs = [["tournament", "Test Tournament Status"], ["roster", "Roster Status"], ["checks", "Run Status"]];
-  let tab = location.hash.slice(1);
-  if (!tabs.some(([k]) => k === tab)) tab = "tournament";
+  const tabs = [["tournament", "Test Tournament Status", ""], ["roster", "Roster Status", "roster"], ["checks", "Run Status", "run"]];
+  const seg = lastSegment(), old = location.hash.slice(1);
+  let tab = seg === "roster" ? "roster" : seg === "run" ? "checks" : (old === "roster" || old === "checks") ? old : "tournament";
+  const here = HEALTH_DIR + tabs.find(([k]) => k === tab)[2];
+  if (location.pathname !== here || location.hash) history.replaceState(null, "", here);
   const overall = h.checks.some((c) => c.status === "fail") ? "fail" : h.checks.some((c) => c.status === "warn") ? "warn" : "pass";
   const roster = h.roster_rows || [];
   const found = roster.filter((r) => r.found).length;
 
   $("#year").textContent = "";
-  $("#tabs").innerHTML = tabs.map(([k, label]) => {
+  $("#tabs").innerHTML = tabs.map(([k, label, path]) => {
     let flag = "";
     if (k === "checks" && overall !== "pass") flag = `<span class="flag ${overall}">${overall === "fail" ? "Failed" : "Warning"}</span>`;
     if (k === "roster" && roster.length && found < roster.length) flag = `<span class="flag warn">${roster.length - found}</span>`;
-    return `<a href="#${k}" ${tab === k ? 'aria-current="page"' : ""}>${label}${flag}</a>`;
+    return `<a href="${HEALTH_DIR + path}" data-nav ${tab === k ? 'aria-current="page"' : ""}>${label}${flag}</a>`;
   }).join("");
 
   let html = "";
@@ -263,6 +287,27 @@ function renderHealth() {
   $("#main").innerHTML = html;
 }
 
-window.addEventListener("hashchange", () => { if (window.POOL_HEALTH) renderHealth(); else render(); });
+// Tabs switch without reloading; the address changes and Back/Forward work
+function onRoute() {
+  if (window.POOL_HEALTH) return renderHealth();
+  const r = routeFromPath();
+  state.wantTab = r ? r.tab : null;
+  if (r && r.year && r.year !== state.year) { state.year = r.year; load(); } else render();
+}
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("a[data-nav]");
+  if (!a || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  e.preventDefault();
+  if (a.getAttribute("href") !== location.pathname) history.pushState(null, "", a.getAttribute("href"));
+  onRoute();
+});
+window.addEventListener("popstate", onRoute);
+
 if (window.POOL_HEALTH) { loadHealth(); setInterval(loadHealth, REFRESH_MS); }
-else { load(); setInterval(load, REFRESH_MS); }
+else {
+  const r = routeFromPath();
+  state.year = r && r.year ? r.year : null;
+  state.wantTab = r ? r.tab : null;
+  load();
+  setInterval(load, REFRESH_MS);
+}

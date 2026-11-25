@@ -5,6 +5,14 @@ updates it every 15 minutes during each major and saves an end-of-day CSV
 (same layout as the old R script's output) once every golfer in the pool has
 finished the round. Nothing needs to run on your computer.
 
+## Page addresses
+
+Each season and tab has its own address, like `/2026-masters`, `/2026-pga-championship`,
+`/2026-us-open`, `/2026-british-open` and `/2026-overall`. The home page opens on the
+latest tournament. The health page is `/health`, with `/health/roster` and `/health/run`.
+The update job creates a small page file for each season and tab (`docs/2026-masters.html`
+and so on), so these addresses work when typed in, bookmarked or refreshed.
+
 ## What's in here
 
 | Path | What it is |
@@ -59,9 +67,9 @@ pool's rosters, as if it were a major, and checks each step: the four majors
 are on ESPN's schedule, the data sources read, every golfer's status is
 recognized, round scores add up, the cut is picked up, and day files save.
 
-Results are on an unlisted page that nothing links to:
-`https://<your-username>.github.io/majors-pool/health-4e2e646b/`
-(The repository is public, so it's unlisted rather than private.)
+Results are on a page that nothing links to:
+`https://<your-username>.github.io/majors-pool/health/`
+(The repository is public, so anyone who guesses the address can view it, but nothing on it can be changed.)
 
 When a check newly fails, that run is marked failed in the Actions tab, and
 GitHub notifies you the way it does for any failed workflow (email or the

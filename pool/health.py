@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import json
 import traceback
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from . import espn
@@ -21,6 +21,7 @@ KNOWN_STATUSES = {
     "STATUS_DQ", "STATUS_SUSPENDED", "STATUS_DELAYED", "STATUS_FINAL",
 }
 WRITE_EVERY = timedelta(minutes=60)  # unless results change, save at most hourly
+MIN_FIELD = 15                        # smallest field we expect (the Hero World Challenge has 20)
 CATCH_UP_PER_RUN = 8                  # earlier tournaments read per run for the roster check
 
 
@@ -114,10 +115,17 @@ def run(now: datetime, docs: Path, slug: str, teams: dict, config: dict,
             raw = espn._get(espn.FEED_LEADERBOARD_URL, params={"league": "pga", "event": ev["id"]}).json()
             rows = espn.parse_leaderboard_feed(raw)
             entry["venue"] = espn.venue_from(raw) or entry.get("venue")
-            ok, why = espn.looks_valid(rows)
-            checks.append(_check("Leaderboard feed (main source)", "pass" if ok else "fail",
-                                 f"{len(rows)} golfers read." if ok else why))
-            if not ok:
+            starts = date.fromisoformat(ev["start"]) if ev.get("start") else None
+            if not rows and starts and starts > now.date():
+                # off week: ESPN already shows next week's event, field not posted yet
+                checks.append(_check("Leaderboard feed (main source)", "pass",
+                                     f"Field not posted yet; it starts {starts:%b} {starts.day}."))
+                rows = None
+            elif len(rows) >= MIN_FIELD and sum(1 for r in rows if r.name) >= 0.9 * len(rows):
+                checks.append(_check("Leaderboard feed (main source)", "pass", f"{len(rows)} golfers read."))
+            else:
+                checks.append(_check("Leaderboard feed (main source)", "fail",
+                                     f"Only {len(rows)} golfers read for a tournament that has started."))
                 rows = None
         except Exception as exc:
             checks.append(_check("Leaderboard feed (main source)", "fail", f"{type(exc).__name__}: {exc}"))
@@ -126,8 +134,9 @@ def run(now: datetime, docs: Path, slug: str, teams: dict, config: dict,
         backups = []
         for name, fn in (("leaderboard page", espn.fetch_html), ("scoreboard feed", espn.fetch_feed)):
             try:
-                ok, why = espn.looks_valid(fn(ev["id"]))
-                backups.append((name, ok, why))
+                got = fn(ev["id"])
+                ok = len(got) >= MIN_FIELD
+                backups.append((name, ok, "" if ok else f"{len(got)} golfers"))
             except Exception as exc:
                 backups.append((name, False, type(exc).__name__))
         working = [n for n, ok, _ in backups if ok]

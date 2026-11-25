@@ -138,6 +138,38 @@ def process_major(entry: dict, rows: list, source: str, teams: dict, config: dic
     })
 
 
+SLUGS = {"masters": "masters", "pga": "pga-championship", "usopen": "us-open",
+         "open": "british-open", "overall": "overall"}
+
+
+def _write_if_changed(path: Path, text: str) -> None:
+    if not path.exists() or path.read_text(encoding="utf-8") != text:
+        path.write_text(text, encoding="utf-8")
+
+
+def write_pages(config: dict) -> None:
+    """One small file per season and tab, so addresses like /2026-masters work
+    when typed in, bookmarked or refreshed. Each is a copy of index.html; the
+    page works out which season and tab to show from the address."""
+    template = DOCS / "index.html"
+    if not template.exists():
+        return
+    page = template.read_text(encoding="utf-8")
+    years = sorted(int(p.stem) for p in (DOCS / "data").glob("[0-9][0-9][0-9][0-9].json"))
+    wanted = {f"{y}-{slug}.html" for y in years for slug in SLUGS.values()}
+    for name in wanted:
+        _write_if_changed(DOCS / name, page)
+    for old in DOCS.glob("[0-9][0-9][0-9][0-9]-*.html"):
+        if old.name not in wanted:
+            old.unlink()
+    _write_if_changed(DOCS / "404.html", page)  # any other address opens the latest tournament
+    health = DOCS / config.get("health_page", "health")
+    if (health / "index.html").exists():
+        hp = (health / "index.html").read_text(encoding="utf-8")
+        for name in ("roster.html", "run.html"):
+            _write_if_changed(health / name, hp)
+
+
 def in_window(entry: dict, today, force: bool = False) -> bool:
     if entry.get("state") in ("final", "notplayed"):
         return False
@@ -295,6 +327,8 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
             alert = True
         if alert:
             (ROOT / ".alert").write_text("A health check newly failed. See the health page.\n")
+
+    write_pages(config)
 
     # Weekly heartbeat so GitHub doesn't pause the schedule in the off-season
     week = now.strftime("%G-W%V")
