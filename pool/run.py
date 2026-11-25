@@ -156,18 +156,35 @@ def write_pages(config: dict) -> None:
         return
     page = template.read_text(encoding="utf-8")
     years = sorted(int(p.stem) for p in (DOCS / "data").glob("[0-9][0-9][0-9][0-9].json"))
-    wanted = {f"{y}-{slug}.html" for y in years for slug in SLUGS.values()} | {f"{y}.html" for y in years}
+    wanted = {f"{y}-{slug}.html" for y in years for slug in SLUGS.values()}
     for name in wanted:
         _write_if_changed(DOCS / name, page)
     for old in list(DOCS.glob("[0-9][0-9][0-9][0-9]-*.html")) + list(DOCS.glob("[0-9][0-9][0-9][0-9].html")):
         if old.name not in wanted:
             old.unlink()
-    _write_if_changed(DOCS / "404.html", page)  # any other address shows the current season
+    _write_if_changed(DOCS / "404.html", page)  # any other address shows the landing page
     health = DOCS / config.get("health_page", "health")
     if (health / "index.html").exists():
         hp = (health / "index.html").read_text(encoding="utf-8")
         for name in ("roster.html", "run.html"):
             _write_if_changed(health / name, hp)
+
+
+def write_index() -> None:
+    """data/index.json: the list of seasons, and each season's overall winner
+    for the landing page's Past seasons list."""
+    seasons = {}
+    for p in sorted((DOCS / "data").glob("[0-9][0-9][0-9][0-9].json"), reverse=True):
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        majors = d.get("majors", [])
+        complete = bool(majors) and all(m.get("state") in ("final", "notplayed") for m in majors)
+        winners = [o["person"] for o in d.get("overall", []) if o.get("place") == 1]
+        seasons[p.stem] = {"complete": complete, "winners": winners if complete else []}
+    years = [int(y) for y in seasons]
+    _write_if_changed(DOCS / "data" / "index.json", json.dumps({"years": years, "seasons": seasons}))
 
 
 def in_window(entry: dict, today, force: bool = False) -> bool:
@@ -311,8 +328,6 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
         data["updated"] = now.isoformat(timespec="minutes")
         data_path.parent.mkdir(parents=True, exist_ok=True)
         data_path.write_text(json.dumps(data, indent=1, ensure_ascii=False), encoding="utf-8")
-        years = sorted({int(p.stem) for p in (DOCS / "data").glob("[0-9][0-9][0-9][0-9].json")}, reverse=True)
-        (DOCS / "data" / "index.json").write_text(json.dumps({"years": years}), encoding="utf-8")
         print(f"Updated {data_path.relative_to(ROOT)}")
     else:
         print("No changes.")
@@ -328,6 +343,8 @@ def update(now: datetime | None = None, fetch=espn.fetch_leaderboard, find=espn.
         if alert:
             (ROOT / ".alert").write_text("A health check newly failed. See the health page.\n")
 
+    if (DOCS / "data").exists():
+        write_index()
     write_pages(config)
 
     # Weekly heartbeat so GitHub doesn't pause the schedule in the off-season

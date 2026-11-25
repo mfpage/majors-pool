@@ -180,3 +180,17 @@ nav.tabs a[aria-current="page"] .flag.warn { background: var(--flag-bg); }
 @media (max-width: 520px) {
   .glance, .g-overall .g-places { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Landing page: green page, title, Overall, then the four majors, centered as one block */
+h1 a { color: inherit; text-decoration: none; }
+h1 a:hover { opacity: .85; }
+.tagline { display: none; }
+body.is-home { background: var(--green); }
+body.is-home header.top { display: none; }
+body.is-home main.wrap { min-height: 100vh; min-height: 100dvh; padding-block: 40px; display: flex; flex-direction: column; justify-content: center; }
+.landing { display: flex; flex-direction: column; gap: 16px; }
+.land-title { margin: 0 0 14px; text-align: center; color: var(--green-ink); font: 700 clamp(40px, 7vw, 72px)/.95 var(--display); letter-spacing: .03em; text-transform: uppercase; text-wrap: balance; }
+body.is-home .g-overall { margin-top: 0; }
+body.is-home .g-card { border-color: transparent; box-shadow: 0 1px 2px rgba(0,0,0,.12), 0 8px 24px rgba(0,0,0,.14); }
+body.is-home .g-card:hover { border-color: var(--flag); }
+body.is-home .g-card.live { border-color: var(--live); }

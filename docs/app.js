@@ -60,7 +60,7 @@ function lastSegment() {
 }
 function routeFromPath() {
   const seg = lastSegment();
-  if (/^\d{4}$/.test(seg)) return { year: Number(seg), tab: "home" };  // a season's overview
+  if (/^\d{4}$/.test(seg)) return { year: Number(seg), tab: "overall" };
   const m = seg.match(/^(\d{4})-([a-z-]+)$/);
   if (m && KEY_BY_SLUG[m[2]]) return { year: Number(m[1]), tab: KEY_BY_SLUG[m[2]] };
   const old = location.hash.slice(1);  // links from before, like #masters
@@ -68,7 +68,7 @@ function routeFromPath() {
   return null;
 }
 function pageUrl(year, tab) {
-  if (tab === "home") return year === state.years[0] ? SITE_ROOT : SITE_ROOT + year;  // current season lives at the main address
+  if (tab === "home") return SITE_ROOT;  // the landing page
   return SITE_ROOT + year + "-" + SLUG[tab];
 }
 function fileUrl(file) { return (window.POOL_HEALTH ? HEALTH_DIR : SITE_ROOT) + encodeURI(file); }
@@ -83,6 +83,7 @@ async function load() {
   try {
     const idx = await getJSON(SITE_ROOT + "data/index.json");
     state.years = idx.years || [];
+    state.seasons = idx.seasons || {};
     if (!state.year || !state.years.includes(state.year)) state.year = state.years[0];
     state.data = state.year ? await getJSON(`${SITE_ROOT}data/${state.year}.json`) : null;
   } catch (e) {
@@ -106,14 +107,20 @@ function render() {
   const data = state.data;
   if (!data) return;
   const majors = data.majors || [];
-  const keys = ["home"].concat(majors.map((m) => m.key), "overall");
-  let tab = state.wantTab;
-  if (!keys.includes(tab)) tab = "home";
+  const latest = state.year === state.years[0];
+  const keys = (latest ? ["home"] : []).concat(majors.map((m) => m.key), "overall");
+  let tab = state.wantTab || "home";
+  if (!keys.includes(tab)) tab = latest ? "home" : "overall";
+  const home = tab === "home";
+  document.body.classList.toggle("is-home", home);
+  $("#homeLink").href = SITE_ROOT;
   state.tab = tab;
   const here = pageUrl(state.year, tab);
   if (location.pathname !== here || location.hash) history.replaceState(null, "", here);
 
-  $("#year").innerHTML = state.years.length >= 1
+  const first = state.years[state.years.length - 1];
+  $("#tagline").textContent = "";
+  $("#year").innerHTML = home ? "" : state.years.length >= 1
     ? `<label>Season <select id="yearSel">${state.years.map((y) => `<option ${y === state.year ? "selected" : ""}>${y}</option>`).join("")}</select></label>`
     : `${data.year} season`;
   const sel = $("#yearSel");
@@ -125,7 +132,7 @@ function render() {
     load();
   };
 
-  $("#tabs").innerHTML = `<a href="${pageUrl(state.year, "home")}" data-nav ${tab === "home" ? 'aria-current="page"' : ""}>Overview</a>` + majors.map((m) =>
+  $("#tabs").innerHTML = home ? "" : majors.map((m) =>
     `<a href="${pageUrl(state.year, m.key)}" data-nav ${tab === m.key ? 'aria-current="page"' : ""}>${m.state === "live" ? '<span class="dot" aria-label="Live"></span>' : ""}${esc(tabLabel(m))}</a>`
   ).join("") + `<a href="${pageUrl(state.year, "overall")}" data-nav ${tab === "overall" ? 'aria-current="page"' : ""}>Overall</a>`;
 
@@ -248,20 +255,19 @@ function homeView(data) {
   const played = majors.filter((m) => m.standings && (m.state === "live" || m.state === "final"));
   const done = majors.every((m) => m.state === "final" || m.state === "notplayed");
   const overall = data.overall || [];
-  let ov;
-  if (!played.length) {
-    ov = `<p class="g-note">Standings start with the first major.</p>`;
-  } else {
-    ov = `<ol class="g-places">` + overall.map((o) =>
-      `<li><span class="g-rk">${ordinal(o.place)}</span><span class="g-who">${esc(o.person)}</span>` +
-      `<span class="g-tot">${o.total} pts</span></li>`).join("") + `</ol>`;
-  }
-  return `<section class="head"><h2>${data.year} Season</h2>
-      <span class="pill ${done ? "final" : ""}">${done ? "Complete" : `${played.length} of ${majors.length} played`}</span></section>
-    <div class="glance">${majors.map(glanceCard).join("")}</div>
+  const ov = !played.length
+    ? `<p class="g-note">Standings start with the first major.</p>`
+    : `<ol class="g-places">` + overall.map((o) =>
+        `<li><span class="g-rk">${ordinal(o.place)}</span><span class="g-who">${esc(o.person)}</span>` +
+        `<span class="g-tot">${o.total} ${o.total === 1 ? "point" : "points"}</span></li>`).join("") + `</ol>`;
+  const status = done && played.length ? `<span class="pill final">Final</span>`
+    : played.length ? `<span class="pill">${played.length} of ${majors.length} played</span>` : "";
+  return `<div class="landing">
+    <h1 class="land-title">Page Family Golf Pool</h1>
     <a class="g-card g-overall" href="${pageUrl(state.year, "overall")}" data-nav>
-      <div class="g-top"><h3 class="g-name">Overall</h3>${done && played.length ? `<span class="pill final">Final</span>` : ""}</div>
-${ov}</a>`;
+      <div class="g-top"><h3 class="g-name">${data.year} Overall</h3>${status}</div>${ov}</a>
+    <div class="glance">${majors.map(glanceCard).join("")}</div>
+  </div>`;
 }
 
 function overallView(data) {
@@ -350,8 +356,9 @@ function renderHealth() {
 function onRoute() {
   if (window.POOL_HEALTH) return renderHealth();
   const r = routeFromPath();
-  state.wantTab = r ? r.tab : null;
-  if (r && r.year && r.year !== state.year) { state.year = r.year; load(); } else render();
+  state.wantTab = r ? r.tab : "home";
+  const year = r && r.year ? r.year : state.years[0];
+  if (year !== state.year) { state.year = year; load(); } else render();
 }
 document.addEventListener("click", (e) => {
   const a = e.target.closest("a[data-nav]");
