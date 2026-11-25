@@ -703,6 +703,6 @@
   "Judy"
  ],
  "year": 2026,
- "updated": "2026-11-24T15:55-05:00",
+ "updated": "2026-11-24T22:51-05:00",
  "signature": "[[\"Majors on ESPN's schedule\", \"pass\", \"\"], [\"Pool page updates\", \"pass\", \"\"], [\"This week's tournament\", \"pass\", \"\"], [\"Leaderboard feed (main source)\", \"fail\", \"\"], [\"Backup sources\", \"warn\", \"\"], [\"Roster names\", \"pass\", \"All 48 found on ESPN this year, spelled as in the teams file.\"]]"
 }
