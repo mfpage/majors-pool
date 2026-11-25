@@ -23,6 +23,7 @@ and so on), so these addresses work when typed in, bookmarked or refreshed.
 | `pool/` | The Python code: reading ESPN, name matching, scoring, the CSV. |
 | `docs/` | The web page. `docs/data` and `docs/snapshots` are written by the job. |
 | `.github/workflows/update.yml` | The schedule: every 15 minutes. |
+| `design/` | Favicon artwork: option A (in use) and option C (ball on tee), kept for later. |
 | `tests/` | Checks against your 2026 Masters Day 1 file. |
 
 ## One-time setup (about 15 minutes)
